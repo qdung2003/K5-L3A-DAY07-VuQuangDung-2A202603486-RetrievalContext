@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Desk | Python Tutorial</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.svg" alt="" width="30" height="30">Evidence Desk<span>DAY 07</span></a>
+    <span class="author">Vũ Quang Dũng <span>2A202603486</span></span>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar">
+      <div class="sidebar-heading"><h2>Câu hỏi mẫu</h2><span id="questionCount">24</span></div>
+      <label class="sr-only" for="filterQuestions">Tìm câu hỏi</label>
+      <input id="filterQuestions" class="filter" type="search" placeholder="Tìm trong bộ câu hỏi…">
+      <div id="examples" class="examples" aria-label="Danh sách câu hỏi"></div>
+      <div class="sidebar-footer"><span class="online-dot"></span>Python Tutorial · CPython 3.13.0<br><span class="subtle">8 chương · 256 đoạn · MiniLM 384 chiều</span></div>
+    </aside>
+    <main class="main">
+      <div class="page-heading"><div><div class="eyebrow">HỎI ĐÁP CÓ BẰNG CHỨNG</div><h1>Python Tutorial</h1></div><span class="pipeline-tag">Hybrid · RRF</span></div>
+      <form id="askForm" class="question-area">
+        <div class="mobile-examples"><label for="mobileQuestion">Câu hỏi mẫu</label><select id="mobileQuestion"><option value="">Chọn một câu hỏi…</option></select></div>
+        <div class="input-heading"><label for="question">Câu hỏi của bạn</label><span id="modeBadge" class="mode-badge">Trace đã lưu</span></div>
+        <textarea id="question" rows="3" maxlength="1000" placeholder="Nhập câu hỏi về Python…" required></textarea>
+        <div class="composer-bottom"><div class="mode-control"><label for="mode">Chế độ</label><select id="mode"><option value="saved">Trace đã lưu</option><option value="live">Live model · dùng API</option></select></div><button class="ask-button" id="ask" type="submit"><span id="askLabel">Gửi câu hỏi</span><span aria-hidden="true">↗</span></button></div>
+        <p class="mode-note" id="modeNote">Xem lại lượt chạy đã nộp, không gọi API mới.</p>
+      </form>
+      <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+      <div id="loading" class="loading" hidden><span class="spinner"></span><div>Đang tìm bằng chứng…<small id="loadingNote">Đang đọc trace đã lưu.</small></div></div>
+      <section id="answerSection" class="answer-section" hidden>
+        <div class="answer-heading"><h2 id="answerTitle">Câu trả lời</h2><span id="runLabel"></span></div>
+        <div id="answer" class="answer-text"></div>
+        <div id="runStats" class="run-stats"></div>
+        <div class="tabs" role="tablist" aria-label="Chi tiết lượt chạy"><button id="sourcesTab" role="tab" aria-selected="true" aria-controls="sourcesPanel" type="button">Nguồn bằng chứng <span id="sourceCount">0</span></button><button id="traceTab" role="tab" aria-selected="false" aria-controls="tracePanel" type="button">Lượt tìm kiếm <span id="searchCount">0</span></button></div>
+        <div id="sourcesPanel" role="tabpanel" aria-labelledby="sourcesTab"><div id="sources" class="sources"></div></div>
+        <div id="tracePanel" role="tabpanel" aria-labelledby="traceTab" hidden><div id="traceRows"></div></div>
+      </section>
+      <div id="empty" class="empty"><img src="/logo.svg" alt="" width="48" height="48"><h2>Từ câu hỏi đến bằng chứng</h2><p>Chọn một câu hỏi mẫu để bắt đầu.</p><div class="flow"><span>Câu hỏi</span><span>→</span><span>Truy xuất</span><span>→</span><span>Trả lời + nguồn</span></div></div>
+      <footer class="main-footer">Day 7 · Agentic RAG <span>Dense + TF-IDF → RRF → Context → Model</span></footer>
+    </main>
+  </div>
+</body>
+</html>

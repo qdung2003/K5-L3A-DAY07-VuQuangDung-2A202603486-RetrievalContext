@@ -7,6 +7,9 @@ agent gọi model thật qua Responses API. Xem [cách chạy](RUNBOOK.md),
 [báo cáo cá nhân](report/individual/2A202603486_VuQuangDung.md).
 Code và dữ liệu hash/heuristic trước đây được giữ trong các thư mục `legacy`.
 
+Demo trình duyệt: chạy `.venv\Scripts\python.exe web/app.py`, mở địa chỉ server
+in ra. Có chế độ trace đã lưu và Live model dùng `.env`; xem [web demo](web/README.md).
+
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.

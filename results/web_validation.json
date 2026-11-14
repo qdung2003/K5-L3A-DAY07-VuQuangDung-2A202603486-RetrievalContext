@@ -1,0 +1,20 @@
+{
+  "scope": "Local browser demo; original frozen benchmark outputs are unchanged",
+  "unit_tests": {"run": 37, "passed": 37},
+  "browser": "Playwright Chromium",
+  "viewports": [{"width": 1440, "height": 1000}, {"width": 390, "height": 844}],
+  "checks": [
+    "Saved T02 renders the sourced enumerate answer without model requests",
+    "Saved T-U02 renders abstention and supporting source",
+    "Citation button highlights the matching source",
+    "Search tab exposes the exact context sent to the model",
+    "Unknown saved question displays an error",
+    "Mobile example selector works without horizontal overflow",
+    "No browser JavaScript errors in the checked replay flows",
+    "Live request using project .env returned HTTP 200, answered, one search and one citation",
+    "Static HTTP routes do not expose Python files or .env; provider error details are hidden"
+  ],
+  "live_model": "gpt-6.1-sol",
+  "live_case": "Which built-in returns a new sorted list without changing the source sequence?",
+  "note": "Live smoke requests are demo validation, not additional held-out benchmark evaluation. API usage is separate from frozen benchmark cost totals."
+}

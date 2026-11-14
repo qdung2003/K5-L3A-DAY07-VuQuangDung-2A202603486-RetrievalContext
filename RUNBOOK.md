@@ -98,7 +98,17 @@ khoan/khuyen mai/don gia lich su chua xac minh. Bang khong phai hoa don, khong
 gom du moi probe/lan judge loi thieu usage. Summary/trace cu giu nguyen hash va
 `cost_usd: null` lich su; chi phi bo sung nam trong `costs.json`.
 
-## 5. Bai nop
+## 5. Demo tren web
+
+```powershell
+.\.venv\Scripts\python.exe web/app.py
+```
+
+Mo <http://127.0.0.1:8765>. Chon **Saved trace** de demo cau tra loi, citation,
+score va search da luu ma khong ton API. Chon **Live model** de nhap cau hoi moi;
+che do nay dung `.env` va co the phat sinh chi phi. Nen demo `T02`, `T-U02` va `Q01`.
+
+## 6. Bai nop
 
 Code, nguon duoc phep chia se, vector export, config, benchmark, trace, nhan,
 metrics, gia va bao cao nam trong repo. Bao cao:
