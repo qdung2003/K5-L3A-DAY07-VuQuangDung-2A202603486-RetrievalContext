@@ -1,0 +1,136 @@
+[
+  {
+    "query_id": "d01",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d02",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d03",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d04",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d05",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d06",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d07",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d08",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d09",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d10",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d11",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d12",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d13",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d14",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d15",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "d-u01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "NHÁP - bạn phải đọc trace và sửa abstention_correct thủ công"
+  },
+  {
+    "query_id": "d-u02",
+    "abstention_correct": false,
+    "citation_support": [
+      false
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa abstention_correct thủ công"
+  }
+]

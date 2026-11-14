@@ -1,0 +1,700 @@
+{
+  "counting_rule": "Non-overlapping sequential text units at paragraph boundaries, each >=1500 normalized characters; short tail merged. Source offsets [start,end) refer to normalized chapter text. No physical PDF pages, no OCR, no duplicated content.",
+  "total_counted_units": 93,
+  "sources": [
+    {
+      "source_id": "python-tutorial-controlflow",
+      "title": "More Control Flow Tools",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+      "local_path": "data/python_tutorial/raw/controlflow.rst",
+      "normalized_path": "data/python_tutorial/controlflow.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "e5da06f2db7559a6539f9a8f48f3ceaa4395f82800160f48f8c4208f4be57c27",
+      "physical_pages": null,
+      "counted_units": 19,
+      "pages": [
+        {
+          "page": "controlflow:001",
+          "start_char": 0,
+          "end_char": 1962,
+          "normalized_char_count": 1960
+        },
+        {
+          "page": "controlflow:002",
+          "start_char": 1962,
+          "end_char": 3769,
+          "normalized_char_count": 1801
+        },
+        {
+          "page": "controlflow:003",
+          "start_char": 3769,
+          "end_char": 5747,
+          "normalized_char_count": 1976
+        },
+        {
+          "page": "controlflow:004",
+          "start_char": 5747,
+          "end_char": 7634,
+          "normalized_char_count": 1885
+        },
+        {
+          "page": "controlflow:005",
+          "start_char": 7634,
+          "end_char": 9639,
+          "normalized_char_count": 2000
+        },
+        {
+          "page": "controlflow:006",
+          "start_char": 9639,
+          "end_char": 11460,
+          "normalized_char_count": 1819
+        },
+        {
+          "page": "controlflow:007",
+          "start_char": 11460,
+          "end_char": 13381,
+          "normalized_char_count": 1915
+        },
+        {
+          "page": "controlflow:008",
+          "start_char": 13381,
+          "end_char": 15779,
+          "normalized_char_count": 2390
+        },
+        {
+          "page": "controlflow:009",
+          "start_char": 15779,
+          "end_char": 17601,
+          "normalized_char_count": 1820
+        },
+        {
+          "page": "controlflow:010",
+          "start_char": 17601,
+          "end_char": 19635,
+          "normalized_char_count": 2032
+        },
+        {
+          "page": "controlflow:011",
+          "start_char": 19635,
+          "end_char": 21649,
+          "normalized_char_count": 2012
+        },
+        {
+          "page": "controlflow:012",
+          "start_char": 21649,
+          "end_char": 23659,
+          "normalized_char_count": 2008
+        },
+        {
+          "page": "controlflow:013",
+          "start_char": 23659,
+          "end_char": 25591,
+          "normalized_char_count": 1930
+        },
+        {
+          "page": "controlflow:014",
+          "start_char": 25591,
+          "end_char": 27485,
+          "normalized_char_count": 1892
+        },
+        {
+          "page": "controlflow:015",
+          "start_char": 27485,
+          "end_char": 29532,
+          "normalized_char_count": 2042
+        },
+        {
+          "page": "controlflow:016",
+          "start_char": 29532,
+          "end_char": 31627,
+          "normalized_char_count": 2093
+        },
+        {
+          "page": "controlflow:017",
+          "start_char": 31627,
+          "end_char": 34076,
+          "normalized_char_count": 2447
+        },
+        {
+          "page": "controlflow:018",
+          "start_char": 34076,
+          "end_char": 35882,
+          "normalized_char_count": 1804
+        },
+        {
+          "page": "controlflow:019",
+          "start_char": 35882,
+          "end_char": 37643,
+          "normalized_char_count": 1761
+        }
+      ],
+      "normalized_char_count": 37643
+    },
+    {
+      "source_id": "python-tutorial-datastructures",
+      "title": "Data Structures",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+      "local_path": "data/python_tutorial/raw/datastructures.rst",
+      "normalized_path": "data/python_tutorial/datastructures.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "3c2b7a87519b3e7b1513f5fbb12c9d37ba715c402a6bf032f1b584d555eb979b",
+      "physical_pages": null,
+      "counted_units": 12,
+      "pages": [
+        {
+          "page": "datastructures:001",
+          "start_char": 0,
+          "end_char": 1860,
+          "normalized_char_count": 1858
+        },
+        {
+          "page": "datastructures:002",
+          "start_char": 1860,
+          "end_char": 3833,
+          "normalized_char_count": 1971
+        },
+        {
+          "page": "datastructures:003",
+          "start_char": 3833,
+          "end_char": 5663,
+          "normalized_char_count": 1828
+        },
+        {
+          "page": "datastructures:004",
+          "start_char": 5663,
+          "end_char": 7671,
+          "normalized_char_count": 2006
+        },
+        {
+          "page": "datastructures:005",
+          "start_char": 7671,
+          "end_char": 9758,
+          "normalized_char_count": 2085
+        },
+        {
+          "page": "datastructures:006",
+          "start_char": 9758,
+          "end_char": 11933,
+          "normalized_char_count": 2170
+        },
+        {
+          "page": "datastructures:007",
+          "start_char": 11933,
+          "end_char": 13873,
+          "normalized_char_count": 1938
+        },
+        {
+          "page": "datastructures:008",
+          "start_char": 13873,
+          "end_char": 15729,
+          "normalized_char_count": 1851
+        },
+        {
+          "page": "datastructures:009",
+          "start_char": 15729,
+          "end_char": 17649,
+          "normalized_char_count": 1918
+        },
+        {
+          "page": "datastructures:010",
+          "start_char": 17649,
+          "end_char": 19730,
+          "normalized_char_count": 2079
+        },
+        {
+          "page": "datastructures:011",
+          "start_char": 19730,
+          "end_char": 21635,
+          "normalized_char_count": 1903
+        },
+        {
+          "page": "datastructures:012",
+          "start_char": 21635,
+          "end_char": 23269,
+          "normalized_char_count": 1634
+        }
+      ],
+      "normalized_char_count": 23269
+    },
+    {
+      "source_id": "python-tutorial-modules",
+      "title": "Modules",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+      "local_path": "data/python_tutorial/raw/modules.rst",
+      "normalized_path": "data/python_tutorial/modules.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "b391a3d94b7dd61785cb7749ba36837735404693eed3172248f5be2101eda16b",
+      "physical_pages": null,
+      "counted_units": 11,
+      "pages": [
+        {
+          "page": "modules:001",
+          "start_char": 0,
+          "end_char": 1804,
+          "normalized_char_count": 1802
+        },
+        {
+          "page": "modules:002",
+          "start_char": 1804,
+          "end_char": 3658,
+          "normalized_char_count": 1849
+        },
+        {
+          "page": "modules:003",
+          "start_char": 3658,
+          "end_char": 5507,
+          "normalized_char_count": 1847
+        },
+        {
+          "page": "modules:004",
+          "start_char": 5507,
+          "end_char": 7399,
+          "normalized_char_count": 1887
+        },
+        {
+          "page": "modules:005",
+          "start_char": 7399,
+          "end_char": 9351,
+          "normalized_char_count": 1950
+        },
+        {
+          "page": "modules:006",
+          "start_char": 9351,
+          "end_char": 12675,
+          "normalized_char_count": 3322
+        },
+        {
+          "page": "modules:007",
+          "start_char": 12675,
+          "end_char": 15248,
+          "normalized_char_count": 2571
+        },
+        {
+          "page": "modules:008",
+          "start_char": 15248,
+          "end_char": 17261,
+          "normalized_char_count": 2011
+        },
+        {
+          "page": "modules:009",
+          "start_char": 17261,
+          "end_char": 19067,
+          "normalized_char_count": 1804
+        },
+        {
+          "page": "modules:010",
+          "start_char": 19067,
+          "end_char": 21028,
+          "normalized_char_count": 1959
+        },
+        {
+          "page": "modules:011",
+          "start_char": 21028,
+          "end_char": 24037,
+          "normalized_char_count": 3005
+        }
+      ],
+      "normalized_char_count": 24037
+    },
+    {
+      "source_id": "python-tutorial-inputoutput",
+      "title": "Input and Output",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+      "local_path": "data/python_tutorial/raw/inputoutput.rst",
+      "normalized_path": "data/python_tutorial/inputoutput.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "13e550fdc65948d88196eda0985221df240a1dce40dc456e858ef3a55611a606",
+      "physical_pages": null,
+      "counted_units": 10,
+      "pages": [
+        {
+          "page": "inputoutput:001",
+          "start_char": 0,
+          "end_char": 1889,
+          "normalized_char_count": 1887
+        },
+        {
+          "page": "inputoutput:002",
+          "start_char": 1889,
+          "end_char": 3755,
+          "normalized_char_count": 1864
+        },
+        {
+          "page": "inputoutput:003",
+          "start_char": 3755,
+          "end_char": 5557,
+          "normalized_char_count": 1800
+        },
+        {
+          "page": "inputoutput:004",
+          "start_char": 5557,
+          "end_char": 7439,
+          "normalized_char_count": 1880
+        },
+        {
+          "page": "inputoutput:005",
+          "start_char": 7439,
+          "end_char": 9378,
+          "normalized_char_count": 1937
+        },
+        {
+          "page": "inputoutput:006",
+          "start_char": 9378,
+          "end_char": 11554,
+          "normalized_char_count": 2174
+        },
+        {
+          "page": "inputoutput:007",
+          "start_char": 11554,
+          "end_char": 13872,
+          "normalized_char_count": 2316
+        },
+        {
+          "page": "inputoutput:008",
+          "start_char": 13872,
+          "end_char": 15901,
+          "normalized_char_count": 2024
+        },
+        {
+          "page": "inputoutput:009",
+          "start_char": 15901,
+          "end_char": 17741,
+          "normalized_char_count": 1835
+        },
+        {
+          "page": "inputoutput:010",
+          "start_char": 17741,
+          "end_char": 19266,
+          "normalized_char_count": 1522
+        }
+      ],
+      "normalized_char_count": 19266
+    },
+    {
+      "source_id": "python-tutorial-errors",
+      "title": "Errors and Exceptions",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+      "local_path": "data/python_tutorial/raw/errors.rst",
+      "normalized_path": "data/python_tutorial/errors.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "c1d8deb184bce4aa005a03407d62312a774e38dd62ba73802e5e8ace030ae34e",
+      "physical_pages": null,
+      "counted_units": 11,
+      "pages": [
+        {
+          "page": "errors:001",
+          "start_char": 0,
+          "end_char": 1890,
+          "normalized_char_count": 1888
+        },
+        {
+          "page": "errors:002",
+          "start_char": 1890,
+          "end_char": 3936,
+          "normalized_char_count": 2044
+        },
+        {
+          "page": "errors:003",
+          "start_char": 3936,
+          "end_char": 5816,
+          "normalized_char_count": 1878
+        },
+        {
+          "page": "errors:004",
+          "start_char": 5816,
+          "end_char": 7637,
+          "normalized_char_count": 1816
+        },
+        {
+          "page": "errors:005",
+          "start_char": 7637,
+          "end_char": 9583,
+          "normalized_char_count": 1944
+        },
+        {
+          "page": "errors:006",
+          "start_char": 9583,
+          "end_char": 11645,
+          "normalized_char_count": 2057
+        },
+        {
+          "page": "errors:007",
+          "start_char": 11645,
+          "end_char": 13465,
+          "normalized_char_count": 1818
+        },
+        {
+          "page": "errors:008",
+          "start_char": 13465,
+          "end_char": 15290,
+          "normalized_char_count": 1823
+        },
+        {
+          "page": "errors:009",
+          "start_char": 15290,
+          "end_char": 17143,
+          "normalized_char_count": 1851
+        },
+        {
+          "page": "errors:010",
+          "start_char": 17143,
+          "end_char": 19632,
+          "normalized_char_count": 2487
+        },
+        {
+          "page": "errors:011",
+          "start_char": 19632,
+          "end_char": 22813,
+          "normalized_char_count": 3181
+        }
+      ],
+      "normalized_char_count": 22813
+    },
+    {
+      "source_id": "python-tutorial-classes",
+      "title": "Classes",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "local_path": "data/python_tutorial/raw/classes.rst",
+      "normalized_path": "data/python_tutorial/classes.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "fd28b82a81acda33c4997dc931ab63d5a4fea4ef65d820b579dcf2d4bf7304a4",
+      "physical_pages": null,
+      "counted_units": 18,
+      "pages": [
+        {
+          "page": "classes:001",
+          "start_char": 0,
+          "end_char": 2039,
+          "normalized_char_count": 2037
+        },
+        {
+          "page": "classes:002",
+          "start_char": 2039,
+          "end_char": 4078,
+          "normalized_char_count": 2037
+        },
+        {
+          "page": "classes:003",
+          "start_char": 4078,
+          "end_char": 5888,
+          "normalized_char_count": 1808
+        },
+        {
+          "page": "classes:004",
+          "start_char": 5888,
+          "end_char": 7863,
+          "normalized_char_count": 1973
+        },
+        {
+          "page": "classes:005",
+          "start_char": 7863,
+          "end_char": 9741,
+          "normalized_char_count": 1876
+        },
+        {
+          "page": "classes:006",
+          "start_char": 9741,
+          "end_char": 11771,
+          "normalized_char_count": 2028
+        },
+        {
+          "page": "classes:007",
+          "start_char": 11771,
+          "end_char": 13670,
+          "normalized_char_count": 1894
+        },
+        {
+          "page": "classes:008",
+          "start_char": 13670,
+          "end_char": 15862,
+          "normalized_char_count": 2190
+        },
+        {
+          "page": "classes:009",
+          "start_char": 15862,
+          "end_char": 17793,
+          "normalized_char_count": 1929
+        },
+        {
+          "page": "classes:010",
+          "start_char": 17793,
+          "end_char": 19609,
+          "normalized_char_count": 1814
+        },
+        {
+          "page": "classes:011",
+          "start_char": 19609,
+          "end_char": 21846,
+          "normalized_char_count": 2235
+        },
+        {
+          "page": "classes:012",
+          "start_char": 21846,
+          "end_char": 23682,
+          "normalized_char_count": 1834
+        },
+        {
+          "page": "classes:013",
+          "start_char": 23682,
+          "end_char": 25486,
+          "normalized_char_count": 1802
+        },
+        {
+          "page": "classes:014",
+          "start_char": 25486,
+          "end_char": 27338,
+          "normalized_char_count": 1850
+        },
+        {
+          "page": "classes:015",
+          "start_char": 27338,
+          "end_char": 29171,
+          "normalized_char_count": 1828
+        },
+        {
+          "page": "classes:016",
+          "start_char": 29171,
+          "end_char": 31292,
+          "normalized_char_count": 2115
+        },
+        {
+          "page": "classes:017",
+          "start_char": 31292,
+          "end_char": 33265,
+          "normalized_char_count": 1968
+        },
+        {
+          "page": "classes:018",
+          "start_char": 33265,
+          "end_char": 35067,
+          "normalized_char_count": 1802
+        }
+      ],
+      "normalized_char_count": 35067
+    },
+    {
+      "source_id": "python-tutorial-stdlib",
+      "title": "Brief Tour of the Standard Library",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib.rst",
+      "local_path": "data/python_tutorial/raw/stdlib.rst",
+      "normalized_path": "data/python_tutorial/stdlib.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "f0f425a1346f45d5510b531295ac54c5f3c46e560712a51df7e7fafa833d0947",
+      "physical_pages": null,
+      "counted_units": 5,
+      "pages": [
+        {
+          "page": "stdlib:001",
+          "start_char": 0,
+          "end_char": 1927,
+          "normalized_char_count": 1925
+        },
+        {
+          "page": "stdlib:002",
+          "start_char": 1927,
+          "end_char": 4032,
+          "normalized_char_count": 2099
+        },
+        {
+          "page": "stdlib:003",
+          "start_char": 4032,
+          "end_char": 6068,
+          "normalized_char_count": 2034
+        },
+        {
+          "page": "stdlib:004",
+          "start_char": 6068,
+          "end_char": 7964,
+          "normalized_char_count": 1891
+        },
+        {
+          "page": "stdlib:005",
+          "start_char": 7964,
+          "end_char": 10342,
+          "normalized_char_count": 2375
+        }
+      ],
+      "normalized_char_count": 10342
+    },
+    {
+      "source_id": "python-tutorial-stdlib2",
+      "title": "Brief Tour of the Standard Library --- Part II",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+      "local_path": "data/python_tutorial/raw/stdlib2.rst",
+      "normalized_path": "data/python_tutorial/stdlib2.txt",
+      "license_or_permission": "PSF License Version 2 covers software and documentation; documentation examples/recipes/code additionally Zero-Clause BSD from Python 3.8.6. Copyright notices retained.",
+      "license_path": "data/python_tutorial/LICENSE.txt",
+      "accessed_at": "2026-11-13T11:03:34.182353+00:00",
+      "snapshot": "CPython v3.13.0",
+      "sha256": "b38c38bd657b4f74b3a1d4168cd93dbbc233a78c9d8d4971cbfbec4a2143e183",
+      "physical_pages": null,
+      "counted_units": 7,
+      "pages": [
+        {
+          "page": "stdlib2:001",
+          "start_char": 0,
+          "end_char": 2145,
+          "normalized_char_count": 2143
+        },
+        {
+          "page": "stdlib2:002",
+          "start_char": 2145,
+          "end_char": 3989,
+          "normalized_char_count": 1842
+        },
+        {
+          "page": "stdlib2:003",
+          "start_char": 3989,
+          "end_char": 5944,
+          "normalized_char_count": 1950
+        },
+        {
+          "page": "stdlib2:004",
+          "start_char": 5944,
+          "end_char": 7890,
+          "normalized_char_count": 1944
+        },
+        {
+          "page": "stdlib2:005",
+          "start_char": 7890,
+          "end_char": 10258,
+          "normalized_char_count": 2366
+        },
+        {
+          "page": "stdlib2:006",
+          "start_char": 10258,
+          "end_char": 12231,
+          "normalized_char_count": 1971
+        },
+        {
+          "page": "stdlib2:007",
+          "start_char": 12231,
+          "end_char": 14350,
+          "normalized_char_count": 2116
+        }
+      ],
+      "normalized_char_count": 14350
+    }
+  ]
+}

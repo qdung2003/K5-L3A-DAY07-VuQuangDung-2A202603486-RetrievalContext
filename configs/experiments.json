@@ -1,0 +1,7 @@
+[
+  {"name":"baseline","method":"dense","top_k":3,"budget":3200,"max_searches":1,"hypothesis":"Original-query dense baseline; one retrieval and compact context."},
+  {"name":"dense-wide","method":"dense","top_k":5,"budget":6000,"max_searches":2,"hypothesis":"Larger context and one follow-up search can recover missing conditions."},
+  {"name":"hybrid","method":"hybrid","top_k":3,"budget":3200,"max_searches":1,"hypothesis":"RRF combines exact Python identifiers with semantic matching."},
+  {"name":"hybrid-wide","method":"hybrid","top_k":5,"budget":6000,"max_searches":2,"hypothesis":"Hybrid candidates plus wider context can improve complete evidence coverage."},
+  {"name":"lexical","method":"lexical","top_k":3,"budget":3200,"max_searches":1,"hypothesis":"Lexical comparator on the same dev questions and model."}
+]

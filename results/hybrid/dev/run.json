@@ -1,0 +1,35 @@
+{
+  "config": {
+    "name": "hybrid",
+    "method": "hybrid",
+    "top_k": 3,
+    "budget": 3200,
+    "max_searches": 1,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "hypothesis": "RRF combines exact Python identifiers with semantic matching.",
+    "corpus_sha256": "5ecf960c5041054b9beed540c713a22312283f4438c0da034da04fd09e511a22",
+    "system_sha256": "14b787205881220f320c0100344bccd4bb648aab7e199986843d87e2686b793d"
+  },
+  "config_sha256": "6b0aa576519308720d7fe7cd836f4413e41f9464100c82c70f3e97f5519a5b39",
+  "started_at": "2026-11-14T08:57:18.315707+00:00",
+  "question_ids": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "D-U01",
+    "D-U02"
+  ]
+}

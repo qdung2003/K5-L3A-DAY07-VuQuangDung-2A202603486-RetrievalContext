@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-11-14T08:46:15.669957+00:00",
+  "policy": "Reuse Day 6 dev only. New Day 7 test topics differ from Day 6 test. Freeze before any Day 7 neural retrieval or agent evaluation. Never tune on test.",
+  "selection_rule": "Maximize dev grounded-answer mean, then correct abstention, then fewer false refusals, then fewer model tokens. If tied prefer baseline, dense-wide, hybrid, hybrid-wide in that order.",
+  "sha256": {
+    "data/chunks.json": "1ab4c3efd9ca63a6f31cd9b0f8701144e63c6f561f96fe663394020ea630d5e3",
+    "data/questions.json": "010b420acf508e6fbc1f44486a854ce61a871f9e4b367b8f48ea86599a4d2c7a",
+    "data/cases.json": "c76498bc3e8344e7fe16669c9bfb6df208e7a764e2a3ed701936a95cd86b53e5",
+    "data/day7_additions.json": "4ce6d90132e79118e03b94592cae4f1d4cb59fbe4ef1f20370702e6a33b47f3f"
+  },
+  "pretest_amendment": {
+    "at": "2026-11-14T09:01:31.083324+00:00",
+    "reason": "T03 overlapped dev Q11. Replaced before any Day 7 test execution with import-search-order question; dev inputs and selection rule unchanged. Original freeze retained as benchmark_freeze_v1.json.",
+    "test_queries_run": 0
+  }
+}

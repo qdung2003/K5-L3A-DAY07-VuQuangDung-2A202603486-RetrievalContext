@@ -1,0 +1,245 @@
+[
+  {
+    "query_id": "T01",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The Python tutorial passage at datastructures:010 explicitly states that sorted returns a new sorted list while leaving the source unaltered, providing sufficient evidence and source attribution.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly identifies sorted() and includes both required properties: returning a new sorted list and preserving the original sequence. The citation is present in the final context and supports the entire claim. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:07:56.339383+00:00",
+    "trace_sha256": "42407e4ebb8a1e05638f347821d8be2e43dccd80e2326fff4fe54716d3e1c9a2",
+    "judge_response_id": "resp_0647aa788c7ae381006af824eae4dc87d2891605cc9aacfebd",
+    "judge_usage": {
+      "input_tokens": 1450,
+      "input_tokens_details": {
+        "cache_write_tokens": 1447,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1447
+        }
+      },
+      "output_tokens": 119,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1569
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:010 source and final context: sorted returns a new list and leaves source unaltered. Both answer conditions and citation are supported.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.135547+00:00"
+  },
+  {
+    "query_id": "T02",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial datastructures:010, which explicitly states that enumerate retrieves the position index and corresponding value together when looping through a sequence, and illustrates this with index-value pairs.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly identifies enumerate() and matches the benchmark. Its citation is in the final context and supports the entire claim. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:07:56.342646+00:00",
+    "trace_sha256": "13e25404ff49ac88c1b26a982f7ce10f8b2f449551027e35fcf6e984f2bdf513",
+    "judge_response_id": "resp_08f1f225199f1222006af824eae49887d2946575f9060f8edd",
+    "judge_usage": {
+      "input_tokens": 1640,
+      "input_tokens_details": {
+        "cache_write_tokens": 1637,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1637
+        }
+      },
+      "output_tokens": 131,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1771
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:010 enumerate paragraph and example: position index and corresponding value retrieved together. Final context contains full paragraph and source.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.135733+00:00"
+  },
+  {
+    "query_id": "T03",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes the Python tutorial's modules:004 passage explicitly stating that the interpreter first searches for a built-in module named spam, that these names are listed in sys.builtin_module_names, and that it searches for spam.py on sys.path only if none is found.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer matches the benchmark and the cited passage, including the condition that the sys.path search occurs only if the built-in module is not found. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:07:56.352854+00:00",
+    "trace_sha256": "61a6c4a635fefbc0e1ec0709e32efb90f0651b509c2c943ed7b9b168327bec57",
+    "judge_response_id": "resp_08c891e7e625c63c006af824eae77087d2a14548d6143fdfa3",
+    "judge_usage": {
+      "input_tokens": 1472,
+      "input_tokens_details": {
+        "cache_write_tokens": 1469,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1469
+        }
+      },
+      "output_tokens": 132,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1604
+    },
+    "codex_verified": true,
+    "codex_reason": "Read modules:004 import-search paragraph: built-in named spam first, listed in sys.builtin_module_names, then spam.py on sys.path. All answer claims supported.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.135884+00:00"
+  },
+  {
+    "query_id": "T04",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial datastructures:009, explicitly stating that storing using a key already in use causes the old value associated with that key to be forgotten. This supplies the relevant condition, outcome, and source.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly states that the original value is replaced and forgotten, matching the benchmark and the cited passage. The citation is present in the final context and supports the whole claim; no condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:07:59.965231+00:00",
+    "trace_sha256": "cb93814c8cafb1c7e8905819d381d342a33b950b1745ed9af740a16a2ac1334f",
+    "judge_response_id": "resp_00d3c9227163399c006af824eef77c87d28ab555a489ec28b1",
+    "judge_usage": {
+      "input_tokens": 1146,
+      "input_tokens_details": {
+        "cache_write_tokens": 1143,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1143
+        }
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1273
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:009: existing-key store forgets old associated value. Answer accurately describes replacement; full evidence and source in context.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.136003+00:00"
+  },
+  {
+    "query_id": "T05",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes the stdlib2:006 tutorial passage showing the initially sorted scores list, the exact call bisect.insort(scores, (300, 'ruby')), and the resulting list with the tuple in sorted position. The source URL and page are supplied.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer exactly matches the benchmark call and correctly identifies bisect.insort. The cited passage supports both insertion of the specified tuple and preservation of sorted order; no required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:08:01.167577+00:00",
+    "trace_sha256": "7f53b0708dce54131450b654188aece4f8baac6d217efa82d7ab2ec4498c311a",
+    "judge_response_id": "resp_08649e981518a92d006af824eef81c87d289ee33e10a973eaf",
+    "judge_usage": {
+      "input_tokens": 1371,
+      "input_tokens_details": {
+        "cache_write_tokens": 1368,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1368
+        }
+      },
+      "output_tokens": 132,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1503
+    },
+    "codex_verified": true,
+    "codex_reason": "Read stdlib2:006 bisect.insort example and resulting sorted scores. Correct function, tuple arguments and order preserved. User-provided stdlib2 filter is honored.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.136135+00:00"
+  },
+  {
+    "query_id": "T-U01",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "context_reason": "The final context identifies the tutorial source and supplies relevant threading passages covering background tasks, shared-resource coordination, and an AsyncZip example. None recommends a production web-server worker count. The recommendation to concentrate resource access in a single thread concerns coordination, not a maximum number of server workers.",
+    "citation_support": [],
+    "abstention_correct": true,
+    "note": "The answer correctly abstains without inventing a worker limit, consistent with the benchmark's finding that no such recommendation exists. No unsupported claim is added. Answer grade is 0 as required for an unanswerable question.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:08:00.620863+00:00",
+    "trace_sha256": "ed7a75763275889a57aac4c220075271032ff071e99c9ee1e9434bd90021289e",
+    "judge_response_id": "resp_0856cdeddbec81f1006af824eef54487d2b6cc9cb3ddefcf73",
+    "judge_usage": {
+      "input_tokens": 1172,
+      "input_tokens_details": {
+        "cache_write_tokens": 1169,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1169
+        }
+      },
+      "output_tokens": 161,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1333
+    },
+    "codex_verified": true,
+    "codex_reason": "Read abstention: no worker-count claim is added. Checked full normalized corpus and threading discussion; no maximum production web-server thread recommendation exists.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.136276+00:00"
+  },
+  {
+    "query_id": "T-U02",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "context_reason": "The final context includes the tutorial's relevant pickle discussion and its source URL. It explicitly warns that crafted pickle data from an untrusted source can execute arbitrary code and offers no AES key-length recommendation. The other two passages are irrelevant.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": true,
+    "note": "The answer correctly abstains rather than inventing an AES key length, consistent with the benchmark's confirmed absence of such a recommendation. Its security warning is supported by the cited final-context passage. No required condition is missing; the answer says untrusted data can execute code, not that all untrusted data necessarily does.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:08:05.044298+00:00",
+    "trace_sha256": "50bee92f9c2db9dc8100e6be6593b0a693acaa3b2c2fd064476b709ea756aba0",
+    "judge_response_id": "resp_0f24f179c56798c4006af824f2966887d287789665fb39c199",
+    "judge_usage": {
+      "input_tokens": 1293,
+      "input_tokens_details": {
+        "cache_write_tokens": 1290,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1290
+        }
+      },
+      "output_tokens": 172,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1465
+    },
+    "codex_verified": true,
+    "codex_reason": "Read inputoutput:010 pickle warning: arbitrary-code risk is explicit. Full-corpus AES/key-length search finds no recommendation. Answer refuses a length and only repeats the supported warning.",
+    "codex_reviewed_at": "2026-11-14T09:09:12.136405+00:00"
+  }
+]

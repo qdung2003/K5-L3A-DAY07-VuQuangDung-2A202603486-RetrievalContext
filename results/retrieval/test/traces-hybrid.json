@@ -1,0 +1,359 @@
+[
+  {
+    "query_id": "T01",
+    "question": "Which built-in returns a new sorted list while leaving the original sequence unchanged?",
+    "filter": null,
+    "results": [
+      {
+        "id": "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13",
+        "source_id": "python-tutorial-datastructures",
+        "text": "To loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:010",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 17649,
+          "unit_end": 19730,
+          "start_char": 940,
+          "end_char": 1784
+        },
+        "score": 0.03252247488101534,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "e46116aa64a8b7d0f84ba515fb29ed83dde8dfb27a5a6db4901fe0195c033745",
+        "source_id": "python-tutorial-datastructures",
+        "text": "Remove the item at the given position in the list, and return it.  If no index\n   is specified, a.pop() removes and returns the last item in the list.\n   It raises an IndexError if the list is empty or the index is\n   outside the list range.\n\nlist.clear()\n\n   Remove all items from the list.  Equivalent to del a[:].\n\nlist.index(x[, start[, end]])\n\n   Return zero-based index in the list of the first item whose value is equal to *x*.\n   Raises a ValueError if there is no such item.\n\n   The optional arguments *start* and *end* are interpreted as in the slice\n   notation and are used to limit the search to a particular subsequence of\n   the list.  The returned index is computed relative to the beginning of the full\n   sequence rather than the *start* argument.\n\nlist.count(x)\n\n   Return the number of times *x* appears in the list.\n\nlist.sort(*, key=None, reverse=False)",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:001",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 0,
+          "unit_end": 1860,
+          "start_char": 854,
+          "end_char": 1729
+        },
+        "score": 0.031054405392392875,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "a1bd75a2c723250d0d5d1bb85c6b61a0e64112b2004cf87eaf722952d89e4202",
+        "source_id": "python-tutorial-datastructures",
+        "text": "Sort the items of the list in place (the arguments can be used for sort\n   customization, see sorted for their explanation).",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:001",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 0,
+          "unit_end": 1860,
+          "start_char": 1734,
+          "end_char": 1858
+        },
+        "score": 0.030776515151515152,
+        "strategy": "hybrid-rrf"
+      }
+    ],
+    "context": "[2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:010]\nTo loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::\n\n[e46116aa64a8b7d0f84ba515fb29ed83dde8dfb27a5a6db4901fe0195c033745 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:001]\nRemove the item at the given position in the list, and return it.  If no index\n   is specified, a.pop() removes and returns the last item in the list.\n   It raises an IndexError if the list is empty or the index is\n   outside the list range.\n\nlist.clear()\n\n   Remove all items from the list.  Equivalent to del a[:].\n\nlist.index(x[, start[, end]])\n\n   Return zero-based index in the list of the first item whose value is equal to *x*.\n   Raises a ValueError if there is no such item.\n\n   The optional arguments *start* and *end* are interpreted as in the slice\n   notation and are used to limit the search to a particular subsequence of\n   the list.  The returned index is computed relative to the beginning of the full\n   sequence rather than the *start* argument.\n\nlist.count(x)\n\n   Return the number of times *x* appears in the list.\n\nlist.sort(*, key=None, reverse=False)\n\n[a1bd75a2c723250d0d5d1bb85c6b61a0e64112b2004cf87eaf722952d89e4202 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:001]\nSort the items of the list in place (the arguments can be used for sort\n   customization, see sorted for their explanation).",
+    "context_ids": [
+      "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13",
+      "e46116aa64a8b7d0f84ba515fb29ed83dde8dfb27a5a6db4901fe0195c033745",
+      "a1bd75a2c723250d0d5d1bb85c6b61a0e64112b2004cf87eaf722952d89e4202"
+    ],
+    "elapsed_ms": 49.23600000620354,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T02",
+    "question": "Which function lets a loop retrieve a sequence element and its position index together?",
+    "filter": null,
+    "results": [
+      {
+        "id": "41d7ef430bff9aceed5ce03921b39a36712b19b8b7eef8dfb2d7083e67927a9c",
+        "source_id": "python-tutorial-datastructures",
+        "text": "When looping through a sequence, the position index and corresponding value can\nbe retrieved at the same time using the enumerate function. ::\n\n   >>> for i, v in enumerate(['tic', 'tac', 'toe']):\n   ...     print(i, v)\n   ...\n   0 tic\n   1 tac\n   2 toe\n\nTo loop over two or more sequences at the same time, the entries can be paired\nwith the zip function. ::\n\n   >>> questions = ['name', 'quest', 'favorite color']\n   >>> answers = ['lancelot', 'the holy grail', 'blue']\n   >>> for q, a in zip(questions, answers):\n   ...     print('What is your {0}?  It is {1}.'.format(q, a))\n   ...\n   What is your name?  It is lancelot.\n   What is your quest?  It is the holy grail.\n   What is your favorite color?  It is blue.\n\nTo loop over a sequence in reverse, first specify the sequence in a forward\ndirection and then call the reversed function. ::\n\n   >>> for i in reversed(range(1, 10, 2)):\n   ...     print(i)\n   ...\n   9\n   7\n   5\n   3\n   1",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:010",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 17649,
+          "unit_end": 19730,
+          "start_char": 0,
+          "end_char": 938
+        },
+        "score": 0.03252247488101534,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "e46116aa64a8b7d0f84ba515fb29ed83dde8dfb27a5a6db4901fe0195c033745",
+        "source_id": "python-tutorial-datastructures",
+        "text": "Remove the item at the given position in the list, and return it.  If no index\n   is specified, a.pop() removes and returns the last item in the list.\n   It raises an IndexError if the list is empty or the index is\n   outside the list range.\n\nlist.clear()\n\n   Remove all items from the list.  Equivalent to del a[:].\n\nlist.index(x[, start[, end]])\n\n   Return zero-based index in the list of the first item whose value is equal to *x*.\n   Raises a ValueError if there is no such item.\n\n   The optional arguments *start* and *end* are interpreted as in the slice\n   notation and are used to limit the search to a particular subsequence of\n   the list.  The returned index is computed relative to the beginning of the full\n   sequence rather than the *start* argument.\n\nlist.count(x)\n\n   Return the number of times *x* appears in the list.\n\nlist.sort(*, key=None, reverse=False)",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:001",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 0,
+          "unit_end": 1860,
+          "start_char": 854,
+          "end_char": 1729
+        },
+        "score": 0.030798389007344232,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a",
+        "source_id": "python-tutorial-controlflow",
+        "text": "In either kind of loop, the else clause is **not** executed if the\nloop was terminated by a break.  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:003",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3769,
+          "unit_end": 5747,
+          "start_char": 1744,
+          "end_char": 1976
+        },
+        "score": 0.01639344262295082,
+        "strategy": "hybrid-rrf"
+      }
+    ],
+    "context": "[41d7ef430bff9aceed5ce03921b39a36712b19b8b7eef8dfb2d7083e67927a9c | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:010]\nWhen looping through a sequence, the position index and corresponding value can\nbe retrieved at the same time using the enumerate function. ::\n\n   >>> for i, v in enumerate(['tic', 'tac', 'toe']):\n   ...     print(i, v)\n   ...\n   0 tic\n   1 tac\n   2 toe\n\nTo loop over two or more sequences at the same time, the entries can be paired\nwith the zip function. ::\n\n   >>> questions = ['name', 'quest', 'favorite color']\n   >>> answers = ['lancelot', 'the holy grail', 'blue']\n   >>> for q, a in zip(questions, answers):\n   ...     print('What is your {0}?  It is {1}.'.format(q, a))\n   ...\n   What is your name?  It is lancelot.\n   What is your quest?  It is the holy grail.\n   What is your favorite color?  It is blue.\n\nTo loop over a sequence in reverse, first specify the sequence in a forward\ndirection and then call the reversed function. ::\n\n   >>> for i in reversed(range(1, 10, 2)):\n   ...     print(i)\n   ...\n   9\n   7\n   5\n   3\n   1\n\n[e46116aa64a8b7d0f84ba515fb29ed83dde8dfb27a5a6db4901fe0195c033745 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:001]\nRemove the item at the given position in the list, and return it.  If no index\n   is specified, a.pop() removes and returns the last item in the list.\n   It raises an IndexError if the list is empty or the index is\n   outside the list range.\n\nlist.clear()\n\n   Remove all items from the list.  Equivalent to del a[:].\n\nlist.index(x[, start[, end]])\n\n   Return zero-based index in the list of the first item whose value is equal to *x*.\n   Raises a ValueError if there is no such item.\n\n   The optional arguments *start* and *end* are interpreted as in the slice\n   notation and are used to limit the search to a particular subsequence of\n   the list.  The returned index is computed relative to the beginning of the full\n   sequence rather than the *start* argument.\n\nlist.count(x)\n\n   Return the number of times *x* appears in the list.\n\nlist.sort(*, key=None, reverse=False)\n\n[986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:003]\nIn either kind of loop, the else clause is **not** executed if the\nloop was terminated by a break.  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.",
+    "context_ids": [
+      "41d7ef430bff9aceed5ce03921b39a36712b19b8b7eef8dfb2d7083e67927a9c",
+      "e46116aa64a8b7d0f84ba515fb29ed83dde8dfb27a5a6db4901fe0195c033745",
+      "986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a"
+    ],
+    "elapsed_ms": 15.315199998440221,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T03",
+    "question": "When importing spam, what does the interpreter search for before looking for spam.py on sys.path?",
+    "filter": null,
+    "results": [
+      {
+        "id": "47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7",
+        "source_id": "python-tutorial-modules",
+        "text": "if __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run::\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\nThe Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in\nsys.builtin_module_names. If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable\nsys.path.  sys.path is initialized from these locations:",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:004",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 5507,
+          "unit_end": 7399,
+          "start_char": 3,
+          "end_char": 890
+        },
+        "score": 0.03252247488101534,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "d6b92af106ffaa1891c0b7a0dcd974cd68c1df9e8926eb50ecd5ce776012e1df",
+        "source_id": "python-tutorial-modules",
+        "text": ">>> import sys\n   >>> sys.ps1\n   '>>> '\n   >>> sys.ps2\n   '... '\n   >>> sys.ps1 = 'C> '\n   C> print('Yuck!')\n   Yuck!\n   C>\n\nThese two variables are only defined if the interpreter is in interactive mode.\n\nThe variable sys.path is a list of strings that determines the interpreter's\nsearch path for modules. It is initialized to a default path taken from the\nenvironment variable PYTHONPATH, or from a built-in default if\nPYTHONPATH is not set.  You can modify it using standard list\noperations::\n\n   >>> import sys\n   >>> sys.path.append('/ufs/guido/lib/python')\n\nThe dir Function\n\nThe built-in function dir is used to find out which names a module\ndefines.  It returns a sorted list of strings::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:006",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 9351,
+          "unit_end": 12675,
+          "start_char": 954,
+          "end_char": 1651
+        },
+        "score": 0.03200204813108039,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "e43907926b68a02c746f98ebe0083b982a48d03503a1bbafe88a5296776406d7",
+        "source_id": "python-tutorial-modules",
+        "text": "* The directory containing the input script (or the current directory when no\n  file is specified).\n* PYTHONPATH (a list of directory names, with the same syntax as the\n  shell variable PATH).\n* The installation-dependent default (by convention including a\n  site-packages directory, handled by the site module).\n\nMore details are at sys-path-init.\n\n   On file systems which support symlinks, the directory containing the input\n   script is calculated after the symlink is followed. In other words the\n   directory containing the symlink is **not** added to the module search path.\n\nAfter initialization, Python programs can modify sys.path.  The\ndirectory containing the script being run is placed at the beginning of the\nsearch path, ahead of the standard library path. This means that scripts in that\ndirectory will be loaded instead of modules of the same name in the library\ndirectory. This is an error unless the replacement is intended.  See section\ntut-standardmodules for more information.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:004",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 5507,
+          "unit_end": 7399,
+          "start_char": 892,
+          "end_char": 1890
+        },
+        "score": 0.030798389007344232,
+        "strategy": "hybrid-rrf"
+      }
+    ],
+    "context": "[47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:004]\nif __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run::\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\nThe Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in\nsys.builtin_module_names. If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable\nsys.path.  sys.path is initialized from these locations:\n\n[d6b92af106ffaa1891c0b7a0dcd974cd68c1df9e8926eb50ecd5ce776012e1df | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:006]\n>>> import sys\n   >>> sys.ps1\n   '>>> '\n   >>> sys.ps2\n   '... '\n   >>> sys.ps1 = 'C> '\n   C> print('Yuck!')\n   Yuck!\n   C>\n\nThese two variables are only defined if the interpreter is in interactive mode.\n\nThe variable sys.path is a list of strings that determines the interpreter's\nsearch path for modules. It is initialized to a default path taken from the\nenvironment variable PYTHONPATH, or from a built-in default if\nPYTHONPATH is not set.  You can modify it using standard list\noperations::\n\n   >>> import sys\n   >>> sys.path.append('/ufs/guido/lib/python')\n\nThe dir Function\n\nThe built-in function dir is used to find out which names a module\ndefines.  It returns a sorted list of strings::\n\n[e43907926b68a02c746f98ebe0083b982a48d03503a1bbafe88a5296776406d7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:004]\n* The directory containing the input script (or the current directory when no\n  file is specified).\n* PYTHONPATH (a list of directory names, with the same syntax as the\n  shell variable PATH).\n* The installation-dependent default (by convention including a\n  site-packages directory, handled by the site module).\n\nMore details are at sys-path-init.\n\n   On file systems which support symlinks, the directory containing the input\n   script is calculated after the symlink is followed. In other words the\n   directory containing the symlink is **not** added to the module search path.\n\nAfter initialization, Python programs can modify sys.path.  The\ndirectory containing the script being run is placed at the beginning of the\nsearch path, ahead of the standard library path. This means that scripts in that\ndirectory will be loaded instead of modules of the same name in the library\ndirectory. This is an error unless the replacement is intended.  See section\ntut-standardmodules for more information.",
+    "context_ids": [
+      "47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7",
+      "d6b92af106ffaa1891c0b7a0dcd974cd68c1df9e8926eb50ecd5ce776012e1df",
+      "e43907926b68a02c746f98ebe0083b982a48d03503a1bbafe88a5296776406d7"
+    ],
+    "elapsed_ms": 18.064500007312745,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T04",
+    "question": "What happens to the original dictionary value when a value is stored using a key already in use?",
+    "filter": null,
+    "results": [
+      {
+        "id": "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+        "source_id": "python-tutorial-datastructures",
+        "text": "The main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:009",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 15729,
+          "unit_end": 17649,
+          "start_char": 0,
+          "end_char": 611
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "ee2a981b82c127da2691c3fdb45f5e618e2dfe09af03428b5bc8da0e61c2ad58",
+        "source_id": "python-tutorial-datastructures",
+        "text": "It is best to think of a dictionary as a set of *key: value* pairs,\nwith the requirement that the keys are unique (within one dictionary). A pair of\nbraces creates an empty dictionary: {}. Placing a comma-separated list of\nkey:value pairs within the braces adds initial key:value pairs to the\ndictionary; this is also the way dictionaries are written on output.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:008",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 13873,
+          "unit_end": 15729,
+          "start_char": 1493,
+          "end_char": 1854
+        },
+        "score": 0.03225806451612903,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "8a6c63a2cd5d989a1400276cf923ed2b06c9a262697c088bedc01b783f663aab",
+        "source_id": "python-tutorial-stdlib2",
+        "text": ">>> import weakref, gc\n   >>> class A:\n   ...     def __init__(self, value):\n   ...         self.value = value\n   ...     def __repr__(self):\n   ...         return str(self.value)\n   ...\n   >>> a = A(10)                   # create a reference\n   >>> d = weakref.WeakValueDictionary()\n   >>> d['primary'] = a            # does not create a reference\n   >>> d['primary']                # fetch the object if it is still alive\n   10\n   >>> del a                       # remove the one reference\n   >>> gc.collect()                # run garbage collection right away\n   0\n   >>> d['primary']                # entry was automatically removed\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n       d['primary']                # entry was automatically removed\n     File \"C:/python313/lib/weakref.py\", line 46, in __getitem__\n       o = self.data[key]()\n   KeyError: 'primary'",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:005",
+        "metadata": {
+          "section": "stdlib2",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 7890,
+          "unit_end": 10258,
+          "start_char": 1466,
+          "end_char": 2366
+        },
+        "score": 0.029877369007803793,
+        "strategy": "hybrid-rrf"
+      }
+    ],
+    "context": "[3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:009]\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::\n\n[ee2a981b82c127da2691c3fdb45f5e618e2dfe09af03428b5bc8da0e61c2ad58 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:008]\nIt is best to think of a dictionary as a set of *key: value* pairs,\nwith the requirement that the keys are unique (within one dictionary). A pair of\nbraces creates an empty dictionary: {}. Placing a comma-separated list of\nkey:value pairs within the braces adds initial key:value pairs to the\ndictionary; this is also the way dictionaries are written on output.\n\n[8a6c63a2cd5d989a1400276cf923ed2b06c9a262697c088bedc01b783f663aab | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:005]\n>>> import weakref, gc\n   >>> class A:\n   ...     def __init__(self, value):\n   ...         self.value = value\n   ...     def __repr__(self):\n   ...         return str(self.value)\n   ...\n   >>> a = A(10)                   # create a reference\n   >>> d = weakref.WeakValueDictionary()\n   >>> d['primary'] = a            # does not create a reference\n   >>> d['primary']                # fetch the object if it is still alive\n   10\n   >>> del a                       # remove the one reference\n   >>> gc.collect()                # run garbage collection right away\n   0\n   >>> d['primary']                # entry was automatically removed\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n       d['primary']                # entry was automatically removed\n     File \"C:/python313/lib/weakref.py\", line 46, in __getitem__\n       o = self.data[key]()\n   KeyError: 'primary'",
+    "context_ids": [
+      "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+      "ee2a981b82c127da2691c3fdb45f5e618e2dfe09af03428b5bc8da0e61c2ad58",
+      "8a6c63a2cd5d989a1400276cf923ed2b06c9a262697c088bedc01b783f663aab"
+    ],
+    "elapsed_ms": 16.097800005809404,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T05",
+    "question": "In the stdlib2 tutorial example, which bisect function inserts the (300, 'ruby') tuple while keeping the scores list sorted?",
+    "filter": {
+      "section": "stdlib2"
+    },
+    "results": [
+      {
+        "id": "55c28fa9ed01fae46847b775cb39e5f3d09d5c4ddb63f505b2a20f9b26dc8ab2",
+        "source_id": "python-tutorial-stdlib2",
+        "text": ">>> from collections import deque\n   >>> d = deque([\"task1\", \"task2\", \"task3\"])\n   >>> d.append(\"task4\")\n   >>> print(\"Handling\", d.popleft())\n   Handling task1\n\n::\n\n   unsearched = deque([starting_node])\n   def breadth_first_search(unsearched):\n       node = unsearched.popleft()\n       for m in gen_moves(node):\n           if is_goal(m):\n               return m\n           unsearched.append(m)\n\nIn addition to alternative list implementations, the library also offers other\ntools such as the bisect module with functions for manipulating sorted\nlists::\n\n   >>> import bisect\n   >>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n   >>> bisect.insort(scores, (300, 'ruby'))\n   >>> scores\n   [(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:006",
+        "metadata": {
+          "section": "stdlib2",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 10258,
+          "unit_end": 12231,
+          "start_char": 919,
+          "end_char": 1709
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "93cc8bdba5643df9d61c25fe6fac502c8bb3a5ece0acc5ba42b752c38a1f10ee",
+        "source_id": "python-tutorial-stdlib2",
+        "text": "The heapq module provides functions for implementing heaps based on\nregular lists.  The lowest valued entry is always kept at position zero.  This\nis useful for applications which repeatedly access the smallest element but do\nnot want to run a full list sort::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:006",
+        "metadata": {
+          "section": "stdlib2",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 10258,
+          "unit_end": 12231,
+          "start_char": 1711,
+          "end_char": 1971
+        },
+        "score": 0.03200204813108039,
+        "strategy": "hybrid-rrf"
+      },
+      {
+        "id": "af166e149256aba0cb1ec385719f9aae0501b950ce1686f4793d753a6d95aa14",
+        "source_id": "python-tutorial-stdlib2",
+        "text": "Tools for Working with Lists\n\nMany data structure needs can be met with the built-in list type. However,\nsometimes there is a need for alternative implementations with different\nperformance trade-offs.\n\nThe array module provides an array.array object that is like\na list that stores only homogeneous data and stores it more compactly.  The\nfollowing example shows an array of numbers stored as two byte unsigned binary\nnumbers (typecode \"H\") rather than the usual 16 bytes per entry for regular\nlists of Python int objects::\n\n   >>> from array import array\n   >>> a = array('H', [4000, 10, 700, 22222])\n   >>> sum(a)\n   26932\n   >>> a[1:3]\n   array('H', [10, 700])\n\nThe collections module provides a collections.deque object\nthat is like a list with faster appends and pops from the left side but slower\nlookups in the middle. These objects are well suited for implementing queues\nand breadth first tree searches::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:006",
+        "metadata": {
+          "section": "stdlib2",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 10258,
+          "unit_end": 12231,
+          "start_char": 0,
+          "end_char": 914
+        },
+        "score": 0.03149801587301587,
+        "strategy": "hybrid-rrf"
+      }
+    ],
+    "context": "[55c28fa9ed01fae46847b775cb39e5f3d09d5c4ddb63f505b2a20f9b26dc8ab2 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:006]\n>>> from collections import deque\n   >>> d = deque([\"task1\", \"task2\", \"task3\"])\n   >>> d.append(\"task4\")\n   >>> print(\"Handling\", d.popleft())\n   Handling task1\n\n::\n\n   unsearched = deque([starting_node])\n   def breadth_first_search(unsearched):\n       node = unsearched.popleft()\n       for m in gen_moves(node):\n           if is_goal(m):\n               return m\n           unsearched.append(m)\n\nIn addition to alternative list implementations, the library also offers other\ntools such as the bisect module with functions for manipulating sorted\nlists::\n\n   >>> import bisect\n   >>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n   >>> bisect.insort(scores, (300, 'ruby'))\n   >>> scores\n   [(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]\n\n[93cc8bdba5643df9d61c25fe6fac502c8bb3a5ece0acc5ba42b752c38a1f10ee | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:006]\nThe heapq module provides functions for implementing heaps based on\nregular lists.  The lowest valued entry is always kept at position zero.  This\nis useful for applications which repeatedly access the smallest element but do\nnot want to run a full list sort::\n\n[af166e149256aba0cb1ec385719f9aae0501b950ce1686f4793d753a6d95aa14 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:006]\nTools for Working with Lists\n\nMany data structure needs can be met with the built-in list type. However,\nsometimes there is a need for alternative implementations with different\nperformance trade-offs.\n\nThe array module provides an array.array object that is like\na list that stores only homogeneous data and stores it more compactly.  The\nfollowing example shows an array of numbers stored as two byte unsigned binary\nnumbers (typecode \"H\") rather than the usual 16 bytes per entry for regular\nlists of Python int objects::\n\n   >>> from array import array\n   >>> a = array('H', [4000, 10, 700, 22222])\n   >>> sum(a)\n   26932\n   >>> a[1:3]\n   array('H', [10, 700])\n\nThe collections module provides a collections.deque object\nthat is like a list with faster appends and pops from the left side but slower\nlookups in the middle. These objects are well suited for implementing queues\nand breadth first tree searches::",
+    "context_ids": [
+      "55c28fa9ed01fae46847b775cb39e5f3d09d5c4ddb63f505b2a20f9b26dc8ab2",
+      "93cc8bdba5643df9d61c25fe6fac502c8bb3a5ece0acc5ba42b752c38a1f10ee",
+      "af166e149256aba0cb1ec385719f9aae0501b950ce1686f4793d753a6d95aa14"
+    ],
+    "elapsed_ms": 38.137299998197705,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  }
+]

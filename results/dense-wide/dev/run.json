@@ -1,0 +1,35 @@
+{
+  "config": {
+    "name": "dense-wide",
+    "method": "dense",
+    "top_k": 5,
+    "budget": 6000,
+    "max_searches": 2,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "hypothesis": "Larger context and one follow-up search can recover missing conditions.",
+    "corpus_sha256": "5ecf960c5041054b9beed540c713a22312283f4438c0da034da04fd09e511a22",
+    "system_sha256": "14b787205881220f320c0100344bccd4bb648aab7e199986843d87e2686b793d"
+  },
+  "config_sha256": "5a2ad6d1043638d615646e1d5519b5f0b3cf35b8b9578760116fee088046b989",
+  "started_at": "2026-11-14T08:57:18.326713+00:00",
+  "question_ids": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "D-U01",
+    "D-U02"
+  ]
+}

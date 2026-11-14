@@ -1,0 +1,595 @@
+[
+  {
+    "query_id": "Q01",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "context_reason": "The final context contains Python tutorial passages explaining that break terminates a loop and suppresses its else clause, including discussion of for and while loops. It omits the decisive rule that break exits the innermost enclosing for or while loop, so it cannot resolve nested-loop scope.",
+    "citation_support": [],
+    "abstention_correct": false,
+    "note": "The answer abstains on an answerable benchmark question instead of stating that break exits the innermost enclosing for or while loop. Its description of the supplied context's insufficiency is accurate, but the required nested-loop condition is missing and the benchmark requires a substantive answer.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:39.425331+00:00",
+    "trace_sha256": "51812dde3cd4d85d814de5d7859814139d8d5826b0b9ef16fb5bacb17874425d",
+    "judge_response_id": "resp_0792295e6cc99f8e006af823ad16c487d29150742ea6a311ee",
+    "judge_usage": {
+      "input_tokens": 1225,
+      "input_tokens_details": {
+        "cache_write_tokens": 1222,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1222
+        }
+      },
+      "output_tokens": 151,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1376
+    },
+    "codex_verified": true,
+    "codex_reason": "Read final context: only loop-else/break discussion, no nested-loop exit rule; abstention on this answerable question is grade 0, context is partial.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.796843+00:00"
+  },
+  {
+    "query_id": "Q02",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes controlflow:003 from the Python tutorial explicitly stating that break, return, and a raised exception skip the loop's else clause. Another passage identifies the two loop kinds as for and while, providing sufficient evidence and source attribution.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer matches the benchmark and cited passage: early termination by break, return, or a raised exception skips else execution. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:38.968969+00:00",
+    "trace_sha256": "1895af577dfb8db85b2b0dbdd4c1e1974dfa248c1ae26d83db9b5d5c4bd3cad2",
+    "judge_response_id": "resp_04f1a5837480a758006af823ad218487d29600c0dbb7959bca",
+    "judge_usage": {
+      "input_tokens": 1369,
+      "input_tokens_details": {
+        "cache_write_tokens": 1366,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1366
+        }
+      },
+      "output_tokens": 121,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1490
+    },
+    "codex_verified": true,
+    "codex_reason": "Read controlflow:003: break, return and raised exception all skip loop else; answer includes all three.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.797005+00:00"
+  },
+  {
+    "query_id": "Q03",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial controlflow:011, which states that defaults are evaluated at function definition and only once, demonstrates a mutable list accumulating values across calls, and provides the None-default alternative. This is sufficient evidence with an identified source.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly explains that calls using the default share the same mutable object, so mutations persist. Its example and None-based remedy are also supported by the cited passage in the final context. No relevant condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:40.519053+00:00",
+    "trace_sha256": "58a3301a9eb56c1ce3cf6081ccb7b33d0c60054c647d3b41d7ef8a0d42b56ece",
+    "judge_response_id": "resp_02836b2cf0279364006af823ad32cc87d29040dcd98b034309",
+    "judge_usage": {
+      "input_tokens": 1365,
+      "input_tokens_details": {
+        "cache_write_tokens": 1362,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1362
+        }
+      },
+      "output_tokens": 134,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1499
+    },
+    "codex_verified": true,
+    "codex_reason": "Read controlflow:011 definition-time evaluation, shared mutable default example, and None alternative; answer matches all claims.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.797152+00:00"
+  },
+  {
+    "query_id": "Q04",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes the Python tutorial controlflow:013 passage explicitly stating that positional-only parameters are placed before /, their order matters, and they cannot be passed by keyword. It provides both the required evidence and its source.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer matches the benchmark completely: parameters precede / in the function definition and must be passed positionally rather than by keyword. The example is consistent with the cited rule, and no required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:42.908880+00:00",
+    "trace_sha256": "f6644f55762ca07123b92080cf65b715557691b9fcc1a90df0d9528121854e15",
+    "judge_response_id": "resp_0f6aed0c1467e6e4006af823b18f1c87d2861f1fc3b64e60c0",
+    "judge_usage": {
+      "input_tokens": 1221,
+      "input_tokens_details": {
+        "cache_write_tokens": 1218,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1218
+        }
+      },
+      "output_tokens": 129,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1350
+    },
+    "codex_verified": true,
+    "codex_reason": "Read controlflow:013: slash separator, position order, and no keyword arguments; all requested conditions present.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.797270+00:00"
+  },
+  {
+    "query_id": "Q05",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes the Python tutorial's datastructures:003 passage explicitly recommending collections.deque for queues because it provides fast appends and pops at both ends. This supplies the required evidence and source.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer exactly matches the benchmark recommendation and performance rationale. The cited passage is in the final context and supports the entire claim; no required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:43.632910+00:00",
+    "trace_sha256": "3bf03889f06acf0af164360d9611eb620916aaae208810d43381196dc4620eb7",
+    "judge_response_id": "resp_0ff9c734ef060dfa006af823b2192487d2baaf53a89a167764",
+    "judge_usage": {
+      "input_tokens": 1181,
+      "input_tokens_details": {
+        "cache_write_tokens": 1178,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1178
+        }
+      },
+      "output_tokens": 134,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1315
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:003: deque and fast appends/pops at both ends; list beginning shifts are also explicitly described.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.797396+00:00"
+  },
+  {
+    "query_id": "Q06",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial datastructures:007, which explicitly states that a one-item tuple requires a comma following the value and that parentheses alone are insufficient. Its singleton example demonstrates the trailing comma.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer matches the benchmark and is fully supported by the cited passage in the final context, including both example forms and the insufficiency of parentheses alone. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:44.547521+00:00",
+    "trace_sha256": "0994c6ab90c6f2378772f122b19cbd7dd8cdd3c7f1aa7c4fd2f07992c39dca50",
+    "judge_response_id": "resp_0f62e5806b7ef549006af823b32adc87d2be43432356753ef6",
+    "judge_usage": {
+      "input_tokens": 1429,
+      "input_tokens_details": {
+        "cache_write_tokens": 1426,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1426
+        }
+      },
+      "output_tokens": 139,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1568
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:007: one-item tuple requires trailing comma and parentheses alone are insufficient.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.797516+00:00"
+  },
+  {
+    "query_id": "Q07",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The cited Python tutorial passage on page datastructures:007 explicitly says to create an empty set with set(), not {}, because the latter creates an empty dictionary. The final context also includes a dictionary passage confirming that {} creates an empty dictionary.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly and completely matches the benchmark: set() creates an empty set, while {} creates an empty dictionary. The example s = set() follows directly from the cited instruction. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:46.561951+00:00",
+    "trace_sha256": "927eaa4dc59fe028481e1952d05fdf05d8efc6c8d78416d468c58a5d31108df9",
+    "judge_response_id": "resp_06bbc0d20a6436b7006af823b590fc87d29c03feb0c52282e0",
+    "judge_usage": {
+      "input_tokens": 1298,
+      "input_tokens_details": {
+        "cache_write_tokens": 1295,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1295
+        }
+      },
+      "output_tokens": 132,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1430
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:007: set() makes empty set and {} makes empty dictionary; both parts answered.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.797734+00:00"
+  },
+  {
+    "query_id": "Q08",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial datastructures:009, which explicitly states that list(d) returns all dictionary keys in insertion order and that sorted(d) returns them sorted.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly and completely matches the benchmark. Its citation is present in the final context and supports both insertion order and using sorted(d) for sorted keys. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:47.394544+00:00",
+    "trace_sha256": "0edc8443ede4002877184689b5fd3f84f615447a9949fd91fd09fc0e65deec5d",
+    "judge_response_id": "resp_06f24d6613ed7b22006af823b63b2487d2bd2608331f72379b",
+    "judge_usage": {
+      "input_tokens": 1250,
+      "input_tokens_details": {
+        "cache_write_tokens": 1247,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1247
+        }
+      },
+      "output_tokens": 114,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1364
+    },
+    "codex_verified": true,
+    "codex_reason": "Read datastructures:009: list(d) preserves insertion order and sorted(d) sorts keys; both parts answered.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798025+00:00"
+  },
+  {
+    "query_id": "Q09",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial modules:003, which shows `from fibo import *` and explicitly states that it imports all names except those beginning with an underscore (_). This supplies the complete evidence and source needed.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer exactly matches the benchmark and the cited passage. The citation is present in the final context and supports the entire claim; no required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:48.125484+00:00",
+    "trace_sha256": "026b3c00c85538f04f3ac2ac70e8923e8efbbc88f4125eed558220fa106a65ad",
+    "judge_response_id": "resp_02b5bea6e59a4b0b006af823b7305c87d2982a6d3debfe6c4f",
+    "judge_usage": {
+      "input_tokens": 1498,
+      "input_tokens_details": {
+        "cache_write_tokens": 1495,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1495
+        }
+      },
+      "output_tokens": 137,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1635
+    },
+    "codex_verified": true,
+    "codex_reason": "Read modules:003 import-star paragraph: underscore-prefixed names excluded.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798200+00:00"
+  },
+  {
+    "query_id": "Q10",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes python-tutorial-modules, page modules:003, explicitly stating that modules are imported only once per interpreter session and that changed modules require restarting the interpreter or using importlib.reload(modulename) to test one module interactively. It includes the import importlib example and all evidence needed to answer.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer matches the benchmark and cited passage: it supplies importlib.reload(modulename), identifies modulename as an already imported module, and gives restarting the interpreter as an alternative. The single-module interactive condition is satisfied by the question and answer; no relevant condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:51.518282+00:00",
+    "trace_sha256": "f64478ab03e2364e2254abffbd0bed3f6f6f82437e59f065e77f6db451371ec2",
+    "judge_response_id": "resp_0bd3556fad3eb8c8006af823b9265087d29f94d73f737297aa",
+    "judge_usage": {
+      "input_tokens": 1514,
+      "input_tokens_details": {
+        "cache_write_tokens": 1511,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1511
+        }
+      },
+      "output_tokens": 161,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1675
+    },
+    "codex_verified": true,
+    "codex_reason": "Read modules:003: once-per-session import, importlib.reload and restart alternative explicitly support answer.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798333+00:00"
+  },
+  {
+    "query_id": "Q11",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The modules:004 passage shows the condition `if __name__ == \"__main__\":` and explains that its code runs when the module is executed as the main file, but not when imported. This provides sufficient evidence for the script-execution condition and value, even though the benchmark's explicit assignment statement from modules:003 is absent.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly gives the string \"__main__\", matching the benchmark. The cited passage is in the final context and supports the claim through the conditional and its explanation. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:51.556140+00:00",
+    "trace_sha256": "a1a73bd9cab28cd0de1312d046de0ae33a4dab1f4e3c8b904e5a5a73451d66a1",
+    "judge_response_id": "resp_0476c7d7d8601e8d006af823ba0d1087d2aa73b7b0ab305813",
+    "judge_usage": {
+      "input_tokens": 1143,
+      "input_tokens_details": {
+        "cache_write_tokens": 1140,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1140
+        }
+      },
+      "output_tokens": 151,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1294
+    },
+    "codex_verified": true,
+    "codex_reason": "Read modules:004 __name__ == __main__ guard and explanation that guarded code runs only as main file. This code and explanation support the answer although the frozen exact gold quote is elsewhere.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798452+00:00"
+  },
+  {
+    "query_id": "Q12",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes inputoutput:007, which explicitly states that with properly closes the file after its suite finishes even if an exception is raised, and that it is shorter than equivalent try–finally blocks. The errors:009 passage also corroborates closure even when processing encounters a problem.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer fully matches the benchmark's exception-safe file closure explanation. Its additional claim about shorter code is explicitly supported by the cited passage in the final context. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:03:56.071495+00:00",
+    "trace_sha256": "b0a49cfaaf77d4b17499e2f3c4f64719a6db83889ba5804114494094af699f92",
+    "judge_response_id": "resp_07c44f8a25d673ab006af823fad15087d280b15d7015b87b59",
+    "judge_usage": {
+      "input_tokens": 1473,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1470,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 136,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1609
+    },
+    "codex_verified": true,
+    "codex_reason": "Read inputoutput:007: with closes the file even on exception and is shorter than try/finally.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798655+00:00"
+  },
+  {
+    "query_id": "Q13",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes inputoutput:007 from the Python tutorial, explicitly stating that omitted or negative size reads and returns the entire file contents, warning that the file may exceed machine memory, and specifying string versus bytes return types.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly covers both omitted and negative size and the entire-file return behavior. Its memory warning is less explicit than the benchmark's available-memory warning but conveys the relevant risk. The text/binary return-type detail is also supported by the cited passage. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:57.663695+00:00",
+    "trace_sha256": "f12e0d08f05f2ac2ea5b8e6afbed01efd7a51471d8d2bc49139eb940a7ec107c",
+    "judge_response_id": "resp_0bdae95278e63a93006af823be1cb087d2979fec206c17258c",
+    "judge_usage": {
+      "input_tokens": 1506,
+      "input_tokens_details": {
+        "cache_write_tokens": 1503,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1503
+        }
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1649
+    },
+    "codex_verified": true,
+    "codex_reason": "Read inputoutput:007: omitted/negative size reads entire contents, text/bytes modes and memory warning support answer.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798813+00:00"
+  },
+  {
+    "query_id": "Q14",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes Python tutorial inputoutput:010, which explicitly requires UTF-8 for JSON files and specifies encoding=\"utf-8\" when opening them as text for both reading and writing.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer exactly matches the benchmark and the cited passage in the final context. It includes the text-mode condition and both reading and writing; no condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:02:56.220453+00:00",
+    "trace_sha256": "d3d18f70825f42ba6b8d93d7088138e711ab30c844265f9d922511899b891696",
+    "judge_response_id": "resp_0ac3783da343a1e6006af823bede9c87d2a2b18f2f4f19868a",
+    "judge_usage": {
+      "input_tokens": 1302,
+      "input_tokens_details": {
+        "cache_write_tokens": 1299,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1299
+        }
+      },
+      "output_tokens": 113,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1415
+    },
+    "codex_verified": true,
+    "codex_reason": "Read inputoutput:010: JSON text must use UTF-8 for both reading and writing.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.798947+00:00"
+  },
+  {
+    "query_id": "Q15",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "context_reason": "The final context includes errors:005 from the Python tutorial, explicitly stating that else must follow all except clauses and is useful for code executed if the try clause raises no exception. It also explains that using else avoids accidentally catching exceptions from code outside the protected operation.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": false,
+    "note": "The answer correctly and completely matches the benchmark's placement and execution condition. Its additional explanation about avoiding accidental exception handling is explicitly supported by the cited passage in the final context. No required condition is missing.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:03:00.356579+00:00",
+    "trace_sha256": "17ded9cf8c717eb5be2a5f8e48983031da0e51b0e3874709eb1d01bad029a71d",
+    "judge_response_id": "resp_0d0af93afa223e37006af823c2cdf087d2b0ccaef32a743b9f",
+    "judge_usage": {
+      "input_tokens": 1476,
+      "input_tokens_details": {
+        "cache_write_tokens": 1473,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1473
+        }
+      },
+      "output_tokens": 134,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1610
+    },
+    "codex_verified": true,
+    "codex_reason": "Read errors:005: else follows except handlers, runs only on no exception, and avoids catching unrelated exceptions.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.799078+00:00"
+  },
+  {
+    "query_id": "D-U01",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "context_reason": "The sourced queue passage explains fast deque appends and pops at both ends and slow list inserts or pops at the beginning because elements must shift. The second passage also describes faster deque operations on the left. Neither provides Intel Core i7 measurements or timings in milliseconds, consistent with the benchmark's confirmed absence.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": true,
+    "note": "The answer correctly abstains from inventing a measured speedup. Its qualitative comparison is supported by the cited passage in the final context. The required hardware-specific timing measurements are absent.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:03:02.767012+00:00",
+    "trace_sha256": "29e0bb3e3a24f0dfbd86ed4c61967d3a24913f8d0e888ec9e3437f02639fde9e",
+    "judge_response_id": "resp_0d6f502ab5a03722006af823c459b887d2a8bf29aeec35fb5c",
+    "judge_usage": {
+      "input_tokens": 1177,
+      "input_tokens_details": {
+        "cache_write_tokens": 1174,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1174
+        }
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1336
+    },
+    "codex_verified": true,
+    "codex_reason": "Read queue/deque passages and full-corpus absence check: qualitative efficiency only, no Core i7 millisecond benchmark. Abstention adds no numeric claim; cited deque description is supported.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.799200+00:00"
+  },
+  {
+    "query_id": "D-U02",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "context_reason": "The final context includes the tutorial's JSON serialization and deserialization discussion, including json.load(f), with its source URL. It specifies readable binary or text files and UTF-8 encoding, but no guaranteed maximum size in megabytes. The separate f.read(size) passage discusses memory constraints, not a json.load size guarantee.",
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": true,
+    "note": "The answer correctly abstains rather than inventing a numeric limit. The cited passage is in the final context and demonstrates json.load(f) without giving a size guarantee, consistent with the benchmark. No relevant condition is omitted and no unsupported limit is added.",
+    "reviewed_by": "AI judge + Codex direct source inspection",
+    "human_reviewed": false,
+    "audited_at": "2026-11-14T09:03:04.876645+00:00",
+    "trace_sha256": "34dcd4768a88516464bf0de14df2202697edbce7e02a6c3b530bb2a9963f50c1",
+    "judge_response_id": "resp_06f6bbcb46792ed1006af823c6f69887d286fa050c5be302cb",
+    "judge_usage": {
+      "input_tokens": 1295,
+      "input_tokens_details": {
+        "cache_write_tokens": 1292,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 1292
+        }
+      },
+      "output_tokens": 177,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1472
+    },
+    "codex_verified": true,
+    "codex_reason": "Read JSON passages and full-corpus absence check: json.load example and encoding guidance, no guaranteed MB limit. Abstention does not invent a limit; citation supports the qualitative explanation.",
+    "codex_reviewed_at": "2026-11-14T09:05:16.799316+00:00"
+  }
+]

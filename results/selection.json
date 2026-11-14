@@ -1,0 +1,43 @@
+{
+  "selected_at": "2026-11-14T09:05:17.016511+00:00",
+  "rule": "Maximize dev grounded-answer mean, then correct abstention, then fewer false refusals, then fewer model tokens. If tied prefer baseline, dense-wide, hybrid, hybrid-wide in that order.",
+  "selected": {
+    "name": "hybrid-wide",
+    "method": "hybrid",
+    "top_k": 5,
+    "budget": 6000,
+    "max_searches": 2,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "hypothesis": "Hybrid candidates plus wider context can improve complete evidence coverage."
+  },
+  "baseline": {
+    "name": "baseline",
+    "method": "dense",
+    "top_k": 3,
+    "budget": 3200,
+    "max_searches": 1,
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "hypothesis": "Original-query dense baseline; one retrieval and compact context."
+  },
+  "test_queries_run": 0,
+  "dev_artifact_sha256": {
+    "results\\baseline\\dev\\traces.json": "2cfa82a0fbff3a4ad6d0140391918bebd28fa6983ba0d9ecdb3a1da190027c9a",
+    "results\\baseline\\dev\\reviews.json": "8464346923b5335e3f08f5f5513a05b06a7ce756f32ffdca57f4b57113c62bcf",
+    "results\\baseline\\dev\\summary.json": "7ecbf69fc17af4482d77005381ede82d22b05bb65e1acfa12d6f1e3d7e7095f1",
+    "results\\dense-wide\\dev\\traces.json": "4d2bf2eca841187ee1663628a5eec0fef0bcc611b5a098c100c3c46054c00551",
+    "results\\dense-wide\\dev\\reviews.json": "ff1582bedcc8a70b1a07d12f8313f762a66da12c7a46eea6158cb571899e7aed",
+    "results\\dense-wide\\dev\\summary.json": "00f6d7c331164ce80d9c91a88ccd797b948d97c225bb7e062fe35d15331ee270",
+    "results\\hybrid\\dev\\traces.json": "4ef2d1d0bebf3360c8bf90259c2f90f8b36e0851cfd53c5336e2cb3255431a3b",
+    "results\\hybrid\\dev\\reviews.json": "29b005ab62b1617a55ac57f2121f645048eeb5991d6bb58e4d5e50e1b5618095",
+    "results\\hybrid\\dev\\summary.json": "e363801740dac18d78bff950fe721ff22ad552e40e7e38975d935827517df8b7",
+    "results\\hybrid-wide\\dev\\traces.json": "b16941bf78c86c57c86e61cf49792411a3c3deda7932d2533d8f3f7d650467c5",
+    "results\\hybrid-wide\\dev\\reviews.json": "a5149644784eb8980ee97affe0d712ed54b0fd5cc1f2f9a04741121a8715e5c6",
+    "results\\hybrid-wide\\dev\\summary.json": "c0b642acbb776580e46427bce0e96a0cf455be595227a761fa0defe54108086e",
+    "results\\lexical\\dev\\traces.json": "e40194509a349f7691a3667017db07e1e3bbfbeb88a7919a87a10fa0cf7359e9",
+    "results\\lexical\\dev\\reviews.json": "b461a9293c4e9e7531276ef8b53bdd4595bcfc375cee92184df8fb396900f6f6",
+    "results\\lexical\\dev\\summary.json": "021d1cc6c1432d264e7502f2b0bd88b0bdef85b0e76a9fd05e3c7cc9276f98fb"
+  },
+  "benchmark_freeze_sha256": "7adca462630bb18e6e06fe3f9d9aa6231c6299c9fa7707d0443e643bc3510114"
+}

@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "source_url": "https://api.modelapi.vn/api/pricing",
+  "retrieved_at": "2026-11-14T09:47:13.512167+00:00",
+  "unit": "USD per million tokens",
+  "billing_expr": "len >= 500000 ? tier(\"long\", p * 4 + c * 15 + cr * 0.2 + cc * 5) : tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5)",
+  "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "group_multipliers": {
+    "default": 0.9,
+    "codex_peak_2": 0.9,
+    "codex_peak_3": 0.9,
+    "codex_peak_1": 0.9,
+    "codex_siêu_nhanh": 2.6,
+    "codex_không_lag": 0.9
+  },
+  "basis": "Published expression rates before account/group multiplier. p=uncached input, c=output, cr=cache read, cc=cache write. Frontend labels rates USD per 1M tokens.",
+  "limitations": "Current public rates applied retrospectively. Actual account group, discounts, prior prices, unsuccessful probes and unrecorded judge attempts are not known. This is an estimate, not an invoice."
+}

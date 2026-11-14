@@ -1,0 +1,54 @@
+[
+  {
+    "query_id": "t01",
+    "answer_grade": 0,
+    "citation_support": [],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "t02",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "t03",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "t04",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "t05",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa grade/support thủ công"
+  },
+  {
+    "query_id": "t-u01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "note": "NHÁP - bạn phải đọc trace và sửa abstention_correct thủ công"
+  },
+  {
+    "query_id": "t-u02",
+    "abstention_correct": false,
+    "citation_support": [
+      false
+    ],
+    "note": "NHÁP - bạn phải đọc trace và sửa abstention_correct thủ công"
+  }
+]

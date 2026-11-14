@@ -1,0 +1,29 @@
+{
+  "reviewer": "Codex (AI)",
+  "method": "Read original answers, cited chunks, source-unit text, final context and judge reasons; no human review claimed.",
+  "changes": [
+    {
+      "configuration": "baseline",
+      "query_id": "Q11",
+      "before": {
+        "answer_grade": 2,
+        "context_grade": 1,
+        "citation_support": [
+          false
+        ],
+        "note": "The answer correctly and completely matches the benchmark: running a module as a script sets __name__ to '__main__'. However, its citation, although present in the final context, establishes the top-level module's name rather than explicitly establishing the claimed variable assignment.",
+        "context_reason": "The classes:003 passage says that top-level statements read from a script file belong to a module called __main__, providing relevant but incomplete evidence. It does not state that the variable __name__ is assigned \"__main__\". The benchmark's explicit assignment passage from modules:003 is absent; the other retrieved passages concern search paths and dir()."
+      },
+      "after": {
+        "answer_grade": 1,
+        "context_grade": 1,
+        "citation_support": [
+          false
+        ],
+        "note": "Correct value, but cited classes:003 only calls top-level code a module named __main__; it does not establish the __name__ assignment. Partial grounding, not full credit.",
+        "context_reason": "The classes:003 passage says that top-level statements read from a script file belong to a module called __main__, providing relevant but incomplete evidence. It does not state that the variable __name__ is assigned \"__main__\". The benchmark's explicit assignment passage from modules:003 is absent; the other retrieved passages concern search paths and dir()."
+      }
+    }
+  ],
+  "human_review_complete": false
+}

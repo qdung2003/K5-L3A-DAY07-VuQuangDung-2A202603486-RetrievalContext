@@ -1,0 +1,1070 @@
+[
+  {
+    "query_id": "Q01",
+    "question": "Which loop does a break statement exit when loops are nested?",
+    "filter": null,
+    "results": [
+      {
+        "id": "334190e279b47ab366016fade9576134c7ccee9b86749c2bd5aafa8c8385d667",
+        "source_id": "python-tutorial-controlflow",
+        "text": "One way to think of the else clause is to imagine it paired with the if\ninside the loop.  As the loop executes, it will run a sequence like\nif/if/if/else. The if is inside the loop, encountered a number of times. If\nthe condition is ever true, a break will happen. If the condition is never\ntrue, the else clause outside the loop will execute.\n\nWhen used with a loop, the else clause has more in common with the else\nclause of a try statement than it does with that of if\nstatements: a try statement's else clause runs when no exception\noccurs, and a loop's else clause runs when no break occurs. For more on\nthe try statement and exceptions, see tut-handling.\n\npass Statements\n\nThe pass statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For example::\n\n   >>> while True:\n   ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n   ...\n\nThis is commonly used for creating minimal classes::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:004",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 5747,
+          "unit_end": 7634,
+          "start_char": 663,
+          "end_char": 1624
+        },
+        "score": 0.2717129130401213,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a",
+        "source_id": "python-tutorial-controlflow",
+        "text": "In either kind of loop, the else clause is **not** executed if the\nloop was terminated by a break.  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:003",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3769,
+          "unit_end": 5747,
+          "start_char": 1744,
+          "end_char": 1976
+        },
+        "score": 0.22470592522999522,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "445e571618abd92741857718939c4f3171bcfebf879be6c7fadad268d9d9fb39",
+        "source_id": "python-tutorial-controlflow",
+        "text": ">>> for num in range(2, 10):\n    ...     if num % 2 == 0:\n    ...         print(f\"Found an even number {num}\")\n    ...         continue\n    ...     print(f\"Found an odd number {num}\")\n    ...\n    Found an even number 2\n    Found an odd number 3\n    Found an even number 4\n    Found an odd number 5\n    Found an even number 6\n    Found an odd number 7\n    Found an even number 8\n    Found an odd number 9\n\nelse Clauses on Loops\n\nIn a for or while loop the break statement\nmay be paired with an else clause.  If the loop finishes without\nexecuting the break, the else clause executes.\n\nIn a for loop, the else clause is executed\nafter the loop finishes its final iteration, that is, if no break occurred.\n\nIn a while loop, it's executed after the loop's condition becomes false.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:003",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3769,
+          "unit_end": 5747,
+          "start_char": 966,
+          "end_char": 1742
+        },
+        "score": 0.19777558069946155,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[334190e279b47ab366016fade9576134c7ccee9b86749c2bd5aafa8c8385d667 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:004]\nOne way to think of the else clause is to imagine it paired with the if\ninside the loop.  As the loop executes, it will run a sequence like\nif/if/if/else. The if is inside the loop, encountered a number of times. If\nthe condition is ever true, a break will happen. If the condition is never\ntrue, the else clause outside the loop will execute.\n\nWhen used with a loop, the else clause has more in common with the else\nclause of a try statement than it does with that of if\nstatements: a try statement's else clause runs when no exception\noccurs, and a loop's else clause runs when no break occurs. For more on\nthe try statement and exceptions, see tut-handling.\n\npass Statements\n\nThe pass statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For example::\n\n   >>> while True:\n   ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n   ...\n\nThis is commonly used for creating minimal classes::\n\n[986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:003]\nIn either kind of loop, the else clause is **not** executed if the\nloop was terminated by a break.  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.\n\n[445e571618abd92741857718939c4f3171bcfebf879be6c7fadad268d9d9fb39 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:003]\n>>> for num in range(2, 10):\n    ...     if num % 2 == 0:\n    ...         print(f\"Found an even number {num}\")\n    ...         continue\n    ...     print(f\"Found an odd number {num}\")\n    ...\n    Found an even number 2\n    Found an odd number 3\n    Found an even number 4\n    Found an odd number 5\n    Found an even number 6\n    Found an odd number 7\n    Found an even number 8\n    Found an odd number 9\n\nelse Clauses on Loops\n\nIn a for or while loop the break statement\nmay be paired with an else clause.  If the loop finishes without\nexecuting the break, the else clause executes.\n\nIn a for loop, the else clause is executed\nafter the loop finishes its final iteration, that is, if no break occurred.\n\nIn a while loop, it's executed after the loop's condition becomes false.",
+    "context_ids": [
+      "334190e279b47ab366016fade9576134c7ccee9b86749c2bd5aafa8c8385d667",
+      "986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a",
+      "445e571618abd92741857718939c4f3171bcfebf879be6c7fadad268d9d9fb39"
+    ],
+    "elapsed_ms": 1.095800005714409,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q02",
+    "question": "In the controlflow chapter, when is a loop's else clause skipped if execution ends early?",
+    "filter": {
+      "section": "controlflow"
+    },
+    "results": [
+      {
+        "id": "986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a",
+        "source_id": "python-tutorial-controlflow",
+        "text": "In either kind of loop, the else clause is **not** executed if the\nloop was terminated by a break.  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:003",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3769,
+          "unit_end": 5747,
+          "start_char": 1744,
+          "end_char": 1976
+        },
+        "score": 0.4737783097662994,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "334190e279b47ab366016fade9576134c7ccee9b86749c2bd5aafa8c8385d667",
+        "source_id": "python-tutorial-controlflow",
+        "text": "One way to think of the else clause is to imagine it paired with the if\ninside the loop.  As the loop executes, it will run a sequence like\nif/if/if/else. The if is inside the loop, encountered a number of times. If\nthe condition is ever true, a break will happen. If the condition is never\ntrue, the else clause outside the loop will execute.\n\nWhen used with a loop, the else clause has more in common with the else\nclause of a try statement than it does with that of if\nstatements: a try statement's else clause runs when no exception\noccurs, and a loop's else clause runs when no break occurs. For more on\nthe try statement and exceptions, see tut-handling.\n\npass Statements\n\nThe pass statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For example::\n\n   >>> while True:\n   ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n   ...\n\nThis is commonly used for creating minimal classes::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:004",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 5747,
+          "unit_end": 7634,
+          "start_char": 663,
+          "end_char": 1624
+        },
+        "score": 0.3968829092196565,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "445e571618abd92741857718939c4f3171bcfebf879be6c7fadad268d9d9fb39",
+        "source_id": "python-tutorial-controlflow",
+        "text": ">>> for num in range(2, 10):\n    ...     if num % 2 == 0:\n    ...         print(f\"Found an even number {num}\")\n    ...         continue\n    ...     print(f\"Found an odd number {num}\")\n    ...\n    Found an even number 2\n    Found an odd number 3\n    Found an even number 4\n    Found an odd number 5\n    Found an even number 6\n    Found an odd number 7\n    Found an even number 8\n    Found an odd number 9\n\nelse Clauses on Loops\n\nIn a for or while loop the break statement\nmay be paired with an else clause.  If the loop finishes without\nexecuting the break, the else clause executes.\n\nIn a for loop, the else clause is executed\nafter the loop finishes its final iteration, that is, if no break occurred.\n\nIn a while loop, it's executed after the loop's condition becomes false.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:003",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3769,
+          "unit_end": 5747,
+          "start_char": 966,
+          "end_char": 1742
+        },
+        "score": 0.2111842141314178,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:003]\nIn either kind of loop, the else clause is **not** executed if the\nloop was terminated by a break.  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.\n\n[334190e279b47ab366016fade9576134c7ccee9b86749c2bd5aafa8c8385d667 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:004]\nOne way to think of the else clause is to imagine it paired with the if\ninside the loop.  As the loop executes, it will run a sequence like\nif/if/if/else. The if is inside the loop, encountered a number of times. If\nthe condition is ever true, a break will happen. If the condition is never\ntrue, the else clause outside the loop will execute.\n\nWhen used with a loop, the else clause has more in common with the else\nclause of a try statement than it does with that of if\nstatements: a try statement's else clause runs when no exception\noccurs, and a loop's else clause runs when no break occurs. For more on\nthe try statement and exceptions, see tut-handling.\n\npass Statements\n\nThe pass statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For example::\n\n   >>> while True:\n   ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n   ...\n\nThis is commonly used for creating minimal classes::\n\n[445e571618abd92741857718939c4f3171bcfebf879be6c7fadad268d9d9fb39 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:003]\n>>> for num in range(2, 10):\n    ...     if num % 2 == 0:\n    ...         print(f\"Found an even number {num}\")\n    ...         continue\n    ...     print(f\"Found an odd number {num}\")\n    ...\n    Found an even number 2\n    Found an odd number 3\n    Found an even number 4\n    Found an odd number 5\n    Found an even number 6\n    Found an odd number 7\n    Found an even number 8\n    Found an odd number 9\n\nelse Clauses on Loops\n\nIn a for or while loop the break statement\nmay be paired with an else clause.  If the loop finishes without\nexecuting the break, the else clause executes.\n\nIn a for loop, the else clause is executed\nafter the loop finishes its final iteration, that is, if no break occurred.\n\nIn a while loop, it's executed after the loop's condition becomes false.",
+    "context_ids": [
+      "986589fc7dcaf04960e6f13660b0f866874d5147f0a6913048e9ddbedc8bcf0a",
+      "334190e279b47ab366016fade9576134c7ccee9b86749c2bd5aafa8c8385d667",
+      "445e571618abd92741857718939c4f3171bcfebf879be6c7fadad268d9d9fb39"
+    ],
+    "elapsed_ms": 1.08380000165198,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q03",
+    "question": "Why can a mutable default argument preserve changes between calls?",
+    "filter": null,
+    "results": [
+      {
+        "id": "f89c76c3b4d2226a9ff1f6d9dde78cc3e6891f8309b22cffc9e955981e72a4cc",
+        "source_id": "python-tutorial-controlflow",
+        "text": "This example also introduces the in keyword. This tests whether or\nnot a sequence contains a certain value.\n\nThe default values are evaluated at the point of function definition in the\n*defining* scope, so that ::\n\n   i = 5\n\n   def f(arg=i):\n       print(arg)\n\n   i = 6\n   f()\n\nwill print 5.\n\n**Important warning:**  The default value is evaluated only once. This makes a\ndifference when the default is a mutable object such as a list, dictionary, or\ninstances of most classes.  For example, the following function accumulates the\narguments passed to it on subsequent calls::\n\n   def f(a, L=[]):\n       L.append(a)\n       return L\n\n   print(f(1))\n   print(f(2))\n   print(f(3))\n\nThis will print ::\n\n   [1]\n   [1, 2]\n   [1, 2, 3]\n\nIf you don't want the default to be shared between subsequent calls, you can\nwrite the function like this instead::\n\n   def f(a, L=None):\n       if L is None:\n           L = []\n       L.append(a)\n       return L\n\nKeyword Arguments",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:011",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 19635,
+          "unit_end": 21649,
+          "start_char": 0,
+          "end_char": 959
+        },
+        "score": 0.18870628022513491,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "848759551751c6e403b6c596459df0a307d8e3482833ca638c625b7268956eb3",
+        "source_id": "python-tutorial-controlflow",
+        "text": "* Name your classes and functions consistently; the convention is to use\n  UpperCamelCase for classes and lowercase_with_underscores for functions\n  and methods.  Always use self as the name for the first method argument\n  (see tut-firstclasses for more on classes and methods).\n\n* Don't use fancy encodings if your code is meant to be used in international\n  environments.  Python's default, UTF-8, or even plain ASCII work best in any\n  case.\n\n* Likewise, don't use non-ASCII characters in identifiers if there is only the\n  slightest chance people speaking a different language will read or maintain\n  the code.\n\n.. [#] Actually, *call by object reference* would be a better description,\n   since if a mutable object is passed, the caller will see any changes the\n   callee makes to it (items inserted into a list).",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:019",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 35882,
+          "unit_end": 37643,
+          "start_char": 943,
+          "end_char": 1761
+        },
+        "score": 0.14010986301936862,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "1a20b9ef434e2c5b786203e92ce33e0a0224bb9506c029b19c9e6ec194fd8722",
+        "source_id": "python-tutorial-controlflow",
+        "text": "but all the following calls would be invalid::\n\n   parrot()                     # required argument missing\n   parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument\n   parrot(110, voltage=220)     # duplicate value for the same argument\n   parrot(actor='John Cleese')  # unknown keyword argument\n\nIn a function call, keyword arguments must follow positional arguments.\nAll the keyword arguments passed must match one of the arguments\naccepted by the function (e.g. actor is not a valid argument for the\nparrot function), and their order is not important.  This also includes\nnon-optional arguments (e.g. parrot(voltage=1000) is valid too).\nNo argument may receive a value more than once.\nHere's an example that fails due to this restriction::\n\n   >>> def function(a):\n   ...     pass\n   ...\n   >>> function(0, a=0)\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n   TypeError: function() got multiple values for argument 'a'",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:012",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 21649,
+          "unit_end": 23659,
+          "start_char": 0,
+          "end_char": 978
+        },
+        "score": 0.1311716591995231,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[f89c76c3b4d2226a9ff1f6d9dde78cc3e6891f8309b22cffc9e955981e72a4cc | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:011]\nThis example also introduces the in keyword. This tests whether or\nnot a sequence contains a certain value.\n\nThe default values are evaluated at the point of function definition in the\n*defining* scope, so that ::\n\n   i = 5\n\n   def f(arg=i):\n       print(arg)\n\n   i = 6\n   f()\n\nwill print 5.\n\n**Important warning:**  The default value is evaluated only once. This makes a\ndifference when the default is a mutable object such as a list, dictionary, or\ninstances of most classes.  For example, the following function accumulates the\narguments passed to it on subsequent calls::\n\n   def f(a, L=[]):\n       L.append(a)\n       return L\n\n   print(f(1))\n   print(f(2))\n   print(f(3))\n\nThis will print ::\n\n   [1]\n   [1, 2]\n   [1, 2, 3]\n\nIf you don't want the default to be shared between subsequent calls, you can\nwrite the function like this instead::\n\n   def f(a, L=None):\n       if L is None:\n           L = []\n       L.append(a)\n       return L\n\nKeyword Arguments\n\n[848759551751c6e403b6c596459df0a307d8e3482833ca638c625b7268956eb3 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:019]\n* Name your classes and functions consistently; the convention is to use\n  UpperCamelCase for classes and lowercase_with_underscores for functions\n  and methods.  Always use self as the name for the first method argument\n  (see tut-firstclasses for more on classes and methods).\n\n* Don't use fancy encodings if your code is meant to be used in international\n  environments.  Python's default, UTF-8, or even plain ASCII work best in any\n  case.\n\n* Likewise, don't use non-ASCII characters in identifiers if there is only the\n  slightest chance people speaking a different language will read or maintain\n  the code.\n\n.. [#] Actually, *call by object reference* would be a better description,\n   since if a mutable object is passed, the caller will see any changes the\n   callee makes to it (items inserted into a list).",
+    "context_ids": [
+      "f89c76c3b4d2226a9ff1f6d9dde78cc3e6891f8309b22cffc9e955981e72a4cc",
+      "848759551751c6e403b6c596459df0a307d8e3482833ca638c625b7268956eb3"
+    ],
+    "elapsed_ms": 0.6545999931404367,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q04",
+    "question": "How do you mark function parameters as positional-only and what calling restriction applies?",
+    "filter": null,
+    "results": [
+      {
+        "id": "518d6277e7bec853e65967051d48b2fa375092e3a02b50eeea7efe79eb1d0689",
+        "source_id": "python-tutorial-controlflow",
+        "text": "Looking at this in a bit more detail, it is possible to mark certain parameters\nas *positional-only*. If *positional-only*, the parameters' order matters, and\nthe parameters cannot be passed by keyword. Positional-only parameters are\nplaced before a / (forward-slash). The / is used to logically\nseparate the positional-only parameters from the rest of the parameters.\nIf there is no / in the function definition, there are no positional-only\nparameters.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:013",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 23659,
+          "unit_end": 25591,
+          "start_char": 1476,
+          "end_char": 1930
+        },
+        "score": 0.4073356850455076,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "383db721c88da7680c13b21793dcb5700086d7c8ee3b475d9a3bed4d29cc3c65",
+        "source_id": "python-tutorial-controlflow",
+        "text": "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n           |             |                  |\n           |        Positional or keyword   |\n           |                                - Keyword only\n            -- Positional only\n\nwhere / and * are optional. If used, these symbols indicate the kind of\nparameter by how the arguments may be passed to the function:\npositional-only, positional-or-keyword, and keyword-only. Keyword parameters\nare also referred to as named parameters.\n\nPositional-or-Keyword Arguments\n\nIf / and * are not present in the function definition, arguments may\nbe passed to a function by position or by keyword.\n\nPositional-Only Parameters",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:013",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 23659,
+          "unit_end": 25591,
+          "start_char": 808,
+          "end_char": 1474
+        },
+        "score": 0.32045391904011267,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "01a8ad638700cdf5ed9501599ab9e5ef1a0bd02699f04a546cb5339be4007950",
+        "source_id": "python-tutorial-controlflow",
+        "text": "* Use positional-only if you want the name of the parameters to not be\n  available to the user. This is useful when parameter names have no real\n  meaning, if you want to enforce the order of the arguments when the function\n  is called or if you need to take some positional parameters and arbitrary\n  keywords.\n* Use keyword-only when names have meaning and the function definition is\n  more understandable by being explicit with names or you want to prevent\n  users relying on the position of the argument being passed.\n* For an API, use positional-only to prevent breaking API changes\n  if the parameter's name is modified in the future.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:015",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 27485,
+          "unit_end": 29532,
+          "start_char": 1405,
+          "end_char": 2045
+        },
+        "score": 0.2063448093247754,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[518d6277e7bec853e65967051d48b2fa375092e3a02b50eeea7efe79eb1d0689 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:013]\nLooking at this in a bit more detail, it is possible to mark certain parameters\nas *positional-only*. If *positional-only*, the parameters' order matters, and\nthe parameters cannot be passed by keyword. Positional-only parameters are\nplaced before a / (forward-slash). The / is used to logically\nseparate the positional-only parameters from the rest of the parameters.\nIf there is no / in the function definition, there are no positional-only\nparameters.\n\n[383db721c88da7680c13b21793dcb5700086d7c8ee3b475d9a3bed4d29cc3c65 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:013]\ndef f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n           |             |                  |\n           |        Positional or keyword   |\n           |                                - Keyword only\n            -- Positional only\n\nwhere / and * are optional. If used, these symbols indicate the kind of\nparameter by how the arguments may be passed to the function:\npositional-only, positional-or-keyword, and keyword-only. Keyword parameters\nare also referred to as named parameters.\n\nPositional-or-Keyword Arguments\n\nIf / and * are not present in the function definition, arguments may\nbe passed to a function by position or by keyword.\n\nPositional-Only Parameters\n\n[01a8ad638700cdf5ed9501599ab9e5ef1a0bd02699f04a546cb5339be4007950 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:015]\n* Use positional-only if you want the name of the parameters to not be\n  available to the user. This is useful when parameter names have no real\n  meaning, if you want to enforce the order of the arguments when the function\n  is called or if you need to take some positional parameters and arbitrary\n  keywords.\n* Use keyword-only when names have meaning and the function definition is\n  more understandable by being explicit with names or you want to prevent\n  users relying on the position of the argument being passed.\n* For an API, use positional-only to prevent breaking API changes\n  if the parameter's name is modified in the future.",
+    "context_ids": [
+      "518d6277e7bec853e65967051d48b2fa375092e3a02b50eeea7efe79eb1d0689",
+      "383db721c88da7680c13b21793dcb5700086d7c8ee3b475d9a3bed4d29cc3c65",
+      "01a8ad638700cdf5ed9501599ab9e5ef1a0bd02699f04a546cb5339be4007950"
+    ],
+    "elapsed_ms": 0.9932000102708116,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q05",
+    "question": "In datastructures, which container is recommended for a queue needing fast operations at both ends?",
+    "filter": {
+      "section": "datastructures"
+    },
+    "results": [
+      {
+        "id": "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26",
+        "source_id": "python-tutorial-datastructures",
+        "text": "Using Lists as Queues\n\nIt is also possible to use a list as a queue, where the first element added is\nthe first element retrieved (\"first-in, first-out\"); however, lists are not\nefficient for this purpose.  While appends and pops from the end of list are\nfast, doing inserts or pops from the beginning of a list is slow (because all\nof the other elements have to be shifted by one).\n\nTo implement a queue, use collections.deque which was designed to\nhave fast appends and pops from both ends.  For example::\n\n   >>> from collections import deque\n   >>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n   >>> queue.append(\"Terry\")           # Terry arrives\n   >>> queue.append(\"Graham\")          # Graham arrives\n   >>> queue.popleft()                 # The first to arrive now leaves\n   'Eric'\n   >>> queue.popleft()                 # The second to arrive now leaves\n   'John'\n   >>> queue                           # Remaining queue in order of arrival\n   deque(['Michael', 'Terry', 'Graham'])",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:003",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3833,
+          "unit_end": 5663,
+          "start_char": 0,
+          "end_char": 989
+        },
+        "score": 0.3567063313526546,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "6c7c13137504cc6e9a6a75c560070962f2cc56b26458db77df5bd22ac1df2eb3",
+        "source_id": "python-tutorial-datastructures",
+        "text": ">>> # Demonstrate set operations on unique letters from two words\n   >>>\n   >>> a = set('abracadabra')\n   >>> b = set('alacazam')\n   >>> a                                  # unique letters in a\n   {'a', 'r', 'b', 'c', 'd'}\n   >>> a - b                              # letters in a but not in b\n   {'r', 'd', 'b'}\n   >>> a | b                              # letters in a or b or both\n   {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}\n   >>> a & b                              # letters in both a and b\n   {'a', 'c'}\n   >>> a ^ b                              # letters in a or b but not both\n   {'r', 'd', 'b', 'm', 'z', 'l'}\n\nSimilarly to list comprehensions <tut-listcomps>, set comprehensions\nare also supported::\n\n   >>> a = {x for x in 'abracadabra' if x not in 'abc'}\n   >>> a\n   {'r', 'd'}\n\nDictionaries",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:008",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 13873,
+          "unit_end": 15729,
+          "start_char": 3,
+          "end_char": 804
+        },
+        "score": 0.09615556888025198,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+        "source_id": "python-tutorial-datastructures",
+        "text": "The main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:009",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 15729,
+          "unit_end": 17649,
+          "start_char": 0,
+          "end_char": 611
+        },
+        "score": 0.06958306974234015,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:003]\nUsing Lists as Queues\n\nIt is also possible to use a list as a queue, where the first element added is\nthe first element retrieved (\"first-in, first-out\"); however, lists are not\nefficient for this purpose.  While appends and pops from the end of list are\nfast, doing inserts or pops from the beginning of a list is slow (because all\nof the other elements have to be shifted by one).\n\nTo implement a queue, use collections.deque which was designed to\nhave fast appends and pops from both ends.  For example::\n\n   >>> from collections import deque\n   >>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n   >>> queue.append(\"Terry\")           # Terry arrives\n   >>> queue.append(\"Graham\")          # Graham arrives\n   >>> queue.popleft()                 # The first to arrive now leaves\n   'Eric'\n   >>> queue.popleft()                 # The second to arrive now leaves\n   'John'\n   >>> queue                           # Remaining queue in order of arrival\n   deque(['Michael', 'Terry', 'Graham'])\n\n[6c7c13137504cc6e9a6a75c560070962f2cc56b26458db77df5bd22ac1df2eb3 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:008]\n>>> # Demonstrate set operations on unique letters from two words\n   >>>\n   >>> a = set('abracadabra')\n   >>> b = set('alacazam')\n   >>> a                                  # unique letters in a\n   {'a', 'r', 'b', 'c', 'd'}\n   >>> a - b                              # letters in a but not in b\n   {'r', 'd', 'b'}\n   >>> a | b                              # letters in a or b or both\n   {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}\n   >>> a & b                              # letters in both a and b\n   {'a', 'c'}\n   >>> a ^ b                              # letters in a or b but not both\n   {'r', 'd', 'b', 'm', 'z', 'l'}\n\nSimilarly to list comprehensions <tut-listcomps>, set comprehensions\nare also supported::\n\n   >>> a = {x for x in 'abracadabra' if x not in 'abc'}\n   >>> a\n   {'r', 'd'}\n\nDictionaries\n\n[3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:009]\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+    "context_ids": [
+      "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26",
+      "6c7c13137504cc6e9a6a75c560070962f2cc56b26458db77df5bd22ac1df2eb3",
+      "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b"
+    ],
+    "elapsed_ms": 1.1391000007279217,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q06",
+    "question": "What punctuation is essential to construct a tuple containing just one value?",
+    "filter": null,
+    "results": [
+      {
+        "id": "f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958",
+        "source_id": "python-tutorial-datastructures",
+        "text": "A special problem is the construction of tuples containing 0 or 1 items: the\nsyntax has some extra quirks to accommodate these.  Empty tuples are constructed\nby an empty pair of parentheses; a tuple with one item is constructed by\nfollowing a value with a comma (it is not sufficient to enclose a single value\nin parentheses). Ugly, but effective.  For example::\n\n   >>> empty = ()\n   >>> singleton = 'hello',    # <-- note trailing comma\n   >>> len(empty)\n   0\n   >>> len(singleton)\n   1\n   >>> singleton\n   ('hello',)\n\nThe statement t = 12345, 54321, 'hello!' is an example of *tuple packing*:\nthe values 12345, 54321 and 'hello!' are packed together in a tuple.\nThe reverse operation is also possible::\n\n   >>> x, y, z = t",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:007",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 11933,
+          "unit_end": 13873,
+          "start_char": 0,
+          "end_char": 725
+        },
+        "score": 0.18189258006003242,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "ed9546a2213d42ed9e549ccb40402304ac900539ba8ee6c48f09a0df6e183f67",
+        "source_id": "python-tutorial-controlflow",
+        "text": "Coming from other languages, you might object that fib is not a function but\na procedure since it doesn't return a value.  In fact, even functions without a\nreturn statement do return a value, albeit a rather boring one.  This\nvalue is called None (it's a built-in name).  Writing the value None is\nnormally suppressed by the interpreter if it would be the only value written.\nYou can see it if you really want to using print::\n\n   >>> fib(0)\n   >>> print(fib(0))\n   None\n\nIt is simple to write a function that returns a list of the numbers of the\nFibonacci series, instead of printing it::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:009",
+        "metadata": {
+          "section": "controlflow",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 15779,
+          "unit_end": 17601,
+          "start_char": 796,
+          "end_char": 1386
+        },
+        "score": 0.1606801286406877,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+        "source_id": "python-tutorial-datastructures",
+        "text": "The main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:009",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 15729,
+          "unit_end": 17649,
+          "start_char": 0,
+          "end_char": 611
+        },
+        "score": 0.14423205106696604,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:007]\nA special problem is the construction of tuples containing 0 or 1 items: the\nsyntax has some extra quirks to accommodate these.  Empty tuples are constructed\nby an empty pair of parentheses; a tuple with one item is constructed by\nfollowing a value with a comma (it is not sufficient to enclose a single value\nin parentheses). Ugly, but effective.  For example::\n\n   >>> empty = ()\n   >>> singleton = 'hello',    # <-- note trailing comma\n   >>> len(empty)\n   0\n   >>> len(singleton)\n   1\n   >>> singleton\n   ('hello',)\n\nThe statement t = 12345, 54321, 'hello!' is an example of *tuple packing*:\nthe values 12345, 54321 and 'hello!' are packed together in a tuple.\nThe reverse operation is also possible::\n\n   >>> x, y, z = t\n\n[ed9546a2213d42ed9e549ccb40402304ac900539ba8ee6c48f09a0df6e183f67 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:009]\nComing from other languages, you might object that fib is not a function but\na procedure since it doesn't return a value.  In fact, even functions without a\nreturn statement do return a value, albeit a rather boring one.  This\nvalue is called None (it's a built-in name).  Writing the value None is\nnormally suppressed by the interpreter if it would be the only value written.\nYou can see it if you really want to using print::\n\n   >>> fib(0)\n   >>> print(fib(0))\n   None\n\nIt is simple to write a function that returns a list of the numbers of the\nFibonacci series, instead of printing it::\n\n[3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:009]\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+    "context_ids": [
+      "f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958",
+      "ed9546a2213d42ed9e549ccb40402304ac900539ba8ee6c48f09a0df6e183f67",
+      "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b"
+    ],
+    "elapsed_ms": 0.863500012201257,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q07",
+    "question": "How do you create an empty set, and why does {} not work?",
+    "filter": null,
+    "results": [
+      {
+        "id": "874529fffd81b844a8c59dd618b5be0382ef12addcc97465eb75c275c74d6d50",
+        "source_id": "python-tutorial-datastructures",
+        "text": "This is called, appropriately enough, *sequence unpacking* and works for any\nsequence on the right-hand side.  Sequence unpacking requires that there are as\nmany variables on the left side of the equals sign as there are elements in the\nsequence.  Note that multiple assignment is really just a combination of tuple\npacking and sequence unpacking.\n\nSets\n\nPython also includes a data type for *sets*.  A set is an unordered collection\nwith no duplicate elements.  Basic uses include membership testing and\neliminating duplicate entries.  Set objects also support mathematical operations\nlike union, intersection, difference, and symmetric difference.\n\nCurly braces or the set function can be used to create sets.  Note: to\ncreate an empty set you have to use set(), not {}; the latter creates an\nempty dictionary, a data structure that we discuss in the next section.\n\nHere is a brief demonstration::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:007",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 11933,
+          "unit_end": 13873,
+          "start_char": 727,
+          "end_char": 1626
+        },
+        "score": 0.22311318141227893,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "7009f163258c29d1363aa662c58cc5d44571a2873a7599c09e5d30c1ee40b06d",
+        "source_id": "python-tutorial-classes",
+        "text": "Before introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+        "page": "classes:002",
+        "metadata": {
+          "section": "classes",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 2039,
+          "unit_end": 4078,
+          "start_char": 908,
+          "end_char": 1270
+        },
+        "score": 0.1297783005170462,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958",
+        "source_id": "python-tutorial-datastructures",
+        "text": "A special problem is the construction of tuples containing 0 or 1 items: the\nsyntax has some extra quirks to accommodate these.  Empty tuples are constructed\nby an empty pair of parentheses; a tuple with one item is constructed by\nfollowing a value with a comma (it is not sufficient to enclose a single value\nin parentheses). Ugly, but effective.  For example::\n\n   >>> empty = ()\n   >>> singleton = 'hello',    # <-- note trailing comma\n   >>> len(empty)\n   0\n   >>> len(singleton)\n   1\n   >>> singleton\n   ('hello',)\n\nThe statement t = 12345, 54321, 'hello!' is an example of *tuple packing*:\nthe values 12345, 54321 and 'hello!' are packed together in a tuple.\nThe reverse operation is also possible::\n\n   >>> x, y, z = t",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:007",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 11933,
+          "unit_end": 13873,
+          "start_char": 0,
+          "end_char": 725
+        },
+        "score": 0.12806135207189054,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[874529fffd81b844a8c59dd618b5be0382ef12addcc97465eb75c275c74d6d50 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:007]\nThis is called, appropriately enough, *sequence unpacking* and works for any\nsequence on the right-hand side.  Sequence unpacking requires that there are as\nmany variables on the left side of the equals sign as there are elements in the\nsequence.  Note that multiple assignment is really just a combination of tuple\npacking and sequence unpacking.\n\nSets\n\nPython also includes a data type for *sets*.  A set is an unordered collection\nwith no duplicate elements.  Basic uses include membership testing and\neliminating duplicate entries.  Set objects also support mathematical operations\nlike union, intersection, difference, and symmetric difference.\n\nCurly braces or the set function can be used to create sets.  Note: to\ncreate an empty set you have to use set(), not {}; the latter creates an\nempty dictionary, a data structure that we discuss in the next section.\n\nHere is a brief demonstration::\n\n[7009f163258c29d1363aa662c58cc5d44571a2873a7599c09e5d30c1ee40b06d | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst | page classes:002]\nBefore introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.\n\n[f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:007]\nA special problem is the construction of tuples containing 0 or 1 items: the\nsyntax has some extra quirks to accommodate these.  Empty tuples are constructed\nby an empty pair of parentheses; a tuple with one item is constructed by\nfollowing a value with a comma (it is not sufficient to enclose a single value\nin parentheses). Ugly, but effective.  For example::\n\n   >>> empty = ()\n   >>> singleton = 'hello',    # <-- note trailing comma\n   >>> len(empty)\n   0\n   >>> len(singleton)\n   1\n   >>> singleton\n   ('hello',)\n\nThe statement t = 12345, 54321, 'hello!' is an example of *tuple packing*:\nthe values 12345, 54321 and 'hello!' are packed together in a tuple.\nThe reverse operation is also possible::\n\n   >>> x, y, z = t",
+    "context_ids": [
+      "874529fffd81b844a8c59dd618b5be0382ef12addcc97465eb75c275c74d6d50",
+      "7009f163258c29d1363aa662c58cc5d44571a2873a7599c09e5d30c1ee40b06d",
+      "f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958"
+    ],
+    "elapsed_ms": 0.8997999975690618,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q08",
+    "question": "In what order does list(d) return dictionary keys, and how do you get them sorted?",
+    "filter": null,
+    "results": [
+      {
+        "id": "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+        "source_id": "python-tutorial-datastructures",
+        "text": "The main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:009",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 15729,
+          "unit_end": 17649,
+          "start_char": 0,
+          "end_char": 611
+        },
+        "score": 0.27123298293387305,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "6e863486f0f17c6b25fec9df9288efe22b22f5b289633bb1ed0126a87ea99dd3",
+        "source_id": "python-tutorial-datastructures",
+        "text": "Another useful data type built into Python is the *dictionary* (see\ntypesmapping). Dictionaries are sometimes found in other languages as\n\"associative memories\" or \"associative arrays\".  Unlike sequences, which are\nindexed by a range of numbers, dictionaries are indexed by *keys*, which can be\nany immutable type; strings and numbers can always be keys.  Tuples can be used\nas keys if they contain only strings, numbers, or tuples; if a tuple contains\nany mutable object either directly or indirectly, it cannot be used as a key.\nYou can't use lists as keys, since lists can be modified in place using index\nassignments, slice assignments, or methods like list.append and\nlist.extend.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:008",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 13873,
+          "unit_end": 15729,
+          "start_char": 806,
+          "end_char": 1491
+        },
+        "score": 0.1732531112913836,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13",
+        "source_id": "python-tutorial-datastructures",
+        "text": "To loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:010",
+        "metadata": {
+          "section": "datastructures",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 17649,
+          "unit_end": 19730,
+          "start_char": 940,
+          "end_char": 1784
+        },
+        "score": 0.17089669050451342,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:009]\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::\n\n[6e863486f0f17c6b25fec9df9288efe22b22f5b289633bb1ed0126a87ea99dd3 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:008]\nAnother useful data type built into Python is the *dictionary* (see\ntypesmapping). Dictionaries are sometimes found in other languages as\n\"associative memories\" or \"associative arrays\".  Unlike sequences, which are\nindexed by a range of numbers, dictionaries are indexed by *keys*, which can be\nany immutable type; strings and numbers can always be keys.  Tuples can be used\nas keys if they contain only strings, numbers, or tuples; if a tuple contains\nany mutable object either directly or indirectly, it cannot be used as a key.\nYou can't use lists as keys, since lists can be modified in place using index\nassignments, slice assignments, or methods like list.append and\nlist.extend.\n\n[2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:010]\nTo loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::",
+    "context_ids": [
+      "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+      "6e863486f0f17c6b25fec9df9288efe22b22f5b289633bb1ed0126a87ea99dd3",
+      "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13"
+    ],
+    "elapsed_ms": 1.0824999917531386,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q09",
+    "question": "Which names are excluded by from fibo import *?",
+    "filter": null,
+    "results": [
+      {
+        "id": "6ce64ef6dc3e938aa59d10a3869d04555d168fbc154982ff623ec521f1ae7137",
+        "source_id": "python-tutorial-modules",
+        "text": "Without arguments, dir lists the names you have defined currently::\n\n   >>> a = [1, 2, 3, 4, 5]\n   >>> import fibo\n   >>> fib = fibo.fib\n   >>> dir()\n   ['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys']\n\nNote that it lists all types of names: variables, modules, functions, etc.\n\ndir does not list the names of built-in functions and variables.  If you\nwant a list of those, they are defined in the standard module\nbuiltins::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:007",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 12675,
+          "unit_end": 15248,
+          "start_char": 0,
+          "end_char": 431
+        },
+        "score": 0.3779012519690189,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "00be5aff5be518c404aaf96144bc1fb64919ce081f8234f964a07fcc70ed962e",
+        "source_id": "python-tutorial-modules",
+        "text": ">>> import fibo\n\nThis does not add the names of the functions defined in fibo  directly to\nthe current namespace (see tut-scopes for more details);\nit only adds the module name fibo there. Using\nthe module name you can access the functions::\n\n   >>> fibo.fib(1000)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987\n   >>> fibo.fib2(100)\n   [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n   >>> fibo.__name__\n   'fibo'\n\nIf you intend to use a function often you can assign it to a local name::\n\n   >>> fib = fibo.fib\n   >>> fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\nMore on Modules\n\nA module can contain executable statements as well as function definitions.\nThese statements are intended to initialize the module. They are executed only\nthe *first* time the module name is encountered in an import statement. [#]_\n(They are also run if the file is executed as a script.)",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:002",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 1804,
+          "unit_end": 3658,
+          "start_char": 3,
+          "end_char": 882
+        },
+        "score": 0.3754820585046832,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "7e12131a7ecd636d15a3a2e7072dba9e2a0dc45e5522d6e7af4f15331e581ac7",
+        "source_id": "python-tutorial-modules",
+        "text": "This does not introduce the module name from which the imports are taken in the\nlocal namespace (so in the example, fibo is not defined).\n\nThere is even a variant to import all names that a module defines::\n\n   >>> from fibo import *\n   >>> fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\nThis imports all names except those beginning with an underscore (_).\nIn most cases Python programmers do not use this facility since it introduces\nan unknown set of names into the interpreter, possibly hiding some things\nyou have already defined.\n\nNote that in general the practice of importing * from a module or package is\nfrowned upon, since it often causes poorly readable code. However, it is okay to\nuse it to save typing in interactive sessions.\n\nIf the module name is followed by as, then the name\nfollowing as is bound directly to the imported module.\n\n::\n\n   >>> import fibo as fib\n   >>> fib.fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:003",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3658,
+          "unit_end": 5507,
+          "start_char": 0,
+          "end_char": 951
+        },
+        "score": 0.30285963929634246,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[6ce64ef6dc3e938aa59d10a3869d04555d168fbc154982ff623ec521f1ae7137 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:007]\nWithout arguments, dir lists the names you have defined currently::\n\n   >>> a = [1, 2, 3, 4, 5]\n   >>> import fibo\n   >>> fib = fibo.fib\n   >>> dir()\n   ['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys']\n\nNote that it lists all types of names: variables, modules, functions, etc.\n\ndir does not list the names of built-in functions and variables.  If you\nwant a list of those, they are defined in the standard module\nbuiltins::\n\n[00be5aff5be518c404aaf96144bc1fb64919ce081f8234f964a07fcc70ed962e | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:002]\n>>> import fibo\n\nThis does not add the names of the functions defined in fibo  directly to\nthe current namespace (see tut-scopes for more details);\nit only adds the module name fibo there. Using\nthe module name you can access the functions::\n\n   >>> fibo.fib(1000)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987\n   >>> fibo.fib2(100)\n   [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n   >>> fibo.__name__\n   'fibo'\n\nIf you intend to use a function often you can assign it to a local name::\n\n   >>> fib = fibo.fib\n   >>> fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\nMore on Modules\n\nA module can contain executable statements as well as function definitions.\nThese statements are intended to initialize the module. They are executed only\nthe *first* time the module name is encountered in an import statement. [#]_\n(They are also run if the file is executed as a script.)\n\n[7e12131a7ecd636d15a3a2e7072dba9e2a0dc45e5522d6e7af4f15331e581ac7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:003]\nThis does not introduce the module name from which the imports are taken in the\nlocal namespace (so in the example, fibo is not defined).\n\nThere is even a variant to import all names that a module defines::\n\n   >>> from fibo import *\n   >>> fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\nThis imports all names except those beginning with an underscore (_).\nIn most cases Python programmers do not use this facility since it introduces\nan unknown set of names into the interpreter, possibly hiding some things\nyou have already defined.\n\nNote that in general the practice of importing * from a module or package is\nfrowned upon, since it often causes poorly readable code. However, it is okay to\nuse it to save typing in interactive sessions.\n\nIf the module name is followed by as, then the name\nfollowing as is bound directly to the imported module.\n\n::\n\n   >>> import fibo as fib\n   >>> fib.fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377",
+    "context_ids": [
+      "6ce64ef6dc3e938aa59d10a3869d04555d168fbc154982ff623ec521f1ae7137",
+      "00be5aff5be518c404aaf96144bc1fb64919ce081f8234f964a07fcc70ed962e",
+      "7e12131a7ecd636d15a3a2e7072dba9e2a0dc45e5522d6e7af4f15331e581ac7"
+    ],
+    "elapsed_ms": 0.7650000043213367,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q10",
+    "question": "How can I reload a changed module during an interactive interpreter session?",
+    "filter": null,
+    "results": [
+      {
+        "id": "f999edbd62a877a186c257059a20892154d285a3f9f404b95be427630525e3d7",
+        "source_id": "python-tutorial-modules",
+        "text": "This is effectively importing the module in the same way that import fibo\nwill do, with the only difference of it being available as fib.\n\nIt can also be used when utilising from with similar effects::\n\n   >>> from fibo import fib as fibonacci\n   >>> fibonacci(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\n   For efficiency reasons, each module is only imported once per interpreter\n   session.  Therefore, if you change your modules, you must restart the\n   interpreter -- or, if it's just one module you want to test interactively,\n   use importlib.reload, e.g. import importlib;\n   importlib.reload(modulename).\n\nExecuting modules as scripts\n\nWhen you run a Python module with ::\n\n   python fibo.py <arguments>\n\nthe code in the module will be executed, just as if you imported it, but with\nthe __name__ set to \"__main__\".  That means that by adding this code at\nthe end of your module::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:003",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 3658,
+          "unit_end": 5507,
+          "start_char": 953,
+          "end_char": 1847
+        },
+        "score": 0.21571035506705463,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "a4eddc1ad80b0c76c2f02d1fcf152dbde549c5b912c039e7e7ddbd0ca9eb3f44",
+        "source_id": "python-tutorial-modules",
+        "text": "Modules\n\nIf you quit from the Python interpreter and enter it again, the definitions you\nhave made (functions and variables) are lost. Therefore, if you want to write a\nsomewhat longer program, you are better off using a text editor to prepare the\ninput for the interpreter and running it with that file as input instead.  This\nis known as creating a *script*.  As your program gets longer, you may want to\nsplit it into several files for easier maintenance.  You may also want to use a\nhandy function that you've written in several programs without copying its\ndefinition into each program.\n\nTo support this, Python has a way to put definitions in a file and use them in a\nscript or in an interactive instance of the interpreter. Such a file is called a\n*module*; definitions from a module can be *imported* into other modules or into\nthe *main* module (the collection of variables that you have access to in a\nscript executed at the top level and in calculator mode).",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:001",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 0,
+          "unit_end": 1804,
+          "start_char": 0,
+          "end_char": 969
+        },
+        "score": 0.129749230006968,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "ea15d88e3d5dfd92147b8ccb6ac4b8643e6d95f2272c874f18de34f7841777ff",
+        "source_id": "python-tutorial-classes",
+        "text": "Namespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+        "page": "classes:003",
+        "metadata": {
+          "section": "classes",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 4078,
+          "unit_end": 5888,
+          "start_char": 845,
+          "end_char": 1808
+        },
+        "score": 0.0986731926356783,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[f999edbd62a877a186c257059a20892154d285a3f9f404b95be427630525e3d7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:003]\nThis is effectively importing the module in the same way that import fibo\nwill do, with the only difference of it being available as fib.\n\nIt can also be used when utilising from with similar effects::\n\n   >>> from fibo import fib as fibonacci\n   >>> fibonacci(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\n   For efficiency reasons, each module is only imported once per interpreter\n   session.  Therefore, if you change your modules, you must restart the\n   interpreter -- or, if it's just one module you want to test interactively,\n   use importlib.reload, e.g. import importlib;\n   importlib.reload(modulename).\n\nExecuting modules as scripts\n\nWhen you run a Python module with ::\n\n   python fibo.py <arguments>\n\nthe code in the module will be executed, just as if you imported it, but with\nthe __name__ set to \"__main__\".  That means that by adding this code at\nthe end of your module::\n\n[a4eddc1ad80b0c76c2f02d1fcf152dbde549c5b912c039e7e7ddbd0ca9eb3f44 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:001]\nModules\n\nIf you quit from the Python interpreter and enter it again, the definitions you\nhave made (functions and variables) are lost. Therefore, if you want to write a\nsomewhat longer program, you are better off using a text editor to prepare the\ninput for the interpreter and running it with that file as input instead.  This\nis known as creating a *script*.  As your program gets longer, you may want to\nsplit it into several files for easier maintenance.  You may also want to use a\nhandy function that you've written in several programs without copying its\ndefinition into each program.\n\nTo support this, Python has a way to put definitions in a file and use them in a\nscript or in an interactive instance of the interpreter. Such a file is called a\n*module*; definitions from a module can be *imported* into other modules or into\nthe *main* module (the collection of variables that you have access to in a\nscript executed at the top level and in calculator mode).",
+    "context_ids": [
+      "f999edbd62a877a186c257059a20892154d285a3f9f404b95be427630525e3d7",
+      "a4eddc1ad80b0c76c2f02d1fcf152dbde549c5b912c039e7e7ddbd0ca9eb3f44"
+    ],
+    "elapsed_ms": 0.9008000051835552,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q11",
+    "question": "What value is assigned to __name__ when a Python module is run as a script?",
+    "filter": null,
+    "results": [
+      {
+        "id": "47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7",
+        "source_id": "python-tutorial-modules",
+        "text": "if __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run::\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\nThe Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in\nsys.builtin_module_names. If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable\nsys.path.  sys.path is initialized from these locations:",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:004",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 5507,
+          "unit_end": 7399,
+          "start_char": 3,
+          "end_char": 890
+        },
+        "score": 0.2935470058560846,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "a4eddc1ad80b0c76c2f02d1fcf152dbde549c5b912c039e7e7ddbd0ca9eb3f44",
+        "source_id": "python-tutorial-modules",
+        "text": "Modules\n\nIf you quit from the Python interpreter and enter it again, the definitions you\nhave made (functions and variables) are lost. Therefore, if you want to write a\nsomewhat longer program, you are better off using a text editor to prepare the\ninput for the interpreter and running it with that file as input instead.  This\nis known as creating a *script*.  As your program gets longer, you may want to\nsplit it into several files for easier maintenance.  You may also want to use a\nhandy function that you've written in several programs without copying its\ndefinition into each program.\n\nTo support this, Python has a way to put definitions in a file and use them in a\nscript or in an interactive instance of the interpreter. Such a file is called a\n*module*; definitions from a module can be *imported* into other modules or into\nthe *main* module (the collection of variables that you have access to in a\nscript executed at the top level and in calculator mode).",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:001",
+        "metadata": {
+          "section": "modules",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 0,
+          "unit_end": 1804,
+          "start_char": 0,
+          "end_char": 969
+        },
+        "score": 0.2114786532165324,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "ea15d88e3d5dfd92147b8ccb6ac4b8643e6d95f2272c874f18de34f7841777ff",
+        "source_id": "python-tutorial-classes",
+        "text": "Namespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+        "page": "classes:003",
+        "metadata": {
+          "section": "classes",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 4078,
+          "unit_end": 5888,
+          "start_char": 845,
+          "end_char": 1808
+        },
+        "score": 0.20395616071154016,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:004]\nif __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run::\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\nThe Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in\nsys.builtin_module_names. If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable\nsys.path.  sys.path is initialized from these locations:\n\n[a4eddc1ad80b0c76c2f02d1fcf152dbde549c5b912c039e7e7ddbd0ca9eb3f44 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:001]\nModules\n\nIf you quit from the Python interpreter and enter it again, the definitions you\nhave made (functions and variables) are lost. Therefore, if you want to write a\nsomewhat longer program, you are better off using a text editor to prepare the\ninput for the interpreter and running it with that file as input instead.  This\nis known as creating a *script*.  As your program gets longer, you may want to\nsplit it into several files for easier maintenance.  You may also want to use a\nhandy function that you've written in several programs without copying its\ndefinition into each program.\n\nTo support this, Python has a way to put definitions in a file and use them in a\nscript or in an interactive instance of the interpreter. Such a file is called a\n*module*; definitions from a module can be *imported* into other modules or into\nthe *main* module (the collection of variables that you have access to in a\nscript executed at the top level and in calculator mode).",
+    "context_ids": [
+      "47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7",
+      "a4eddc1ad80b0c76c2f02d1fcf152dbde549c5b912c039e7e7ddbd0ca9eb3f44"
+    ],
+    "elapsed_ms": 0.9509000083198771,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q12",
+    "question": "Why use with when working with file objects if an exception may occur?",
+    "filter": null,
+    "results": [
+      {
+        "id": "df9f4f1af15a4357a6ed088c1da1f1ab2d805384f2fe8d0105b8ce735b2ac706",
+        "source_id": "python-tutorial-inputoutput",
+        "text": "In text mode, the default when reading is to convert platform-specific line\nendings (\\n on Unix, \\r\\n on Windows) to just \\n.  When writing in\ntext mode, the default is to convert occurrences of \\n back to\nplatform-specific line endings.  This behind-the-scenes modification\nto file data is fine for text files, but will corrupt binary data like that in\nJPEG or EXE files.  Be very careful to use binary mode when\nreading and writing such files.\n\nIt is good practice to use the with keyword when dealing\nwith file objects.  The advantage is that the file is properly closed\nafter its suite finishes, even if an exception is raised at some\npoint.  Using with is also much shorter than writing\nequivalent try\\ -\\ finally blocks::\n\n    >>> with open('workfile', encoding=\"utf-8\") as f:\n    ...     read_data = f.read()\n\n    >>> # We can check that the file has been automatically closed.\n    >>> f.closed\n    True",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+        "page": "inputoutput:007",
+        "metadata": {
+          "section": "inputoutput",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 11554,
+          "unit_end": 13872,
+          "start_char": 0,
+          "end_char": 910
+        },
+        "score": 0.16312422417804512,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "d5ead9bb64f39139536d6b4a9604e2775c4535b12612efa8a5ed18233fe05dee",
+        "source_id": "python-tutorial-errors",
+        "text": ">>> def this_fails():\n   ...     x = 1/0\n   ...\n   >>> try:\n   ...     this_fails()\n   ... except ZeroDivisionError as err:\n   ...     print('Handling run-time error:', err)\n   ...\n   Handling run-time error: division by zero\n\nRaising Exceptions\n\nThe raise statement allows the programmer to force a specified\nexception to occur. For example::\n\n   >>> raise NameError('HiThere')\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n       raise NameError('HiThere')\n   NameError: HiThere\n\nThe sole argument to raise indicates the exception to be raised.\nThis must be either an exception instance or an exception class (a class that\nderives from BaseException, such as Exception or one of its\nsubclasses).  If an exception class is passed, it will be implicitly\ninstantiated by calling its constructor with no arguments::\n\n   raise ValueError  # shorthand for 'raise ValueError()'",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+        "page": "errors:005",
+        "metadata": {
+          "section": "errors",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 7637,
+          "unit_end": 9583,
+          "start_char": 873,
+          "end_char": 1778
+        },
+        "score": 0.15738570757365036,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "e08f7f60f659fa2b2cbe8f2b097c8b5fbc0ce34f0e78e7d3b0e70cfabf981ee7",
+        "source_id": "python-tutorial-errors",
+        "text": ">>> try:\n   ...     raise NameError('HiThere')\n   ... except NameError:\n   ...     print('An exception flew by!')\n   ...     raise\n   ...\n   An exception flew by!\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n       raise NameError('HiThere')\n   NameError: HiThere\n\nException Chaining\n\nIf an unhandled exception occurs inside an except section, it will\nhave the exception being handled attached to it and included in the error\nmessage::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+        "page": "errors:006",
+        "metadata": {
+          "section": "errors",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 9583,
+          "unit_end": 11645,
+          "start_char": 3,
+          "end_char": 472
+        },
+        "score": 0.14564757897674174,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[df9f4f1af15a4357a6ed088c1da1f1ab2d805384f2fe8d0105b8ce735b2ac706 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst | page inputoutput:007]\nIn text mode, the default when reading is to convert platform-specific line\nendings (\\n on Unix, \\r\\n on Windows) to just \\n.  When writing in\ntext mode, the default is to convert occurrences of \\n back to\nplatform-specific line endings.  This behind-the-scenes modification\nto file data is fine for text files, but will corrupt binary data like that in\nJPEG or EXE files.  Be very careful to use binary mode when\nreading and writing such files.\n\nIt is good practice to use the with keyword when dealing\nwith file objects.  The advantage is that the file is properly closed\nafter its suite finishes, even if an exception is raised at some\npoint.  Using with is also much shorter than writing\nequivalent try\\ -\\ finally blocks::\n\n    >>> with open('workfile', encoding=\"utf-8\") as f:\n    ...     read_data = f.read()\n\n    >>> # We can check that the file has been automatically closed.\n    >>> f.closed\n    True\n\n[d5ead9bb64f39139536d6b4a9604e2775c4535b12612efa8a5ed18233fe05dee | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst | page errors:005]\n>>> def this_fails():\n   ...     x = 1/0\n   ...\n   >>> try:\n   ...     this_fails()\n   ... except ZeroDivisionError as err:\n   ...     print('Handling run-time error:', err)\n   ...\n   Handling run-time error: division by zero\n\nRaising Exceptions\n\nThe raise statement allows the programmer to force a specified\nexception to occur. For example::\n\n   >>> raise NameError('HiThere')\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n       raise NameError('HiThere')\n   NameError: HiThere\n\nThe sole argument to raise indicates the exception to be raised.\nThis must be either an exception instance or an exception class (a class that\nderives from BaseException, such as Exception or one of its\nsubclasses).  If an exception class is passed, it will be implicitly\ninstantiated by calling its constructor with no arguments::\n\n   raise ValueError  # shorthand for 'raise ValueError()'\n\n[e08f7f60f659fa2b2cbe8f2b097c8b5fbc0ce34f0e78e7d3b0e70cfabf981ee7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst | page errors:006]\n>>> try:\n   ...     raise NameError('HiThere')\n   ... except NameError:\n   ...     print('An exception flew by!')\n   ...     raise\n   ...\n   An exception flew by!\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n       raise NameError('HiThere')\n   NameError: HiThere\n\nException Chaining\n\nIf an unhandled exception occurs inside an except section, it will\nhave the exception being handled attached to it and included in the error\nmessage::",
+    "context_ids": [
+      "df9f4f1af15a4357a6ed088c1da1f1ab2d805384f2fe8d0105b8ce735b2ac706",
+      "d5ead9bb64f39139536d6b4a9604e2775c4535b12612efa8a5ed18233fe05dee",
+      "e08f7f60f659fa2b2cbe8f2b097c8b5fbc0ce34f0e78e7d3b0e70cfabf981ee7"
+    ],
+    "elapsed_ms": 0.8860999951139092,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q13",
+    "question": "What happens if size is omitted or negative in f.read(size)?",
+    "filter": null,
+    "results": [
+      {
+        "id": "f69298dc5660a5ee0ccc8834c7f9199622043395fefc36372ac233b2c75b6b4e",
+        "source_id": "python-tutorial-inputoutput",
+        "text": "To read a file's contents, call f.read(size), which reads some quantity of\ndata and returns it as a string (in text mode) or bytes object (in binary mode).\n*size* is an optional numeric argument.  When *size* is omitted or negative, the\nentire contents of the file will be read and returned; it's your problem if the\nfile is twice as large as your machine's memory. Otherwise, at most *size*\ncharacters (in text mode) or *size* bytes (in binary mode) are read and returned.\nIf the end of the file has been reached, f.read() will return an empty\nstring ('').  ::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+        "page": "inputoutput:007",
+        "metadata": {
+          "section": "inputoutput",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 11554,
+          "unit_end": 13872,
+          "start_char": 1755,
+          "end_char": 2316
+        },
+        "score": 0.5456683595495956,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "f72c4bf2adc1f6231d541c165010882597e35ba30bce4ed723bdbbbfcb0f2bd3",
+        "source_id": "python-tutorial-inputoutput",
+        "text": ">>> f.read()\n   'This is the entire file.\\n'\n   >>> f.read()\n   ''\n\nf.readline() reads a single line from the file; a newline character (\\n)\nis left at the end of the string, and is only omitted on the last line of the\nfile if the file doesn't end in a newline.  This makes the return value\nunambiguous; if f.readline() returns an empty string, the end of the file\nhas been reached, while a blank line is represented by '\\n', a string\ncontaining only a single newline.  ::\n\n   >>> f.readline()\n   'This is the first line of the file.\\n'\n   >>> f.readline()\n   'Second line of the file\\n'\n   >>> f.readline()\n   ''\n\nFor reading lines from a file, you can loop over the file object. This is memory\nefficient, fast, and leads to simple code::\n\n   >>> for line in f:\n   ...     print(line, end='')\n   ...\n   This is the first line of the file.\n   Second line of the file\n\nIf you want to read all the lines of a file in a list you can also use\nlist(f) or f.readlines().",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+        "page": "inputoutput:008",
+        "metadata": {
+          "section": "inputoutput",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 13872,
+          "unit_end": 15901,
+          "start_char": 3,
+          "end_char": 967
+        },
+        "score": 0.14641125560530507,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "2aaba5f0884adfa5fb678002901121fb970a90d8a1b19f400a896ed6f1305012",
+        "source_id": "python-tutorial-classes",
+        "text": "Usually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+        "page": "classes:008",
+        "metadata": {
+          "section": "classes",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 13670,
+          "unit_end": 15862,
+          "start_char": 1002,
+          "end_char": 1748
+        },
+        "score": 0.13447922323771458,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[f69298dc5660a5ee0ccc8834c7f9199622043395fefc36372ac233b2c75b6b4e | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst | page inputoutput:007]\nTo read a file's contents, call f.read(size), which reads some quantity of\ndata and returns it as a string (in text mode) or bytes object (in binary mode).\n*size* is an optional numeric argument.  When *size* is omitted or negative, the\nentire contents of the file will be read and returned; it's your problem if the\nfile is twice as large as your machine's memory. Otherwise, at most *size*\ncharacters (in text mode) or *size* bytes (in binary mode) are read and returned.\nIf the end of the file has been reached, f.read() will return an empty\nstring ('').  ::\n\n[f72c4bf2adc1f6231d541c165010882597e35ba30bce4ed723bdbbbfcb0f2bd3 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst | page inputoutput:008]\n>>> f.read()\n   'This is the entire file.\\n'\n   >>> f.read()\n   ''\n\nf.readline() reads a single line from the file; a newline character (\\n)\nis left at the end of the string, and is only omitted on the last line of the\nfile if the file doesn't end in a newline.  This makes the return value\nunambiguous; if f.readline() returns an empty string, the end of the file\nhas been reached, while a blank line is represented by '\\n', a string\ncontaining only a single newline.  ::\n\n   >>> f.readline()\n   'This is the first line of the file.\\n'\n   >>> f.readline()\n   'Second line of the file\\n'\n   >>> f.readline()\n   ''\n\nFor reading lines from a file, you can loop over the file object. This is memory\nefficient, fast, and leads to simple code::\n\n   >>> for line in f:\n   ...     print(line, end='')\n   ...\n   This is the first line of the file.\n   Second line of the file\n\nIf you want to read all the lines of a file in a list you can also use\nlist(f) or f.readlines().\n\n[2aaba5f0884adfa5fb678002901121fb970a90d8a1b19f400a896ed6f1305012 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst | page classes:008]\nUsually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...",
+    "context_ids": [
+      "f69298dc5660a5ee0ccc8834c7f9199622043395fefc36372ac233b2c75b6b4e",
+      "f72c4bf2adc1f6231d541c165010882597e35ba30bce4ed723bdbbbfcb0f2bd3",
+      "2aaba5f0884adfa5fb678002901121fb970a90d8a1b19f400a896ed6f1305012"
+    ],
+    "elapsed_ms": 1.0334999969927594,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q14",
+    "question": "Which encoding should be used when opening a JSON file as text?",
+    "filter": null,
+    "results": [
+      {
+        "id": "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710",
+        "source_id": "python-tutorial-inputoutput",
+        "text": "The JSON format is commonly used by modern applications to allow for data\n   exchange.  Many programmers are already familiar with it, which makes\n   it a good choice for interoperability.\n\nIf you have an object x, you can view its JSON string representation with a\nsimple line of code::\n\n   >>> import json\n   >>> x = [1, 'simple', 'list']\n   >>> json.dumps(x)\n   '[1, \"simple\", \"list\"]'\n\nAnother variant of the json.dumps function, called json.dump,\nsimply serializes the object to a text file.  So if f is a\ntext file object opened for writing, we can do this::\n\n   json.dump(x, f)\n\nTo decode the object again, if f is a binary file or\ntext file object which has been opened for reading::\n\n   x = json.load(f)\n\n   JSON files must be encoded in UTF-8. Use encoding=\"utf-8\" when opening\n   JSON file as a text file for both of reading and writing.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+        "page": "inputoutput:010",
+        "metadata": {
+          "section": "inputoutput",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 17741,
+          "unit_end": 19266,
+          "start_char": 3,
+          "end_char": 851
+        },
+        "score": 0.5003631479674245,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "3e6f4116cf4c355bdc2a9de486caa49d9cfa68d492b11e75227f9eb0cea7feba",
+        "source_id": "python-tutorial-inputoutput",
+        "text": "Normally, files are opened in text mode, that means, you read and write\nstrings from and to the file, which are encoded in a specific *encoding*.\nIf *encoding* is not specified, the default is platform dependent\n(see open).\nBecause UTF-8 is the modern de-facto standard, encoding=\"utf-8\" is\nrecommended unless you know that you need to use a different encoding.\nAppending a 'b' to the mode opens the file in binary mode.\nBinary mode data is read and written as bytes objects.\nYou can not specify *encoding* when opening file in binary mode.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+        "page": "inputoutput:006",
+        "metadata": {
+          "section": "inputoutput",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 9378,
+          "unit_end": 11554,
+          "start_char": 1634,
+          "end_char": 2174
+        },
+        "score": 0.3422007493559903,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "87cfa9c7dda222a07a7362f3c185dbfb51a2df7fced650de29e93318645a5f1a",
+        "source_id": "python-tutorial-inputoutput",
+        "text": "This simple serialization technique can handle lists and dictionaries, but\nserializing arbitrary class instances in JSON requires a bit of extra effort.\nThe reference for the json module contains an explanation of this.\n\n   pickle - the pickle module\n\n   Contrary to JSON <tut-json>, *pickle* is a protocol which allows\n   the serialization of arbitrarily complex Python objects.  As such, it is\n   specific to Python and cannot be used to communicate with applications\n   written in other languages.  It is also insecure by default:\n   deserializing pickle data coming from an untrusted source can execute\n   arbitrary code, if the data was crafted by a skilled attacker.",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst",
+        "page": "inputoutput:010",
+        "metadata": {
+          "section": "inputoutput",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 17741,
+          "unit_end": 19266,
+          "start_char": 853,
+          "end_char": 1525
+        },
+        "score": 0.2059262414075342,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst | page inputoutput:010]\nThe JSON format is commonly used by modern applications to allow for data\n   exchange.  Many programmers are already familiar with it, which makes\n   it a good choice for interoperability.\n\nIf you have an object x, you can view its JSON string representation with a\nsimple line of code::\n\n   >>> import json\n   >>> x = [1, 'simple', 'list']\n   >>> json.dumps(x)\n   '[1, \"simple\", \"list\"]'\n\nAnother variant of the json.dumps function, called json.dump,\nsimply serializes the object to a text file.  So if f is a\ntext file object opened for writing, we can do this::\n\n   json.dump(x, f)\n\nTo decode the object again, if f is a binary file or\ntext file object which has been opened for reading::\n\n   x = json.load(f)\n\n   JSON files must be encoded in UTF-8. Use encoding=\"utf-8\" when opening\n   JSON file as a text file for both of reading and writing.\n\n[3e6f4116cf4c355bdc2a9de486caa49d9cfa68d492b11e75227f9eb0cea7feba | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst | page inputoutput:006]\nNormally, files are opened in text mode, that means, you read and write\nstrings from and to the file, which are encoded in a specific *encoding*.\nIf *encoding* is not specified, the default is platform dependent\n(see open).\nBecause UTF-8 is the modern de-facto standard, encoding=\"utf-8\" is\nrecommended unless you know that you need to use a different encoding.\nAppending a 'b' to the mode opens the file in binary mode.\nBinary mode data is read and written as bytes objects.\nYou can not specify *encoding* when opening file in binary mode.\n\n[87cfa9c7dda222a07a7362f3c185dbfb51a2df7fced650de29e93318645a5f1a | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/inputoutput.rst | page inputoutput:010]\nThis simple serialization technique can handle lists and dictionaries, but\nserializing arbitrary class instances in JSON requires a bit of extra effort.\nThe reference for the json module contains an explanation of this.\n\n   pickle - the pickle module\n\n   Contrary to JSON <tut-json>, *pickle* is a protocol which allows\n   the serialization of arbitrarily complex Python objects.  As such, it is\n   specific to Python and cannot be used to communicate with applications\n   written in other languages.  It is also insecure by default:\n   deserializing pickle data coming from an untrusted source can execute\n   arbitrary code, if the data was crafted by a skilled attacker.",
+    "context_ids": [
+      "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710",
+      "3e6f4116cf4c355bdc2a9de486caa49d9cfa68d492b11e75227f9eb0cea7feba",
+      "87cfa9c7dda222a07a7362f3c185dbfb51a2df7fced650de29e93318645a5f1a"
+    ],
+    "elapsed_ms": 0.9805000008782372,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q15",
+    "question": "In the errors chapter, where is a try statement's optional else clause placed, and when is it useful?",
+    "filter": {
+      "section": "errors"
+    },
+    "results": [
+      {
+        "id": "5bbf0e249277356952dd149a98e8b62e72eb87b36fdacd95526ffc1424b4cf43",
+        "source_id": "python-tutorial-errors",
+        "text": "The try ... except statement has an optional *else\nclause*, which, when present, must follow all *except clauses*.  It is useful\nfor code that must be executed if the *try clause* does not raise an exception.\nFor example::\n\n   for arg in sys.argv[1:]:\n       try:\n           f = open(arg, 'r')\n       except OSError:\n           print('cannot open', arg)\n       else:\n           print(arg, 'has', len(f.readlines()), 'lines')\n           f.close()\n\nThe use of the else clause is better than adding additional code to\nthe try clause because it avoids accidentally catching an exception\nthat wasn't raised by the code being protected by the try ...\nexcept statement.\n\nException handlers do not handle only exceptions that occur immediately in the\n*try clause*, but also those that occur inside functions that are called (even\nindirectly) in the *try clause*. For example::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+        "page": "errors:005",
+        "metadata": {
+          "section": "errors",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 7637,
+          "unit_end": 9583,
+          "start_char": 0,
+          "end_char": 868
+        },
+        "score": 0.36061885172641317,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "140ca815b3b2f56d5ccfcc961a02b66e0dfb16d453ebae058e313013a3a645cf",
+        "source_id": "python-tutorial-errors",
+        "text": "* If an exception occurs during execution of the try\n  clause, the exception may be handled by an except\n  clause. If the exception is not handled by an except\n  clause, the exception is re-raised after the finally\n  clause has been executed.\n\n* An exception could occur during execution of an except\n  or else clause. Again, the exception is re-raised after\n  the finally clause has been executed.\n\n* If the finally clause executes a break,\n  continue or return statement, exceptions are not\n  re-raised.\n\n* If the try statement reaches a break,\n  continue or return statement, the\n  finally clause will execute just prior to the\n  break, continue or return\n  statement's execution.\n\n* If a finally clause includes a return\n  statement, the returned value will be the one from the\n  finally clause's return statement, not the\n  value from the try clause's return\n  statement.\n\nFor example::",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+        "page": "errors:008",
+        "metadata": {
+          "section": "errors",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 13465,
+          "unit_end": 15290,
+          "start_char": 0,
+          "end_char": 891
+        },
+        "score": 0.2942809449181602,
+        "strategy": "tfidf"
+      },
+      {
+        "id": "9dcaf3d5c9a1721dac52dbc3f2ab66d380d74ed082ec8a55632f01f75fac98f8",
+        "source_id": "python-tutorial-errors",
+        "text": "Many standard modules define their own exceptions to report errors that may\noccur in functions they define.\n\nDefining Clean-up Actions\n\nThe try statement has another optional clause which is intended to\ndefine clean-up actions that must be executed under all circumstances.  For\nexample::\n\n   >>> try:\n   ...     raise KeyboardInterrupt\n   ... finally:\n   ...     print('Goodbye, world!')\n   ...\n   Goodbye, world!\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n       raise KeyboardInterrupt\n   KeyboardInterrupt\n\nIf a finally clause is present, the finally\nclause will execute as the last task before the try\nstatement completes. The finally clause runs whether or\nnot the try statement produces an exception. The following\npoints discuss more complex cases when an exception occurs:",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+        "page": "errors:007",
+        "metadata": {
+          "section": "errors",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 11645,
+          "unit_end": 13465,
+          "start_char": 1001,
+          "end_char": 1818
+        },
+        "score": 0.26548376239044497,
+        "strategy": "tfidf"
+      }
+    ],
+    "context": "[5bbf0e249277356952dd149a98e8b62e72eb87b36fdacd95526ffc1424b4cf43 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst | page errors:005]\nThe try ... except statement has an optional *else\nclause*, which, when present, must follow all *except clauses*.  It is useful\nfor code that must be executed if the *try clause* does not raise an exception.\nFor example::\n\n   for arg in sys.argv[1:]:\n       try:\n           f = open(arg, 'r')\n       except OSError:\n           print('cannot open', arg)\n       else:\n           print(arg, 'has', len(f.readlines()), 'lines')\n           f.close()\n\nThe use of the else clause is better than adding additional code to\nthe try clause because it avoids accidentally catching an exception\nthat wasn't raised by the code being protected by the try ...\nexcept statement.\n\nException handlers do not handle only exceptions that occur immediately in the\n*try clause*, but also those that occur inside functions that are called (even\nindirectly) in the *try clause*. For example::\n\n[140ca815b3b2f56d5ccfcc961a02b66e0dfb16d453ebae058e313013a3a645cf | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst | page errors:008]\n* If an exception occurs during execution of the try\n  clause, the exception may be handled by an except\n  clause. If the exception is not handled by an except\n  clause, the exception is re-raised after the finally\n  clause has been executed.\n\n* An exception could occur during execution of an except\n  or else clause. Again, the exception is re-raised after\n  the finally clause has been executed.\n\n* If the finally clause executes a break,\n  continue or return statement, exceptions are not\n  re-raised.\n\n* If the try statement reaches a break,\n  continue or return statement, the\n  finally clause will execute just prior to the\n  break, continue or return\n  statement's execution.\n\n* If a finally clause includes a return\n  statement, the returned value will be the one from the\n  finally clause's return statement, not the\n  value from the try clause's return\n  statement.\n\nFor example::\n\n[9dcaf3d5c9a1721dac52dbc3f2ab66d380d74ed082ec8a55632f01f75fac98f8 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst | page errors:007]\nMany standard modules define their own exceptions to report errors that may\noccur in functions they define.\n\nDefining Clean-up Actions\n\nThe try statement has another optional clause which is intended to\ndefine clean-up actions that must be executed under all circumstances.  For\nexample::\n\n   >>> try:\n   ...     raise KeyboardInterrupt\n   ... finally:\n   ...     print('Goodbye, world!')\n   ...\n   Goodbye, world!\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n       raise KeyboardInterrupt\n   KeyboardInterrupt\n\nIf a finally clause is present, the finally\nclause will execute as the last task before the try\nstatement completes. The finally clause runs whether or\nnot the try statement produces an exception. The following\npoints discuss more complex cases when an exception occurs:",
+    "context_ids": [
+      "5bbf0e249277356952dd149a98e8b62e72eb87b36fdacd95526ffc1424b4cf43",
+      "140ca815b3b2f56d5ccfcc961a02b66e0dfb16d453ebae058e313013a3a645cf",
+      "9dcaf3d5c9a1721dac52dbc3f2ab66d380d74ed082ec8a55632f01f75fac98f8"
+    ],
+    "elapsed_ms": 1.3387000071816146,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  }
+]

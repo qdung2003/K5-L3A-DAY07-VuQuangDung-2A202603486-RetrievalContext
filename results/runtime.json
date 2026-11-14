@@ -1,0 +1,30 @@
+{
+  "python": "3.13.15",
+  "platform": "Windows",
+  "device": "cpu",
+  "torch_threads": 4,
+  "packages": {
+    "chromadb": "1.5.9",
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "transformers": "5.22.2",
+    "numpy": "2.5.4",
+    "openai": "3.46.0",
+    "python-dotenv": "1.2.4"
+  },
+  "command_note": "Day 6 venv with installed host SDK path appended; see ENVIRONMENT.md. Fresh setup uses requirements.txt.",
+  "code_sha256": {
+    "src/agent_run.py": "b8bdd0844fc23e5bc33e828868fec28efe006eafa2621a69174d98f0a43c6e3c",
+    "src/day6_store.py": "e29a70f52aa2c135f0fd825d30224c042172bb1234c561889a38ffaa00ca2247",
+    "src/evaluation.py": "6d15d5d605638fb7573b8b1047db5252192cd9339ddb420fee903980a067fa0b",
+    "src/retrievers.py": "0d7b54288bcbd0dd8619699e625da7e5e4d4d82561b394e3f1c108d0a7281651",
+    "scripts/audit_answers.py": "300f63b77842cf76e010c823f982ce9c018106da668d40135974d451e73af21e",
+    "scripts/experiment.py": "e43ced67d74ebdbccc928f8a0b1a81699f3c864ddbf08e6068f5a77b6cff645c",
+    "scripts/finalize_reviews.py": "88104b2e30e1432ab5f271a7b22c1aeec8e487706e089b7cdb9be1e5fa002a1b",
+    "scripts/prepare_day7.py": "31700dc6b7409416cfc226aa0f0cb43421b561018eed95de180075fb786bb623",
+    "scripts/pretest_corrections.py": "2ae50710635028fbdddefe1b11e26f0073ac7f97007a3eb354f994aee562b059",
+    "scripts/record_runtime.py": "deb2f92d8d4af82ee1aec456e5b66a5db8f4ed233de26827f0210214cd27d4fd",
+    "scripts/setup_models.py": "042535e7b76c11577a2a09bb4b15d745a8b1172944c4a907336cb4c8778da666",
+    "scripts/verify_submission.py": "ee3e589c195fe92f8bcc030c1cbf0026f95c9c9a6dfb9c58110dc2f705f027ec"
+  }
+}

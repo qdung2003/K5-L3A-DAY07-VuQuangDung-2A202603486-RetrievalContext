@@ -1,0 +1,87 @@
+{
+  "at": "2026-11-14T09:01:31.124411+00:00",
+  "reason": "Count inline citations on abstention without altering original model answers or outputs.",
+  "repairs": [
+    {
+      "configuration": "baseline",
+      "query_id": "D-U01",
+      "before": [],
+      "after": [
+        "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26"
+      ]
+    },
+    {
+      "configuration": "baseline",
+      "query_id": "D-U02",
+      "before": [],
+      "after": [
+        "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710"
+      ]
+    },
+    {
+      "configuration": "dense-wide",
+      "query_id": "D-U01",
+      "before": [],
+      "after": [
+        "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26"
+      ]
+    },
+    {
+      "configuration": "dense-wide",
+      "query_id": "D-U02",
+      "before": [],
+      "after": [
+        "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710"
+      ]
+    },
+    {
+      "configuration": "hybrid",
+      "query_id": "D-U01",
+      "before": [],
+      "after": [
+        "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26"
+      ]
+    },
+    {
+      "configuration": "hybrid",
+      "query_id": "D-U02",
+      "before": [],
+      "after": [
+        "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710"
+      ]
+    },
+    {
+      "configuration": "hybrid-wide",
+      "query_id": "D-U01",
+      "before": [],
+      "after": [
+        "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26"
+      ]
+    },
+    {
+      "configuration": "hybrid-wide",
+      "query_id": "D-U02",
+      "before": [],
+      "after": [
+        "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710"
+      ]
+    },
+    {
+      "configuration": "lexical",
+      "query_id": "D-U01",
+      "before": [],
+      "after": [
+        "3e1c3619d1a598d726fde64d8fddd67471bcd85c3c52622ef8dd3743186ade26"
+      ]
+    },
+    {
+      "configuration": "lexical",
+      "query_id": "D-U02",
+      "before": [],
+      "after": [
+        "f0f690405dbd7ffc224b470cec376fe461b6fd0287169fd23830715a6f1c9710"
+      ]
+    }
+  ],
+  "test_queries_run": 0
+}

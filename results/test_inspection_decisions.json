@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "_trace_sha256": "987014e49173d653aa63fa5f8a31eda4660a2c225fe4794bdf9cda8177a0e10f",
+    "T01": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read datastructures:010 source and final context: sorted returns a new list and leaves source unaltered. Both answer conditions and citation are supported."},
+    "T02": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read datastructures:010 enumerate paragraph and example: position index and corresponding value retrieved together. Final context contains full paragraph and source."},
+    "T03": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read modules:004 import-search paragraph: built-in named spam first, listed in sys.builtin_module_names, then spam.py on sys.path. All answer claims supported."},
+    "T04": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read datastructures:009: existing-key store forgets old associated value. Answer accurately describes replacement; full evidence and source in context."},
+    "T05": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read stdlib2:006 bisect.insort example and resulting sorted scores. Correct function, tuple arguments and order preserved. User-provided stdlib2 filter is honored."},
+    "T-U01": {"abstention_correct":true,"citation_support":[],"reason":"Read abstention: no worker-count claim is added. Checked full normalized corpus and threading discussion; no maximum production web-server thread recommendation exists."},
+    "T-U02": {"abstention_correct":true,"citation_support":[true],"reason":"Read inputoutput:010 pickle warning: arbitrary-code risk is explicit. Full-corpus AES/key-length search finds no recommendation. Answer refuses a length and only repeats the supported warning."}
+  },
+  "hybrid-wide": {
+    "_trace_sha256": "f606022b173f1e890fcd753cf8ade3715e130dba9efd61025a7ff0c609e7f950",
+    "T01": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read datastructures:010 and final context: sorted produces a new sorted list without changing source. Answer and its citation cover both conditions."},
+    "T02": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read datastructures:010 enumerate paragraph/example in final context. Answer correctly returns function that pairs position with value; cited text directly supports it."},
+    "T03": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read modules:004 import-search paragraph in original source and final context. Built-in module is checked first; sys.builtin_module_names is explicitly identified."},
+    "T04": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read datastructures:009 existing-key paragraph. Replacement/forgetting of previous dictionary value is explicitly stated and accurately paraphrased."},
+    "T05": {"answer_grade":2,"context_grade":2,"citation_support":[true],"reason":"Read stdlib2:006 original bisect.insort(scores, (300, 'ruby')) call and sorted output. Function and tuple are correct and citation is included in final context."},
+    "T-U01": {"abstention_correct":true,"citation_support":[],"reason":"Read final response and full-corpus absence check. It refuses to provide a maximum worker-thread number, with no additional unsupported assertion."},
+    "T-U02": {"abstention_correct":true,"citation_support":[true],"reason":"Read inputoutput:010 source warning and final response. No AES length is invented; supporting citation accurately warns that untrusted pickle deserialization can run arbitrary code."}
+  }
+}

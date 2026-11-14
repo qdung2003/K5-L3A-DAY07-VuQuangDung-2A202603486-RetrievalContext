@@ -1,0 +1,125 @@
+{
+  "pricing": {
+    "model": "gpt-6.1-sol",
+    "source_url": "https://api.modelapi.vn/api/pricing",
+    "retrieved_at": "2026-11-14T09:47:13.512167+00:00",
+    "unit": "USD per million tokens",
+    "billing_expr": "len >= 500000 ? tier(\"long\", p * 4 + c * 15 + cr * 0.2 + cc * 5) : tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5)",
+    "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+    "group_multipliers": {
+      "default": 0.9,
+      "codex_peak_2": 0.9,
+      "codex_peak_3": 0.9,
+      "codex_peak_1": 0.9,
+      "codex_siêu_nhanh": 2.6,
+      "codex_không_lag": 0.9
+    },
+    "basis": "Published expression rates before account/group multiplier. p=uncached input, c=output, cr=cache read, cc=cache write. Frontend labels rates USD per 1M tokens.",
+    "limitations": "Current public rates applied retrospectively. Actual account group, discounts, prior prices, unsuccessful probes and unrecorded judge attempts are not known. This is an estimate, not an invoice."
+  },
+  "pricing_sha256": "8cb41c6dfb118713f2282580a61b7488641024dbe91c96fd976c122d6962e999",
+  "kind": "estimate",
+  "account_invoice_verified": false,
+  "runs": [
+    {
+      "configuration": "baseline",
+      "split": "dev",
+      "agent_estimate_usd_before_group": 0.0726148,
+      "audit_estimate_usd_before_group": 0.070632,
+      "agent_group_range_usd": [
+        0.06535331999999999,
+        0.18879848
+      ],
+      "trace_sha256": "2cfa82a0fbff3a4ad6d0140391918bebd28fa6983ba0d9ecdb3a1da190027c9a",
+      "reviews_sha256": "8464346923b5335e3f08f5f5513a05b06a7ce756f32ffdca57f4b57113c62bcf",
+      "input_tokens": 25869,
+      "output_tokens": 2720
+    },
+    {
+      "configuration": "baseline",
+      "split": "test",
+      "agent_estimate_usd_before_group": 0.031956,
+      "audit_estimate_usd_before_group": 0.028828,
+      "agent_group_range_usd": [
+        0.0287604,
+        0.0830856
+      ],
+      "trace_sha256": "987014e49173d653aa63fa5f8a31eda4660a2c225fe4794bdf9cda8177a0e10f",
+      "reviews_sha256": "9cf4d385f5b96cd1cf2d79037ef9201eae71e3254f8e912537074fd3bfc6bf1e",
+      "input_tokens": 10918,
+      "output_tokens": 1012
+    },
+    {
+      "configuration": "dense-wide",
+      "split": "dev",
+      "agent_estimate_usd_before_group": 0.10979,
+      "audit_estimate_usd_before_group": 0.096138,
+      "agent_group_range_usd": [
+        0.098811,
+        0.285454
+      ],
+      "trace_sha256": "4d2bf2eca841187ee1663628a5eec0fef0bcc611b5a098c100c3c46054c00551",
+      "reviews_sha256": "ff1582bedcc8a70b1a07d12f8313f762a66da12c7a46eea6158cb571899e7aed",
+      "input_tokens": 41245,
+      "output_tokens": 2730
+    },
+    {
+      "configuration": "hybrid",
+      "split": "dev",
+      "agent_estimate_usd_before_group": 0.077908,
+      "audit_estimate_usd_before_group": 0.066301,
+      "agent_group_range_usd": [
+        0.0701172,
+        0.2025608
+      ],
+      "trace_sha256": "4ef2d1d0bebf3360c8bf90259c2f90f8b36e0851cfd53c5336e2cb3255431a3b",
+      "reviews_sha256": "29b005ab62b1617a55ac57f2121f645048eeb5991d6bb58e4d5e50e1b5618095",
+      "input_tokens": 25484,
+      "output_tokens": 2694
+    },
+    {
+      "configuration": "hybrid-wide",
+      "split": "dev",
+      "agent_estimate_usd_before_group": 0.0972012,
+      "audit_estimate_usd_before_group": 0.092514,
+      "agent_group_range_usd": [
+        0.08748108,
+        0.25272312
+      ],
+      "trace_sha256": "b16941bf78c86c57c86e61cf49792411a3c3deda7932d2533d8f3f7d650467c5",
+      "reviews_sha256": "a5149644784eb8980ee97affe0d712ed54b0fd5cc1f2f9a04741121a8715e5c6",
+      "input_tokens": 36892,
+      "output_tokens": 2705
+    },
+    {
+      "configuration": "hybrid-wide",
+      "split": "test",
+      "agent_estimate_usd_before_group": 0.039704,
+      "audit_estimate_usd_before_group": 0.036858,
+      "agent_group_range_usd": [
+        0.035733600000000004,
+        0.10323040000000001
+      ],
+      "trace_sha256": "f606022b173f1e890fcd753cf8ade3715e130dba9efd61025a7ff0c609e7f950",
+      "reviews_sha256": "23603a0194bc80ca3af1dfae7b8bee706e3c1be85b3b8bc6fddb2f9cf06475fe",
+      "input_tokens": 14932,
+      "output_tokens": 984
+    },
+    {
+      "configuration": "lexical",
+      "split": "dev",
+      "agent_estimate_usd_before_group": 0.0753719,
+      "audit_estimate_usd_before_group": 0.068728,
+      "agent_group_range_usd": [
+        0.06783471,
+        0.19596694000000003
+      ],
+      "trace_sha256": "e40194509a349f7691a3667017db07e1e3bbfbeb88a7919a87a10fa0cf7359e9",
+      "reviews_sha256": "b461a9293c4e9e7531276ef8b53bdd4595bcfc375cee92184df8fb396900f6f6",
+      "input_tokens": 25404,
+      "output_tokens": 2669
+    }
+  ],
+  "agent_total_usd_before_group": 0.5045459,
+  "audit_total_usd_before_group": 0.459999
+}

@@ -1,0 +1,404 @@
+[
+  {
+    "query_id": "T01",
+    "question": "Which built-in returns a new sorted list while leaving the original sequence unchanged?",
+    "filter": null,
+    "results": [
+      {
+        "id": "5c8a60169ec9b37eef2c8d9e4eb644a355cf498eb4ed4924ec22ff89ff838799",
+        "text": "You might have noticed that methods like insert, remove or sort that\nonly modify the list have no return value printed -- they return the default\nNone. [#]_  This is a design principle for all mutable data structures in\nPython.\n\nAnother thing you might notice is that not all data can be sorted or\ncompared.  For instance, [None, 'hello', 10] doesn't sort because\nintegers can't be compared to strings and None can't be compared to\nother types.  Also, there are some types that don't have a defined\nordering relation.  For example, 3+4j < 5+7j isn't a valid\ncomparison.\n\nUsing Lists as Stacks\n\nThe list methods make it very easy to use a list as a stack, where the last\nelement added is the first element retrieved (\"last-in, first-out\").  To add an\nitem to the top of the stack, use list.append.  To retrieve an item from the\ntop of the stack, use list.pop without an explicit index.  For example::",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:002",
+        "metadata": {
+          "version": "3.13.0",
+          "document_id": "python-tutorial-datastructures",
+          "unit_start": 1860,
+          "start_char": 844,
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "page": "datastructures:002",
+          "unit_end": 3833,
+          "section": "datastructures",
+          "end_char": 1743
+        },
+        "score": 0.5421556234359741,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13",
+        "text": "To loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:010",
+        "metadata": {
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "page": "datastructures:010",
+          "start_char": 940,
+          "unit_start": 17649,
+          "language": "en",
+          "document_id": "python-tutorial-datastructures",
+          "version": "3.13.0",
+          "end_char": 1784,
+          "unit_end": 19730,
+          "section": "datastructures"
+        },
+        "score": 0.5097755193710327,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "99ee45b6660911a2f9082de199fbdb303b3f423d00a1e06e15283de9eab645e0",
+        "text": "Comparing Sequences and Other Types\nSequence objects typically may be compared to other objects with the same sequence\ntype. The comparison uses *lexicographical* ordering: first the first two\nitems are compared, and if they differ this determines the outcome of the\ncomparison; if they are equal, the next two items are compared, and so on, until\neither sequence is exhausted. If two items to be compared are themselves\nsequences of the same type, the lexicographical comparison is carried out\nrecursively.  If all items of two sequences compare equal, the sequences are\nconsidered equal. If one sequence is an initial sub-sequence of the other, the\nshorter sequence is the smaller (lesser) one.  Lexicographical ordering for\nstrings uses the Unicode code point number to order individual characters.\nSome examples of comparisons between sequences of the same type::",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:012",
+        "metadata": {
+          "version": "3.13.0",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "page": "datastructures:012",
+          "section": "datastructures",
+          "unit_end": 23269,
+          "language": "en",
+          "start_char": 0,
+          "end_char": 867,
+          "document_id": "python-tutorial-datastructures",
+          "unit_start": 21635
+        },
+        "score": 0.5092589855194092,
+        "strategy": "dense-chroma"
+      }
+    ],
+    "context": "[5c8a60169ec9b37eef2c8d9e4eb644a355cf498eb4ed4924ec22ff89ff838799 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:002]\nYou might have noticed that methods like insert, remove or sort that\nonly modify the list have no return value printed -- they return the default\nNone. [#]_  This is a design principle for all mutable data structures in\nPython.\n\nAnother thing you might notice is that not all data can be sorted or\ncompared.  For instance, [None, 'hello', 10] doesn't sort because\nintegers can't be compared to strings and None can't be compared to\nother types.  Also, there are some types that don't have a defined\nordering relation.  For example, 3+4j < 5+7j isn't a valid\ncomparison.\n\nUsing Lists as Stacks\n\nThe list methods make it very easy to use a list as a stack, where the last\nelement added is the first element retrieved (\"last-in, first-out\").  To add an\nitem to the top of the stack, use list.append.  To retrieve an item from the\ntop of the stack, use list.pop without an explicit index.  For example::\n\n[2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:010]\nTo loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::\n\n[99ee45b6660911a2f9082de199fbdb303b3f423d00a1e06e15283de9eab645e0 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:012]\nComparing Sequences and Other Types\nSequence objects typically may be compared to other objects with the same sequence\ntype. The comparison uses *lexicographical* ordering: first the first two\nitems are compared, and if they differ this determines the outcome of the\ncomparison; if they are equal, the next two items are compared, and so on, until\neither sequence is exhausted. If two items to be compared are themselves\nsequences of the same type, the lexicographical comparison is carried out\nrecursively.  If all items of two sequences compare equal, the sequences are\nconsidered equal. If one sequence is an initial sub-sequence of the other, the\nshorter sequence is the smaller (lesser) one.  Lexicographical ordering for\nstrings uses the Unicode code point number to order individual characters.\nSome examples of comparisons between sequences of the same type::",
+    "context_ids": [
+      "5c8a60169ec9b37eef2c8d9e4eb644a355cf498eb4ed4924ec22ff89ff838799",
+      "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13",
+      "99ee45b6660911a2f9082de199fbdb303b3f423d00a1e06e15283de9eab645e0"
+    ],
+    "elapsed_ms": 85.89360000041779,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T02",
+    "question": "Which function lets a loop retrieve a sequence element and its position index together?",
+    "filter": null,
+    "results": [
+      {
+        "id": "41d7ef430bff9aceed5ce03921b39a36712b19b8b7eef8dfb2d7083e67927a9c",
+        "text": "When looping through a sequence, the position index and corresponding value can\nbe retrieved at the same time using the enumerate function. ::\n\n   >>> for i, v in enumerate(['tic', 'tac', 'toe']):\n   ...     print(i, v)\n   ...\n   0 tic\n   1 tac\n   2 toe\n\nTo loop over two or more sequences at the same time, the entries can be paired\nwith the zip function. ::\n\n   >>> questions = ['name', 'quest', 'favorite color']\n   >>> answers = ['lancelot', 'the holy grail', 'blue']\n   >>> for q, a in zip(questions, answers):\n   ...     print('What is your {0}?  It is {1}.'.format(q, a))\n   ...\n   What is your name?  It is lancelot.\n   What is your quest?  It is the holy grail.\n   What is your favorite color?  It is blue.\n\nTo loop over a sequence in reverse, first specify the sequence in a forward\ndirection and then call the reversed function. ::\n\n   >>> for i in reversed(range(1, 10, 2)):\n   ...     print(i)\n   ...\n   9\n   7\n   5\n   3\n   1",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:010",
+        "metadata": {
+          "language": "en",
+          "version": "3.13.0",
+          "start_char": 0,
+          "unit_end": 19730,
+          "end_char": 938,
+          "unit_start": 17649,
+          "page": "datastructures:010",
+          "document_id": "python-tutorial-datastructures",
+          "section": "datastructures",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst"
+        },
+        "score": 0.5861245393753052,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "fddc0995cc573b9353ebc929399563804dbd7127c329f68bca97dc31bb42d031",
+        "text": ">>> list(range(5, 10))\n    [5, 6, 7, 8, 9]\n\n    >>> list(range(0, 10, 3))\n    [0, 3, 6, 9]\n\n    >>> list(range(-10, -100, -30))\n    [-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range and\nlen as follows::\n\n   >>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n   >>> for i in range(len(a)):\n   ...     print(i, a[i])\n   ...\n   0 Mary\n   1 had\n   2 a\n   3 little\n   4 lamb\n\nIn most such cases, however, it is convenient to use the enumerate\nfunction, see tut-loopidioms.\n\nA strange thing happens if you just print a range::\n\n   >>> range(10)\n   range(0, 10)\n\nIn many ways the object returned by range behaves as if it is a list,\nbut in fact it isn't. It is an object which returns the successive items of\nthe desired sequence when you iterate over it, but it doesn't really make\nthe list, thus saving space.",
+        "source_id": "python-tutorial-controlflow",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+        "page": "controlflow:002",
+        "metadata": {
+          "version": "3.13.0",
+          "unit_end": 3769,
+          "unit_start": 1962,
+          "end_char": 1805,
+          "page": "controlflow:002",
+          "language": "en",
+          "document_id": "python-tutorial-controlflow",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst",
+          "section": "controlflow",
+          "start_char": 973
+        },
+        "score": 0.479203462600708,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13",
+        "text": "To loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:010",
+        "metadata": {
+          "unit_end": 19730,
+          "page": "datastructures:010",
+          "document_id": "python-tutorial-datastructures",
+          "section": "datastructures",
+          "version": "3.13.0",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "end_char": 1784,
+          "language": "en",
+          "unit_start": 17649,
+          "start_char": 940
+        },
+        "score": 0.4472183585166931,
+        "strategy": "dense-chroma"
+      }
+    ],
+    "context": "[41d7ef430bff9aceed5ce03921b39a36712b19b8b7eef8dfb2d7083e67927a9c | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:010]\nWhen looping through a sequence, the position index and corresponding value can\nbe retrieved at the same time using the enumerate function. ::\n\n   >>> for i, v in enumerate(['tic', 'tac', 'toe']):\n   ...     print(i, v)\n   ...\n   0 tic\n   1 tac\n   2 toe\n\nTo loop over two or more sequences at the same time, the entries can be paired\nwith the zip function. ::\n\n   >>> questions = ['name', 'quest', 'favorite color']\n   >>> answers = ['lancelot', 'the holy grail', 'blue']\n   >>> for q, a in zip(questions, answers):\n   ...     print('What is your {0}?  It is {1}.'.format(q, a))\n   ...\n   What is your name?  It is lancelot.\n   What is your quest?  It is the holy grail.\n   What is your favorite color?  It is blue.\n\nTo loop over a sequence in reverse, first specify the sequence in a forward\ndirection and then call the reversed function. ::\n\n   >>> for i in reversed(range(1, 10, 2)):\n   ...     print(i)\n   ...\n   9\n   7\n   5\n   3\n   1\n\n[fddc0995cc573b9353ebc929399563804dbd7127c329f68bca97dc31bb42d031 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/controlflow.rst | page controlflow:002]\n>>> list(range(5, 10))\n    [5, 6, 7, 8, 9]\n\n    >>> list(range(0, 10, 3))\n    [0, 3, 6, 9]\n\n    >>> list(range(-10, -100, -30))\n    [-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range and\nlen as follows::\n\n   >>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n   >>> for i in range(len(a)):\n   ...     print(i, a[i])\n   ...\n   0 Mary\n   1 had\n   2 a\n   3 little\n   4 lamb\n\nIn most such cases, however, it is convenient to use the enumerate\nfunction, see tut-loopidioms.\n\nA strange thing happens if you just print a range::\n\n   >>> range(10)\n   range(0, 10)\n\nIn many ways the object returned by range behaves as if it is a list,\nbut in fact it isn't. It is an object which returns the successive items of\nthe desired sequence when you iterate over it, but it doesn't really make\nthe list, thus saving space.\n\n[2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:010]\nTo loop over a sequence in sorted order, use the sorted function which\nreturns a new sorted list while leaving the source unaltered. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for i in sorted(basket):\n   ...     print(i)\n   ...\n   apple\n   apple\n   banana\n   orange\n   orange\n   pear\n\nUsing set on a sequence eliminates duplicate elements. The use of\nsorted in combination with set over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order. ::\n\n   >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n   >>> for f in sorted(set(basket)):\n   ...     print(f)\n   ...\n   apple\n   banana\n   orange\n   pear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead. ::",
+    "context_ids": [
+      "41d7ef430bff9aceed5ce03921b39a36712b19b8b7eef8dfb2d7083e67927a9c",
+      "fddc0995cc573b9353ebc929399563804dbd7127c329f68bca97dc31bb42d031",
+      "2ed3a458e18becdd012d1773ecedbcebcebbe57eca84e05507220a20a2dede13"
+    ],
+    "elapsed_ms": 40.09290000249166,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T03",
+    "question": "When importing spam, what does the interpreter search for before looking for spam.py on sys.path?",
+    "filter": null,
+    "results": [
+      {
+        "id": "47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7",
+        "text": "if __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run::\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\nThe Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in\nsys.builtin_module_names. If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable\nsys.path.  sys.path is initialized from these locations:",
+        "source_id": "python-tutorial-modules",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:004",
+        "metadata": {
+          "section": "modules",
+          "start_char": 3,
+          "unit_end": 7399,
+          "version": "3.13.0",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+          "page": "modules:004",
+          "end_char": 890,
+          "language": "en",
+          "document_id": "python-tutorial-modules",
+          "unit_start": 5507
+        },
+        "score": 0.6741412281990051,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "d6b92af106ffaa1891c0b7a0dcd974cd68c1df9e8926eb50ecd5ce776012e1df",
+        "text": ">>> import sys\n   >>> sys.ps1\n   '>>> '\n   >>> sys.ps2\n   '... '\n   >>> sys.ps1 = 'C> '\n   C> print('Yuck!')\n   Yuck!\n   C>\n\nThese two variables are only defined if the interpreter is in interactive mode.\n\nThe variable sys.path is a list of strings that determines the interpreter's\nsearch path for modules. It is initialized to a default path taken from the\nenvironment variable PYTHONPATH, or from a built-in default if\nPYTHONPATH is not set.  You can modify it using standard list\noperations::\n\n   >>> import sys\n   >>> sys.path.append('/ufs/guido/lib/python')\n\nThe dir Function\n\nThe built-in function dir is used to find out which names a module\ndefines.  It returns a sorted list of strings::",
+        "source_id": "python-tutorial-modules",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:006",
+        "metadata": {
+          "end_char": 1651,
+          "version": "3.13.0",
+          "start_char": 954,
+          "section": "modules",
+          "page": "modules:006",
+          "unit_end": 12675,
+          "document_id": "python-tutorial-modules",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+          "language": "en",
+          "unit_start": 9351
+        },
+        "score": 0.5847086906433105,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "e43907926b68a02c746f98ebe0083b982a48d03503a1bbafe88a5296776406d7",
+        "text": "* The directory containing the input script (or the current directory when no\n  file is specified).\n* PYTHONPATH (a list of directory names, with the same syntax as the\n  shell variable PATH).\n* The installation-dependent default (by convention including a\n  site-packages directory, handled by the site module).\n\nMore details are at sys-path-init.\n\n   On file systems which support symlinks, the directory containing the input\n   script is calculated after the symlink is followed. In other words the\n   directory containing the symlink is **not** added to the module search path.\n\nAfter initialization, Python programs can modify sys.path.  The\ndirectory containing the script being run is placed at the beginning of the\nsearch path, ahead of the standard library path. This means that scripts in that\ndirectory will be loaded instead of modules of the same name in the library\ndirectory. This is an error unless the replacement is intended.  See section\ntut-standardmodules for more information.",
+        "source_id": "python-tutorial-modules",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+        "page": "modules:004",
+        "metadata": {
+          "page": "modules:004",
+          "unit_start": 5507,
+          "end_char": 1890,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst",
+          "document_id": "python-tutorial-modules",
+          "start_char": 892,
+          "language": "en",
+          "version": "3.13.0",
+          "section": "modules",
+          "unit_end": 7399
+        },
+        "score": 0.5711666345596313,
+        "strategy": "dense-chroma"
+      }
+    ],
+    "context": "[47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:004]\nif __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run::\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\nThe Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in\nsys.builtin_module_names. If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable\nsys.path.  sys.path is initialized from these locations:\n\n[d6b92af106ffaa1891c0b7a0dcd974cd68c1df9e8926eb50ecd5ce776012e1df | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:006]\n>>> import sys\n   >>> sys.ps1\n   '>>> '\n   >>> sys.ps2\n   '... '\n   >>> sys.ps1 = 'C> '\n   C> print('Yuck!')\n   Yuck!\n   C>\n\nThese two variables are only defined if the interpreter is in interactive mode.\n\nThe variable sys.path is a list of strings that determines the interpreter's\nsearch path for modules. It is initialized to a default path taken from the\nenvironment variable PYTHONPATH, or from a built-in default if\nPYTHONPATH is not set.  You can modify it using standard list\noperations::\n\n   >>> import sys\n   >>> sys.path.append('/ufs/guido/lib/python')\n\nThe dir Function\n\nThe built-in function dir is used to find out which names a module\ndefines.  It returns a sorted list of strings::\n\n[e43907926b68a02c746f98ebe0083b982a48d03503a1bbafe88a5296776406d7 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/modules.rst | page modules:004]\n* The directory containing the input script (or the current directory when no\n  file is specified).\n* PYTHONPATH (a list of directory names, with the same syntax as the\n  shell variable PATH).\n* The installation-dependent default (by convention including a\n  site-packages directory, handled by the site module).\n\nMore details are at sys-path-init.\n\n   On file systems which support symlinks, the directory containing the input\n   script is calculated after the symlink is followed. In other words the\n   directory containing the symlink is **not** added to the module search path.\n\nAfter initialization, Python programs can modify sys.path.  The\ndirectory containing the script being run is placed at the beginning of the\nsearch path, ahead of the standard library path. This means that scripts in that\ndirectory will be loaded instead of modules of the same name in the library\ndirectory. This is an error unless the replacement is intended.  See section\ntut-standardmodules for more information.",
+    "context_ids": [
+      "47e682c49283ece17d1fd23d4916370629aaf56e0379e0b521ddc8066bab12c7",
+      "d6b92af106ffaa1891c0b7a0dcd974cd68c1df9e8926eb50ecd5ce776012e1df",
+      "e43907926b68a02c746f98ebe0083b982a48d03503a1bbafe88a5296776406d7"
+    ],
+    "elapsed_ms": 45.49879999831319,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T04",
+    "question": "What happens to the original dictionary value when a value is stored using a key already in use?",
+    "filter": null,
+    "results": [
+      {
+        "id": "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+        "text": "The main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:009",
+        "metadata": {
+          "language": "en",
+          "section": "datastructures",
+          "unit_end": 17649,
+          "version": "3.13.0",
+          "unit_start": 15729,
+          "document_id": "python-tutorial-datastructures",
+          "page": "datastructures:009",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "end_char": 611,
+          "start_char": 0
+        },
+        "score": 0.6870241165161133,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "ee2a981b82c127da2691c3fdb45f5e618e2dfe09af03428b5bc8da0e61c2ad58",
+        "text": "It is best to think of a dictionary as a set of *key: value* pairs,\nwith the requirement that the keys are unique (within one dictionary). A pair of\nbraces creates an empty dictionary: {}. Placing a comma-separated list of\nkey:value pairs within the braces adds initial key:value pairs to the\ndictionary; this is also the way dictionaries are written on output.",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:008",
+        "metadata": {
+          "page": "datastructures:008",
+          "version": "3.13.0",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "language": "en",
+          "start_char": 1493,
+          "unit_end": 15729,
+          "end_char": 1854,
+          "section": "datastructures",
+          "unit_start": 13873,
+          "document_id": "python-tutorial-datastructures"
+        },
+        "score": 0.5784112215042114,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "b4c9eed54dc552421e8e784fd954e94f8dce66fd6e8ed6b00906d5b513fd789c",
+        "text": "When looping through dictionaries, the key and corresponding value can be\nretrieved at the same time using the dict.items method. ::\n\n   >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n   >>> for k, v in knights.items():\n   ...     print(k, v)\n   ...\n   gallahad the pure\n   robin the brave",
+        "source_id": "python-tutorial-datastructures",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+        "page": "datastructures:009",
+        "metadata": {
+          "version": "3.13.0",
+          "language": "en",
+          "end_char": 1918,
+          "unit_end": 17649,
+          "unit_start": 15729,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+          "start_char": 1615,
+          "document_id": "python-tutorial-datastructures",
+          "section": "datastructures",
+          "page": "datastructures:009"
+        },
+        "score": 0.548943042755127,
+        "strategy": "dense-chroma"
+      }
+    ],
+    "context": "[3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:009]\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del. If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.  It is an error to extract a value\nusing a non-existent key.\n\nPerforming list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use\nsorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary::\n\n[ee2a981b82c127da2691c3fdb45f5e618e2dfe09af03428b5bc8da0e61c2ad58 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:008]\nIt is best to think of a dictionary as a set of *key: value* pairs,\nwith the requirement that the keys are unique (within one dictionary). A pair of\nbraces creates an empty dictionary: {}. Placing a comma-separated list of\nkey:value pairs within the braces adds initial key:value pairs to the\ndictionary; this is also the way dictionaries are written on output.\n\n[b4c9eed54dc552421e8e784fd954e94f8dce66fd6e8ed6b00906d5b513fd789c | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst | page datastructures:009]\nWhen looping through dictionaries, the key and corresponding value can be\nretrieved at the same time using the dict.items method. ::\n\n   >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n   >>> for k, v in knights.items():\n   ...     print(k, v)\n   ...\n   gallahad the pure\n   robin the brave",
+    "context_ids": [
+      "3a0543db96998d580dd65fb611f6d8efd91b61243cd0a6f0d6761187def0ad7b",
+      "ee2a981b82c127da2691c3fdb45f5e618e2dfe09af03428b5bc8da0e61c2ad58",
+      "b4c9eed54dc552421e8e784fd954e94f8dce66fd6e8ed6b00906d5b513fd789c"
+    ],
+    "elapsed_ms": 42.168100000708364,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "T05",
+    "question": "In the stdlib2 tutorial example, which bisect function inserts the (300, 'ruby') tuple while keeping the scores list sorted?",
+    "filter": {
+      "section": "stdlib2"
+    },
+    "results": [
+      {
+        "id": "55c28fa9ed01fae46847b775cb39e5f3d09d5c4ddb63f505b2a20f9b26dc8ab2",
+        "text": ">>> from collections import deque\n   >>> d = deque([\"task1\", \"task2\", \"task3\"])\n   >>> d.append(\"task4\")\n   >>> print(\"Handling\", d.popleft())\n   Handling task1\n\n::\n\n   unsearched = deque([starting_node])\n   def breadth_first_search(unsearched):\n       node = unsearched.popleft()\n       for m in gen_moves(node):\n           if is_goal(m):\n               return m\n           unsearched.append(m)\n\nIn addition to alternative list implementations, the library also offers other\ntools such as the bisect module with functions for manipulating sorted\nlists::\n\n   >>> import bisect\n   >>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n   >>> bisect.insort(scores, (300, 'ruby'))\n   >>> scores\n   [(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]",
+        "source_id": "python-tutorial-stdlib2",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:006",
+        "metadata": {
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "end_char": 1709,
+          "unit_start": 10258,
+          "page": "stdlib2:006",
+          "unit_end": 12231,
+          "section": "stdlib2",
+          "document_id": "python-tutorial-stdlib2",
+          "version": "3.13.0",
+          "start_char": 919
+        },
+        "score": 0.5107267498970032,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "93cc8bdba5643df9d61c25fe6fac502c8bb3a5ece0acc5ba42b752c38a1f10ee",
+        "text": "The heapq module provides functions for implementing heaps based on\nregular lists.  The lowest valued entry is always kept at position zero.  This\nis useful for applications which repeatedly access the smallest element but do\nnot want to run a full list sort::",
+        "source_id": "python-tutorial-stdlib2",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:006",
+        "metadata": {
+          "unit_end": 12231,
+          "unit_start": 10258,
+          "document_id": "python-tutorial-stdlib2",
+          "end_char": 1971,
+          "version": "3.13.0",
+          "section": "stdlib2",
+          "page": "stdlib2:006",
+          "start_char": 1711,
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst"
+        },
+        "score": 0.331274151802063,
+        "strategy": "dense-chroma"
+      },
+      {
+        "id": "af166e149256aba0cb1ec385719f9aae0501b950ce1686f4793d753a6d95aa14",
+        "text": "Tools for Working with Lists\n\nMany data structure needs can be met with the built-in list type. However,\nsometimes there is a need for alternative implementations with different\nperformance trade-offs.\n\nThe array module provides an array.array object that is like\na list that stores only homogeneous data and stores it more compactly.  The\nfollowing example shows an array of numbers stored as two byte unsigned binary\nnumbers (typecode \"H\") rather than the usual 16 bytes per entry for regular\nlists of Python int objects::\n\n   >>> from array import array\n   >>> a = array('H', [4000, 10, 700, 22222])\n   >>> sum(a)\n   26932\n   >>> a[1:3]\n   array('H', [10, 700])\n\nThe collections module provides a collections.deque object\nthat is like a list with faster appends and pops from the left side but slower\nlookups in the middle. These objects are well suited for implementing queues\nand breadth first tree searches::",
+        "source_id": "python-tutorial-stdlib2",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+        "page": "stdlib2:006",
+        "metadata": {
+          "section": "stdlib2",
+          "version": "3.13.0",
+          "page": "stdlib2:006",
+          "unit_start": 10258,
+          "start_char": 0,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "language": "en",
+          "end_char": 914,
+          "unit_end": 12231,
+          "document_id": "python-tutorial-stdlib2"
+        },
+        "score": 0.2672785520553589,
+        "strategy": "dense-chroma"
+      }
+    ],
+    "context": "[55c28fa9ed01fae46847b775cb39e5f3d09d5c4ddb63f505b2a20f9b26dc8ab2 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:006]\n>>> from collections import deque\n   >>> d = deque([\"task1\", \"task2\", \"task3\"])\n   >>> d.append(\"task4\")\n   >>> print(\"Handling\", d.popleft())\n   Handling task1\n\n::\n\n   unsearched = deque([starting_node])\n   def breadth_first_search(unsearched):\n       node = unsearched.popleft()\n       for m in gen_moves(node):\n           if is_goal(m):\n               return m\n           unsearched.append(m)\n\nIn addition to alternative list implementations, the library also offers other\ntools such as the bisect module with functions for manipulating sorted\nlists::\n\n   >>> import bisect\n   >>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]\n   >>> bisect.insort(scores, (300, 'ruby'))\n   >>> scores\n   [(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]\n\n[93cc8bdba5643df9d61c25fe6fac502c8bb3a5ece0acc5ba42b752c38a1f10ee | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:006]\nThe heapq module provides functions for implementing heaps based on\nregular lists.  The lowest valued entry is always kept at position zero.  This\nis useful for applications which repeatedly access the smallest element but do\nnot want to run a full list sort::\n\n[af166e149256aba0cb1ec385719f9aae0501b950ce1686f4793d753a6d95aa14 | https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst | page stdlib2:006]\nTools for Working with Lists\n\nMany data structure needs can be met with the built-in list type. However,\nsometimes there is a need for alternative implementations with different\nperformance trade-offs.\n\nThe array module provides an array.array object that is like\na list that stores only homogeneous data and stores it more compactly.  The\nfollowing example shows an array of numbers stored as two byte unsigned binary\nnumbers (typecode \"H\") rather than the usual 16 bytes per entry for regular\nlists of Python int objects::\n\n   >>> from array import array\n   >>> a = array('H', [4000, 10, 700, 22222])\n   >>> sum(a)\n   26932\n   >>> a[1:3]\n   array('H', [10, 700])\n\nThe collections module provides a collections.deque object\nthat is like a list with faster appends and pops from the left side but slower\nlookups in the middle. These objects are well suited for implementing queues\nand breadth first tree searches::",
+    "context_ids": [
+      "55c28fa9ed01fae46847b775cb39e5f3d09d5c4ddb63f505b2a20f9b26dc8ab2",
+      "93cc8bdba5643df9d61c25fe6fac502c8bb3a5ece0acc5ba42b752c38a1f10ee",
+      "af166e149256aba0cb1ec385719f9aae0501b950ce1686f4793d753a6d95aa14"
+    ],
+    "elapsed_ms": 60.43640000279993,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "answerable": true
+  },
+  {
+    "id": "D-U01",
+    "split": "dev",
+    "answerable": false
+  },
+  {
+    "id": "D-U02",
+    "split": "dev",
+    "answerable": false
+  },
+  {
+    "id": "T01",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "T02",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "T03",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "T04",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "T05",
+    "split": "test",
+    "answerable": true
+  },
+  {
+    "id": "T-U01",
+    "split": "test",
+    "answerable": false
+  },
+  {
+    "id": "T-U02",
+    "split": "test",
+    "answerable": false
+  }
+]

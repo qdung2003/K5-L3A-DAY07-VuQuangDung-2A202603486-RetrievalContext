@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-14T08:46:15.669957+00:00",
+  "policy": "Reuse Day 6 dev only. New Day 7 test topics differ from Day 6 test. Freeze before any Day 7 neural retrieval or agent evaluation. Never tune on test.",
+  "selection_rule": "Maximize dev grounded-answer mean, then correct abstention, then fewer false refusals, then fewer model tokens. If tied prefer baseline, dense-wide, hybrid, hybrid-wide in that order.",
+  "sha256": {
+    "data/chunks.json": "1ab4c3efd9ca63a6f31cd9b0f8701144e63c6f561f96fe663394020ea630d5e3",
+    "data/questions.json": "e5fcb2d6c481549b0d97b82a560a6fe2529685bcfe11c0860438fb36de3b672b",
+    "data/cases.json": "c76498bc3e8344e7fe16669c9bfb6df208e7a764e2a3ed701936a95cd86b53e5",
+    "data/day7_additions.json": "1a80d7120646715ddb7125196b83600cb6cb666df5193883e1b72b0631b788e8"
+  }
+}

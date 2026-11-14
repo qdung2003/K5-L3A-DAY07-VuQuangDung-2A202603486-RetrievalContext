@@ -1,0 +1,252 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "category": "direct",
+    "question": "Which loop does a break statement exit when loops are nested?",
+    "expected_answer": "The innermost enclosing for or while loop.",
+    "gold_source_id": "python-tutorial-controlflow",
+    "gold_page": "controlflow:003",
+    "evidence_quote": "The break statement breaks out of the innermost enclosing for or while loop",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "category": "condition",
+    "question": "In the controlflow chapter, when is a loop's else clause skipped if execution ends early?",
+    "expected_answer": "A break skips it; return or a raised exception also skip it.",
+    "gold_source_id": "python-tutorial-controlflow",
+    "gold_page": "controlflow:003",
+    "evidence_quote": "In either kind of loop, the else clause is **not** executed if the loop was terminated by a break. Of course, other ways of ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.",
+    "filter": {
+      "section": "controlflow"
+    },
+    "alternative_gold": []
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "category": "condition",
+    "question": "Why can a mutable default argument preserve changes between calls?",
+    "expected_answer": "The default is evaluated only once, so a mutable object can be shared between calls.",
+    "gold_source_id": "python-tutorial-controlflow",
+    "gold_page": "controlflow:011",
+    "evidence_quote": "**Important warning:** The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "category": "direct",
+    "question": "How do you mark function parameters as positional-only and what calling restriction applies?",
+    "expected_answer": "Place them before /; they cannot be passed by keyword.",
+    "gold_source_id": "python-tutorial-controlflow",
+    "gold_page": "controlflow:013",
+    "evidence_quote": "If *positional-only*, the parameters' order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a / (forward-slash).",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "category": "metadata",
+    "question": "In datastructures, which container is recommended for a queue needing fast operations at both ends?",
+    "expected_answer": "collections.deque, designed for fast appends and pops at both ends.",
+    "gold_source_id": "python-tutorial-datastructures",
+    "gold_page": "datastructures:003",
+    "evidence_quote": "To implement a queue, use collections.deque which was designed to have fast appends and pops from both ends.",
+    "filter": {
+      "section": "datastructures"
+    },
+    "alternative_gold": []
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "category": "paraphrase",
+    "question": "What punctuation is essential to construct a tuple containing just one value?",
+    "expected_answer": "A trailing comma; parentheses alone are insufficient.",
+    "gold_source_id": "python-tutorial-datastructures",
+    "gold_page": "datastructures:007",
+    "evidence_quote": "a tuple with one item is constructed by following a value with a comma (it is not sufficient to enclose a single value in parentheses).",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "category": "condition",
+    "question": "How do you create an empty set, and why does {} not work?",
+    "expected_answer": "Use set(); {} creates an empty dictionary.",
+    "gold_source_id": "python-tutorial-datastructures",
+    "gold_page": "datastructures:007",
+    "evidence_quote": "to create an empty set you have to use set(), not {}; the latter creates an empty dictionary",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "category": "direct",
+    "question": "In what order does list(d) return dictionary keys, and how do you get them sorted?",
+    "expected_answer": "Insertion order; use sorted(d) for sorted keys.",
+    "gold_source_id": "python-tutorial-datastructures",
+    "gold_page": "datastructures:009",
+    "evidence_quote": "Performing list(d) on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you want it sorted, just use sorted(d) instead).",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "category": "condition",
+    "question": "Which names are excluded by from fibo import *?",
+    "expected_answer": "Names beginning with an underscore.",
+    "gold_source_id": "python-tutorial-modules",
+    "gold_page": "modules:003",
+    "evidence_quote": "This imports all names except those beginning with an underscore (_).",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "category": "paraphrase",
+    "question": "How can I reload a changed module during an interactive interpreter session?",
+    "expected_answer": "Use importlib.reload(modulename), or restart the interpreter.",
+    "gold_source_id": "python-tutorial-modules",
+    "gold_page": "modules:003",
+    "evidence_quote": "if you change your modules, you must restart the interpreter -- or, if it's just one module you want to test interactively, use importlib.reload",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "category": "direct",
+    "question": "What value is assigned to __name__ when a Python module is run as a script?",
+    "expected_answer": "__main__.",
+    "gold_source_id": "python-tutorial-modules",
+    "gold_page": "modules:003",
+    "evidence_quote": "the code in the module will be executed, just as if you imported it, but with the __name__ set to \"__main__\".",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "category": "condition",
+    "question": "Why use with when working with file objects if an exception may occur?",
+    "expected_answer": "It properly closes the file after the suite, even if an exception is raised.",
+    "gold_source_id": "python-tutorial-inputoutput",
+    "gold_page": "inputoutput:007",
+    "evidence_quote": "It is good practice to use the with keyword when dealing with file objects. The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point.",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "category": "condition",
+    "question": "What happens if size is omitted or negative in f.read(size)?",
+    "expected_answer": "The entire file contents are read and returned, which may exceed available memory.",
+    "gold_source_id": "python-tutorial-inputoutput",
+    "gold_page": "inputoutput:007",
+    "evidence_quote": "When *size* is omitted or negative, the entire contents of the file will be read and returned; it's your problem if the file is twice as large as your machine's memory.",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "category": "direct",
+    "question": "Which encoding should be used when opening a JSON file as text?",
+    "expected_answer": "UTF-8 for both reading and writing.",
+    "gold_source_id": "python-tutorial-inputoutput",
+    "gold_page": "inputoutput:010",
+    "evidence_quote": "JSON files must be encoded in UTF-8. Use encoding=\"utf-8\" when opening JSON file as a text file for both of reading and writing.",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "category": "metadata",
+    "question": "In the errors chapter, where is a try statement's optional else clause placed, and when is it useful?",
+    "expected_answer": "After all except clauses; for code executed when the try clause raises no exception.",
+    "gold_source_id": "python-tutorial-errors",
+    "gold_page": "errors:005",
+    "evidence_quote": "The try ... except statement has an optional *else clause*, which, when present, must follow all *except clauses*. It is useful for code that must be executed if the *try clause* does not raise an exception.",
+    "filter": {
+      "section": "errors"
+    },
+    "alternative_gold": []
+  },
+  {
+    "id": "Q16",
+    "split": "test",
+    "category": "paraphrase",
+    "question": "How do instance variables differ from class variables in terms of sharing?",
+    "expected_answer": "Instance variables are unique to an instance; class variables are shared by all instances.",
+    "gold_source_id": "python-tutorial-classes",
+    "gold_page": "classes:009",
+    "evidence_quote": "Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q17",
+    "split": "test",
+    "category": "condition",
+    "question": "If both try and finally return values, which return value does the caller receive?",
+    "expected_answer": "The value returned by finally.",
+    "gold_source_id": "python-tutorial-errors",
+    "gold_page": "errors:008",
+    "evidence_quote": "If a finally clause includes a return statement, the returned value will be the one from the finally clause's return statement, not the value from the try clause's return statement.",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "category": "condition",
+    "question": "Are single-underscore attributes enforced private, and how should _spam be treated?",
+    "expected_answer": "No enforced private instance variables; a leading underscore signals a non-public implementation detail.",
+    "gold_source_id": "python-tutorial-classes",
+    "gold_page": "classes:014",
+    "evidence_quote": "\"Private\" instance variables that cannot be accessed except from inside an object don't exist in Python. However, there is a convention that is followed by most Python code: a name prefixed with an underscore (e.g. _spam) should be treated as a non-public part of the API",
+    "filter": null,
+    "alternative_gold": []
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "category": "metadata",
+    "question": "In stdlib2, what approach is preferred for coordinating threads sharing a resource?",
+    "expected_answer": "Concentrate all access to the resource in one thread and feed it requests through the queue module.",
+    "gold_source_id": "python-tutorial-stdlib2",
+    "gold_page": "stdlib2:004",
+    "evidence_quote": "the preferred approach to task coordination is to concentrate all access to a resource in a single thread and then use the queue module to feed that thread with requests from other threads.",
+    "filter": {
+      "section": "stdlib2"
+    },
+    "alternative_gold": []
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "category": "metadata",
+    "question": "In stdlib2, where are log messages sent in the simplest logging setup?",
+    "expected_answer": "To a file or sys.stderr.",
+    "gold_source_id": "python-tutorial-stdlib2",
+    "gold_page": "stdlib2:004",
+    "evidence_quote": "At its simplest, log messages are sent to a file or to sys.stderr",
+    "filter": {
+      "section": "stdlib2"
+    },
+    "alternative_gold": []
+  }
+]

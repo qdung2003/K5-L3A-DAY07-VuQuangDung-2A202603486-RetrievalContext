@@ -1,0 +1,15 @@
+[
+  {
+    "status": "error",
+    "answer": "",
+    "citations": [],
+    "events": [],
+    "error_type": "BadRequestError",
+    "error": "Model or retrieval request failed. No synthetic answer substituted.",
+    "elapsed_ms": 2245.6800999934785,
+    "query_id": "Q01",
+    "question": "Which loop does a break statement exit when loops are nested?",
+    "config_sha256": "6159e3d3a050fac74a527571e72cfb1b87f59162fec442192dd571426b87ab5d",
+    "input_sha256": "689dd626812d11d03298e3e7466f00695bebb996da8126020d158377203a87bf"
+  }
+]

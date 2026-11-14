@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "chunks": 256,
+  "source_units": 93,
+  "questions": 24,
+  "verified_runs": [
+    "baseline/dev",
+    "baseline/test",
+    "dense-wide/dev",
+    "hybrid/dev",
+    "hybrid-wide/dev",
+    "hybrid-wide/test",
+    "lexical/dev"
+  ],
+  "embedding": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "human_review_complete": false
+}

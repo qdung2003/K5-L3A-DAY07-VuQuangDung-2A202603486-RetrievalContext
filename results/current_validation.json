@@ -1,0 +1,43 @@
+{
+  "validated_at": "2026-11-14T09:55:44.088806+00:00",
+  "status": "passed",
+  "python": "3.13.15",
+  "environment": "Project .venv; host heavy libraries reused, no Day 6 venv import path",
+  "packages": {
+    "chromadb": "1.5.9",
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "transformers": "5.22.2",
+    "numpy": "2.5.4",
+    "openai": "3.46.0",
+    "python-dotenv": "1.2.4",
+    "requests": "2.34.2",
+    "python-dateutil": "2.9.0.post0"
+  },
+  "rebuilt_store_count": 256,
+  "neural_vector_max_abs_difference": 0.0,
+  "tests_run": 32,
+  "tests_passed": 32,
+  "model_api_requests_sent": 0,
+  "retrieval_smoke": [
+    {
+      "id": "874529fffd81b844a8c59dd618b5be0382ef12addcc97465eb75c275c74d6d50",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+      "page": "datastructures:007",
+      "score": 0.46337342262268066
+    },
+    {
+      "id": "f73137830043e57df0c081709498e47084a6fd6f7dca4ed22d9dfd7f4fe4a958",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+      "page": "datastructures:007",
+      "score": 0.39995503425598145
+    },
+    {
+      "id": "c3412114027882338e3059a32f720e49d590d74bb159110cbe2f5d9a5aa16ca1",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/datastructures.rst",
+      "page": "datastructures:004",
+      "score": 0.3319411277770996
+    }
+  ],
+  "scope": "Rebuilt from tracked real-vector export, checked pinned local encoder and real retrieval; no new generation benchmark or hidden-test claim."
+}
